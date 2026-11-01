@@ -29,3 +29,5 @@ This is Aetherium's real settings screen inside Horizon: the AETHERIUM header, s
 | N | Open Aetherium |
 
 Settings and waypoints are kept in `horizon-mods/.horizon-mod-data/aetherium/`. Waypoints made with the .hmod carry over.
+
+Made for Horizon commit `d91cab6` (horizon-mixins `4342a0b`). The launcher builds that commit with the mod applied.
