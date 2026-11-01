@@ -1,0 +1,55 @@
+# Every option can be set and read back; bad values are refused.
+
+[[step]]
+command = "aetherium version"
+expect.feedback = "Aetherium 1.0.0 for Horizon 26.3"
+
+[[step]]
+command = "aetherium set zoom_toggle on"
+expect.feedback = "zoom_toggle = true"
+
+[[step]]
+command = "aetherium set zoom_smooth 0"
+expect.feedback = "zoom_smooth = 0"
+
+[[step]]
+command = "aetherium set zoom_mouse 100"
+expect.feedback = "zoom_mouse = 100"
+
+[[step]]
+command = "aetherium set hud_corner middle"
+expect.error = "hud_corner takes top_left, top_right, bottom_left or bottom_right"
+
+[[step]]
+command = "aetherium set hud off"
+expect.feedback = "hud = false"
+
+[[step]]
+command = "aetherium set wp_hud off"
+expect.feedback = "wp_hud = false"
+
+# Nothing left to show: no panel.
+[[step]]
+ticks = 1
+expect.panel = []
+
+[[step]]
+command = "aetherium reset"
+expect.feedback = "Aetherium settings reset to defaults"
+
+[[step]]
+command = "aetherium get hud"
+expect.feedback = "hud = true"
+
+[[step]]
+command = "wp del Nowhere"
+expect.error = "No waypoint called Nowhere"
+
+[[step]]
+command = "wp list"
+expect.feedback = "No waypoints yet: /wp add <name>"
+
+# Frames run the zoom and marker code with no keys held; nothing may fail.
+[[step]]
+frames = 30
+ticks = 2

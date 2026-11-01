@@ -1,0 +1,106 @@
+name: horizon
+# Aetherium for Horizon (Minecraft Java 26.3 in Rust): a sandboxed .hmod for
+# Vasysik/horizon-android, built against the source of the APK release it
+# targets. `[horizon-release]` in the commit message publishes it.
+on:
+  push:
+    branches: [arena/46f241da-aetherium]
+    paths: ['horizon/**', '.github/workflows/horizon.yml', '!horizon/ci/out/**']
+permissions:
+  contents: write
+concurrency:
+  group: horizon-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  HORIZON_REPO: Vasysik/horizon-android
+  # Tag v0.7.6 (Horizon Android 0.7.6, 2026-10-31).
+  HORIZON_REV: 7301f6fdd7f470b11317276e7a11b4dc615c137a
+  HORIZON_TAG: v0.7.6
+  RUST: 1.95.0
+  CARGO_TERM_COLOR: never
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    outputs:
+      ok: ${{ steps.build.outputs.ok }}
+      version: ${{ steps.build.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Horizon source (pinned)
+        run: |
+          echo "HZ=$RUNNER_TEMP/hz" >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/hz"
+          curl -sSfL "https://codeload.github.com/$HORIZON_REPO/tar.gz/$HORIZON_REV" | tar xz -C "$RUNNER_TEMP/hz" --strip-components=1
+          cat "$RUNNER_TEMP/hz/rust-toolchain.toml"
+      - name: Rust
+        run: |
+          rustup toolchain install "$RUST" --profile minimal --target wasm32-unknown-unknown
+          rustup default "$RUST"
+          rustup target add wasm32-unknown-unknown --toolchain "$RUST"
+          rustc --version; cargo --version
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin/cargo-horizon-mod
+            ~/.cargo/registry/index
+            ~/.cargo/registry/cache
+          key: horizon-tool-${{ env.HORIZON_REV }}-${{ env.RUST }}
+      - name: cargo-horizon-mod (Horizon's mod tool)
+        run: |
+          if ! command -v cargo-horizon-mod >/dev/null; then
+            cargo install --locked --path "$HZ/crates/cargo-horizon-mod"
+          fi
+          cargo horizon-mod 2>&1 | head -5 || true
+      - name: build and test
+        id: build
+        run: |
+          if bash horizon/ci/run.sh; then echo "ok=1" >> "$GITHUB_OUTPUT"; else echo "ok=0" >> "$GITHUB_OUTPUT"; fi
+          echo "version=$(cat horizon/ci/out/version.txt)" >> "$GITHUB_OUTPUT"
+          cat horizon/ci/out/status.txt || true
+      - name: commit results
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f horizon/ci/out 2>/dev/null || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "horizon: CI results for ${GITHUB_SHA::7} [skip ci]"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin "${{ github.ref_name }}" && git push -q origin "HEAD:${{ github.ref_name }}" && exit 0; sleep $((i*5)); done
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: steps.build.outputs.ok == '1'
+        with:
+          name: aetherium-hmod
+          path: dist/*
+      - name: fail when the build or tests failed
+        if: steps.build.outputs.ok != '1'
+        run: exit 1
+
+  release:
+    needs: build
+    if: contains(github.event.head_commit.message, '[horizon-release]') && needs.build.outputs.ok == '1'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VERSION: ${{ needs.build.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: aetherium-hmod
+          path: dist
+      - name: GitHub release
+        run: |
+          tag="horizon-v$VERSION+26.3"
+          hmod="dist/aetherium-$VERSION-horizon-26.3.hmod"
+          notes=$(mktemp)
+          { echo "**Aetherium $VERSION for Horizon** (Minecraft Java 26.3 rewritten in Rust), built for Horizon Android $HORIZON_TAG ([$HORIZON_REPO](https://github.com/$HORIZON_REPO)).";
+            echo; cat horizon/release_notes.md;
+            echo; echo "SHA-256: \`$(cut -d' ' -f1 "$hmod.sha256")\`"; } > "$notes"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$hmod" "$hmod.sha256" --clobber
+          else
+            gh release create "$tag" "$hmod" "$hmod.sha256" --target "$GITHUB_SHA" --title "Aetherium $VERSION for Horizon 26.3 (Rust)" --notes-file "$notes" --latest=false
+          fi
+          echo "::notice::release https://github.com/${{ github.repository }}/releases/tag/$tag"

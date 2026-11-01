@@ -1,0 +1,88 @@
+# Aetherium for Horizon: the info HUD, waypoints, the death point, settings
+# that persist across a restart, and leaving the world. The player starts at
+# 0.5 64 0.5 in the Overworld facing south (yaw 0), full health.
+
+# The test game reports no frame rate: turn the FPS line off first.
+[[step]]
+command = "aetherium set hud_fps off"
+expect.feedback = "hud_fps = false"
+
+[[step]]
+ticks = 1
+expect.panel = ["XYZ 0 64 0 (South)", "Nether XZ 0 0"]
+expect.corner = "top-left"
+
+[[step]]
+command = "wp add Home"
+expect.feedback = "Waypoint Home saved at 0 64 0 (Overworld)"
+
+# 100 blocks east of Home, still facing south: Home is to the west, on the
+# right, at 3 o'clock.
+[[step]]
+player = { x = 100.5 }
+ticks = 1
+expect.panel = ["XYZ 100 64 0 (South)", "Nether XZ 12 0", "Home 100m, 3 o'clock"]
+
+# Dying saves the death point where it happened, nearest first in the HUD.
+[[step]]
+player = { health = 0.0 }
+ticks = 1
+expect.chat = ["Death point saved at 100 64 0 (Overworld). /wp del Death removes it."]
+expect.panel = ["XYZ 100 64 0 (South)", "Nether XZ 12 0", "Death 1m, 12 o'clock", "Home 100m, 3 o'clock"]
+
+[[step]]
+player = { health = 20.0 }
+command = "wp list"
+expect.feedback = "#1 Home (0 64 0 Overworld); #2 Death (100 64 0 Overworld)"
+
+[[step]]
+command = "wp del Death"
+expect.feedback = "Waypoint Death deleted"
+
+[[step]]
+command = "wp hide 1"
+expect.feedback = "Waypoint Home hidden"
+
+[[step]]
+ticks = 1
+expect.panel = ["XYZ 100 64 0 (South)", "Nether XZ 12 0"]
+
+[[step]]
+command = "aetherium set fov 999"
+expect.error = "fov takes a number from 30 to 120"
+
+[[step]]
+command = "aetherium get zoom_default"
+expect.feedback = "zoom_default = 50"
+
+[[step]]
+command = "aetherium set hud_corner top_right"
+expect.feedback = "hud_corner = top_right"
+
+[[step]]
+ticks = 1
+expect.panel = ["XYZ 100 64 0 (South)", "Nether XZ 12 0"]
+expect.corner = "top-right"
+
+# A restart keeps the settings and the waypoints.
+[[step]]
+reload = true
+ticks = 1
+expect.panel = ["XYZ 100 64 0 (South)", "Nether XZ 12 0"]
+expect.corner = "top-right"
+
+[[step]]
+command = "wp show Home"
+expect.feedback = "Waypoint Home shown"
+
+# In the Nether the Overworld waypoint is shown at 1/8 of its coordinates,
+# and the HUD gives the Overworld coordinates.
+[[step]]
+player = { dimension = "minecraft:the_nether", x = 0.5, z = 40.5, yaw = 180.0 }
+ticks = 1
+expect.panel = ["XYZ 0 64 40 (North)", "Overworld XZ 4 324", "Home 40m, 12 o'clock"]
+
+[[step]]
+title-screen = true
+ticks = 1
+expect.panel = []

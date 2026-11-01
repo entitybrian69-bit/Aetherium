@@ -33,6 +33,8 @@ on:
       - 'backport/**'
       - '.github/workflows/backport.yml'
       - 'backport189/**'
+      - 'horizon/**'
+      - '.github/workflows/horizon.yml'
       - '.github/workflows/backport189.yml'
       - '.github/workflows/curseforge.yml'
       - 'tools/curseforge/**'

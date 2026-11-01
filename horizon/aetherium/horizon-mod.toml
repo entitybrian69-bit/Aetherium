@@ -1,0 +1,9 @@
+id = "aetherium"
+name = "Aetherium"
+version = "1.0.0"
+description = "Aetherium for Horizon 26.3: smooth zoom with Zoom In and Zoom Out keys, an FPS and coordinates HUD with Nether coordinates, and waypoints with on-screen markers and an automatic death point. /aetherium for settings, /wp for waypoints."
+authors = ["entitybrian69-bit"]
+api = "0.1"
+side = "client"
+capabilities = ["game-read", "hud", "chat", "storage", "render", "input", "ui"]
+experimental = ["render", "input", "ui"]
