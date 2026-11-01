@@ -2,6 +2,6 @@
 fn aetherium_ui_rows(
     ui: &crate::options_ui::OptionsUi,
     s: &crate::settings::Settings,
-) -> std::ops::ControlFlow<Vec<crate::options_ui::Row>> {
+) -> std::ops::ControlFlow<Vec<Row>> {
     crate::options_ui::aetherium::video_rows(ui, s)
 }

@@ -3,6 +3,6 @@ fn aetherium_ui_key(
     ui: &mut crate::options_ui::OptionsUi,
     s: &mut crate::settings::Settings,
     key: winit::keyboard::KeyCode,
-) -> std::ops::ControlFlow<Vec<crate::options_ui::Event>> {
+) -> std::ops::ControlFlow<Vec<Event>> {
     crate::options_ui::aetherium::key(ui, s, key)
 }
