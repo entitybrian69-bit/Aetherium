@@ -1,22 +1,661 @@
 aetherium 1.0.0 on Horizon d91cab6
 Downloading Horizon d91cab6
 Building horizon-mixins 4342a0b
-{
-  "code": "E_INVALID_HELPER",
-  "message": "cancellable hook helper must return core::ops::ControlFlow<TargetResult>",
-  "file": "/home/runner/work/aetherium/aetherium/horizon-native/target/mods/aetherium/aetherium/horizon-mixin.toml",
-  "mod_id": "aetherium",
-  "injection_id": "ui_click",
-  "target": "horizon_client_render::options_ui::OptionsUi::click"
-}
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded ab_glyph v0.2.32
+  Downloaded symphonia-metadata v0.5.5
+  Downloaded symphonia-codec-vorbis v0.5.5
+  Downloaded symphonia-format-ogg v0.5.5
+  Downloaded universal-hash v0.5.1
+  Downloaded tree_magic_mini v3.2.2
+  Downloaded vec_map v0.8.2
+  Downloaded synstructure v0.14.0
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded toml_writer v1.1.3+spec-1.1.0
+  Downloaded tinystr v0.8.4
+  Downloaded wayland-csd-frame v0.3.0
+  Downloaded wayland-cursor v0.31.14
+  Downloaded wgpu-core-deps-windows-linux-android v30.0.1
+  Downloaded cfg_aliases v0.2.2
+  Downloaded utf8_iter v1.0.4
+  Downloaded bit-set v0.10.0
+  Downloaded zerofrom-derive v0.1.8
+  Downloaded ab_glyph_rasterizer v0.1.10
+  Downloaded xkbcommon-dl v0.4.2
+  Downloaded unicode-xid v0.2.6
+  Downloaded zerofrom v0.1.8
+  Downloaded aead v0.5.2
+  Downloaded symphonia-utils-xiph v0.5.5
+  Downloaded untrusted v0.9.0
+  Downloaded wayland-sys v0.31.11
+  Downloaded arrayref v0.3.9
+  Downloaded xcursor v0.3.11
+  Downloaded wgpu-naga-bridge v30.0.1
+  Downloaded webpki-roots v0.26.11
+  Downloaded yoke-derive v0.8.4
+  Downloaded adler2 v2.0.1
+  Downloaded as-raw-xcb-connection v1.0.1
+  Downloaded thiserror-impl v1.0.69
+  Downloaded wayland-protocols-wlr v0.3.12
+  Downloaded bitflags v1.3.2
+  Downloaded termcolor v1.4.1
+  Downloaded thiserror v1.0.69
+  Downloaded unicode-ident v1.0.26
+  Downloaded wayland-scanner v0.31.11
+  Downloaded wl-clipboard-rs v0.9.4
+  Downloaded writeable v0.6.4
+  Downloaded xxhash-rust v0.8.19
+  Downloaded yoke v0.8.3
+  Downloaded zeroize v1.9.1
+  Downloaded zerovec-derive v0.11.6
+  Downloaded ahash v0.8.12
+  Downloaded alsa-sys v0.3.1
+  Downloaded arrayvec v0.7.8
+  Downloaded autocfg v1.5.1
+  Downloaded bit-vec v0.9.1
+  Downloaded bytemuck_derive v1.12.1
+  Downloaded calloop-wayland-source v0.3.0
+  Downloaded chacha20 v0.9.1
+  Downloaded curve25519-dalek-derive v0.1.1
+  Downloaded dasp_sample v0.11.0
+  Downloaded shlex v2.0.1
+  Downloaded smallvec v1.16.2
+  Downloaded spake2 v0.4.0
+  Downloaded stable_deref_trait v1.2.1
+  Downloaded symphonia-core v0.5.5
+  Downloaded tiny-skia-path v0.11.4
+  Downloaded toml_parser v1.1.3+spec-1.1.0
+  Downloaded tracing-core v0.1.36
+  Downloaded twox-hash v2.1.5
+  Downloaded unicode-bidi v0.3.18
+  Downloaded uuid v1.28.0
+  Downloaded wayland-backend v0.3.17
+  Downloaded wayland-client v0.31.15
+  Downloaded wayland-protocols-plasma v0.3.12
+  Downloaded zerotrie v0.2.5
+  Downloaded zopfli v0.8.4
+  Downloaded arboard v3.6.1
+  Downloaded bytemuck v1.25.2
+  Downloaded displaydoc v0.2.7
+  Downloaded fnv v1.0.7
+  Downloaded allocator-api2 v0.2.21
+  Downloaded alsa v0.9.1
+  Downloaded calloop v0.13.0
+  Downloaded sctk-adwaita v0.10.1
+  Downloaded spirv v0.4.0+sdk-1.4.341.0
+  Downloaded toml v1.1.6+spec-1.1.0
+  Downloaded ureq v2.12.1
+  Downloaded url v2.5.8
+  Downloaded x11-dl v2.21.0
+  Downloaded xkeysym v0.2.1
+  Downloaded zip v2.4.2
+  Downloaded base64 v0.22.1
+  Downloaded bumpalo v3.20.3
+  Downloaded cc v1.6.0
+  Downloaded fs4 v1.1.0
+  Downloaded getrandom v0.3.4
+  Downloaded iana-time-zone v0.1.65
+  Downloaded inout v0.1.4
+  Downloaded jobserver v0.1.35
+  Downloaded khronos-egl v6.0.0
+  Downloaded mimalloc v0.1.52
+  Downloaded multiversion_no_op v1.0.0
+  Downloaded profiling v1.0.18
+  Downloaded rustc-hash v1.1.0
+  Downloaded scopeguard v1.2.0
+  Downloaded wayland-protocols v0.32.13
+  Downloaded wgpu-types v30.0.1
+  Downloaded zerocopy-derive v0.8.60
+  Downloaded zerovec v0.11.8
+  Downloaded icu_properties v2.3.0
+  Downloaded num-traits v0.2.19
+  Downloaded percent-encoding v2.3.2
+  Downloaded rustls-pki-types v1.15.1
+  Downloaded winnow v1.0.4
+  Downloaded gilrs v0.11.2
+  Downloaded hidapi v2.6.7
+  Downloaded postcard v1.1.3
+  Downloaded quick-xml v0.41.0
+  Downloaded tiny-skia v0.11.4
+  Downloaded ttf-parser v0.25.1
+  Downloaded webpki-roots v1.0.10
+  Downloaded wgpu v30.0.1
+  Downloaded x11rb v0.13.2
+  Downloaded zlib-rs v0.6.8
+  Downloaded nom v8.0.0
+  Downloaded syn v3.0.6
+  Downloaded unicode-width v0.2.2
+  Downloaded wasmparser v0.254.2
+  Downloaded zerocopy v0.8.60
+  Downloaded chrono v0.4.45
+  Downloaded curve25519-dalek v4.1.3
+  Downloaded icu_properties_data v2.3.0
+  Downloaded rustix v1.1.5
+  Downloaded rustls v0.23.46
+  Downloaded tracing v0.1.44
+  Downloaded wgpu-core v30.0.1
+  Downloaded ash v0.38.0+1.3.281
+  Downloaded dpi v0.1.2
+  Downloaded static_assertions v1.1.0
+  Downloaded winit v0.30.13
+  Downloaded x11rb-protocol v0.13.2
+  Downloaded lazy_static v1.5.1
+  Downloaded petgraph v0.8.3
+  Downloaded cty v0.2.2
+  Downloaded memmap2 v0.9.11
+  Downloaded ring v0.17.14
+  Downloaded strict-num v0.1.1
+  Downloaded cipher v0.4.4
+  Downloaded cobs v0.3.0
+  Downloaded codespan-reporting v0.13.1
+  Downloaded core_detect v1.0.0
+  Downloaded cpal v0.16.0
+  Downloaded crc32fast v1.5.2
+  Downloaded cursor-icon v1.2.0
+  Downloaded dlib v0.5.3
+  Downloaded document-features v0.2.12
+  Downloaded downcast-rs v1.2.1
+  Downloaded embedded-io v0.4.0
+  Downloaded embedded-io v0.6.1
+  Downloaded equivalent v1.0.2
+  Downloaded fdeflate v0.3.7
+  Downloaded find-msvc-tools v0.1.14
+  Downloaded libloading v0.8.9
+  Downloaded libudev-sys v0.1.4
+  Downloaded litemap v0.8.3
+  Downloaded litrs v1.0.0
+  Downloaded lock_api v0.4.14
+  Downloaded log v0.4.34
+  Downloaded simd-adler32 v0.3.10
+  Downloaded lz4_flex v0.14.0
+  Downloaded smithay-client-toolkit v0.19.2
+  Downloaded libm v0.2.16
+  Downloaded encoding_rs v0.8.42
+  Downloaded libmimalloc-sys v0.1.49
+  Downloaded chacha20poly1305 v0.10.1
+  Downloaded linux-raw-sys v0.4.15
+  Downloaded fixedbitset v0.5.7
+  Downloaded foldhash v0.1.5
+  Downloaded form_urlencoded v1.2.2
+  Downloaded minisign-verify v0.3.0
+  Downloaded opaque-debug v0.3.1
+  Downloaded serde_json v1.0.151
+  Downloaded libc v0.2.190
+  Downloaded miniz_oxide v0.8.9
+  Downloaded miniz_oxide v0.9.1
+  Downloaded naga-types v30.0.1
+  Downloaded os_pipe v1.2.3
+  Downloaded subtle v2.6.1
+  Downloaded flate2 v1.1.10
+  Downloaded nix v0.31.3
+  Downloaded presser v0.3.1
+  Downloaded rand_core v0.6.4
+  Downloaded raw-window-handle v0.6.2
+  Downloaded foldhash v0.2.0
+  Downloaded gethostname v1.1.0
+  Downloaded ordered-float v5.5.0
+  Downloaded rustc_version v0.4.1
+  Downloaded gpu-allocator v0.28.0
+  Downloaded icu_collections v2.3.0
+  Downloaded glow v0.17.0
+  Downloaded getrandom v0.2.17
+  Downloaded gilrs-core v0.6.8
+  Downloaded renderdoc-sys v1.1.0
+  Downloaded glam v0.30.10
+  Downloaded naga v30.0.1
+  Downloaded rustversion v1.0.23
+  Downloaded rustls-webpki v0.103.16
+  Downloaded sha1 v0.10.7
+  Downloaded inotify-sys v0.1.8
+  Downloaded pollster v0.4.0
+  Downloaded if-addrs v0.13.4
+  Downloaded scoped-tls v1.0.1
+  Downloaded owned_ttf_parser v0.25.1
+  Downloaded smol_str v0.2.2
+  Downloaded symphonia v0.5.5
+  Downloaded potential_utf v0.1.6
+  Downloaded idna_adapter v1.2.2
+  Downloaded serde_spanned v1.1.2
+  Downloaded pp-rs v0.2.1
+  Downloaded inotify v0.11.5
+  Downloaded poly1305 v0.8.0
+  Downloaded slab v0.4.12
+  Downloaded pkg-config v0.3.34
+  Downloaded simdutf8 v0.1.5
+  Downloaded pin-project-lite v0.2.17
+  Downloaded parking_lot v0.12.5
+  Downloaded hmac v0.12.1
+  Downloaded parking_lot_core v0.9.12
+  Downloaded socket2 v0.5.10
+  Downloaded icu_provider v2.3.1
+  Downloaded half v2.7.1
+  Downloaded polling v3.11.0
+  Downloaded icu_normalizer_data v2.3.0
+  Downloaded icu_locale_core v2.3.0
+  Downloaded ruzstd v0.9.1
+  Downloaded hashbrown v0.15.5
+  Downloaded hashbrown v0.16.1
+  Downloaded idna v1.1.0
+  Downloaded png v0.18.1
+  Downloaded hkdf v0.12.4
+  Downloaded rustix v0.38.44
+  Downloaded icu_normalizer v2.3.0
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking cfg-if v1.0.5
+   Compiling libc v0.2.190
+    Checking log v0.4.34
+    Checking bitflags v2.13.2
+   Compiling serde_core v1.0.229
+   Compiling pkg-config v0.3.34
+   Compiling syn v3.0.6
+   Compiling find-msvc-tools v0.1.14
+   Compiling shlex v2.0.1
+   Compiling cc v1.6.0
+    Checking once_cell v1.21.4
+   Compiling version_check v0.9.5
+    Checking getrandom v0.2.17
+    Checking smallvec v1.16.2
+   Compiling generic-array v0.14.7
+   Compiling cfg_aliases v0.2.2
+   Compiling thiserror v2.0.21
+   Compiling syn v2.0.119
+    Checking libloading v0.8.9
+    Checking typenum v1.20.1
+   Compiling libm v0.2.16
+    Checking rand_core v0.6.4
+    Checking subtle v2.6.1
+    Checking foldhash v0.2.0
+    Checking crypto-common v0.1.7
+   Compiling rustix v1.1.5
+    Checking equivalent v1.0.2
+    Checking dlib v0.5.3
+   Compiling thiserror-impl v2.0.21
+   Compiling bytemuck_derive v1.12.1
+   Compiling wayland-sys v0.31.11
+    Checking linux-raw-sys v0.12.1
+    Checking bytemuck v1.25.2
+    Checking hashbrown v0.17.1
+   Compiling synstructure v0.14.0
+    Checking arrayvec v0.7.8
+    Checking memchr v2.8.3
+    Checking indexmap v2.14.2
+   Compiling zerofrom-derive v0.1.8
+   Compiling displaydoc v0.2.7
+   Compiling serde v1.0.229
+   Compiling yoke-derive v0.8.4
+   Compiling serde_derive v1.0.229
+    Checking zerofrom v0.1.8
+    Checking cpufeatures v0.2.17
+    Checking stable_deref_trait v1.2.1
+    Checking simd-adler32 v0.3.10
+    Checking block-buffer v0.10.4
+   Compiling wayland-backend v0.3.17
+   Compiling autocfg v1.5.1
+    Checking yoke v0.8.3
+   Compiling crc32fast v1.5.2
+   Compiling zmij v1.0.23
+   Compiling zerocopy v0.8.60
+   Compiling num-traits v0.2.19
+    Checking digest v0.10.7
+   Compiling zerocopy-derive v0.8.60
+   Compiling zerovec-derive v0.11.6
+    Checking downcast-rs v1.2.1
+    Checking adler2 v2.0.1
+    Checking scoped-tls v1.0.1
+    Checking scopeguard v1.2.0
+   Compiling serde_json v1.0.151
+   Compiling quick-xml v0.41.0
+    Checking zerovec v0.11.8
+   Compiling wayland-client v0.31.15
+    Checking itoa v1.0.18
+   Compiling wayland-scanner v0.31.11
+    Checking miniz_oxide v0.9.1
+    Checking zlib-rs v0.6.8
+    Checking zeroize v1.9.1
+    Checking rustc-hash v1.1.0
+    Checking naga-types v30.0.1
+    Checking tinystr v0.8.4
+    Checking sha2 v0.10.9
+   Compiling naga v30.0.1
+    Checking writeable v0.6.4
+    Checking unicode-width v0.2.2
+    Checking flate2 v1.1.10
+   Compiling getrandom v0.3.4
+    Checking litemap v0.8.3
+    Checking unicode-xid v0.2.6
+    Checking bit-vec v0.9.1
+    Checking termcolor v1.4.1
+    Checking bit-set v0.10.0
+    Checking codespan-reporting v0.13.1
+    Checking icu_locale_core v2.3.0
+    Checking pp-rs v0.2.1
+    Checking potential_utf v0.1.6
+    Checking zerotrie v0.2.5
+    Checking spirv v0.4.0+sdk-1.4.341.0
+   Compiling icu_properties_data v2.3.0
+    Checking half v2.7.1
+   Compiling rustversion v1.0.23
+   Compiling icu_normalizer_data v2.3.0
+   Compiling parking_lot_core v0.9.12
+    Checking utf8_iter v1.0.4
+    Checking icu_collections v2.3.0
+    Checking icu_provider v2.3.1
+    Checking wayland-protocols v0.32.13
+    Checking horizon-core v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-core)
+   Compiling ring v0.17.14
+    Checking percent-encoding v2.3.2
+    Checking raw-window-handle v0.6.2
+    Checking rustls-pki-types v1.15.1
+    Checking lock_api v0.4.14
+    Checking cobs v0.3.0
+   Compiling rustix v0.38.44
+   Compiling thiserror v1.0.69
+   Compiling ash v0.38.0+1.3.281
+    Checking postcard v1.1.3
+    Checking parking_lot v0.12.5
+    Checking icu_normalizer v2.3.0
+   Compiling encoding_rs v0.8.42
+    Checking icu_properties v2.3.0
+   Compiling thiserror-impl v1.0.69
+    Checking untrusted v0.9.0
+    Checking xxhash-rust v0.8.19
+    Checking linux-raw-sys v0.4.15
+    Checking allocator-api2 v0.2.21
+    Checking static_assertions v1.1.0
+    Checking lz4_flex v0.14.0
+   Compiling khronos-egl v6.0.0
+    Checking horizon-world v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-world)
+    Checking hashbrown v0.16.1
+    Checking wgpu-types v30.0.1
+    Checking idna_adapter v1.2.2
+    Checking wayland-protocols-wlr v0.3.12
+    Checking polling v3.11.0
+   Compiling wgpu-hal v30.0.1 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/third_party/wgpu-hal)
+   Compiling alsa-sys v0.3.1
+    Checking lazy_static v1.5.1
+    Checking presser v0.3.1
+    Checking core_detect v1.0.0
+   Compiling rustls v0.23.46
+    Checking bitflags v1.3.2
+   Compiling multiversion_no_op v1.0.0
+    Checking slab v0.4.12
+    Checking foldhash v0.1.5
+    Checking simdutf8 v0.1.5
+    Checking wgpu-naga-bridge v30.0.1
+    Checking hashbrown v0.15.5
+    Checking calloop v0.13.0
+    Checking symphonia-core v0.5.5
+    Checking rustls-webpki v0.103.16
+    Checking idna v1.1.0
+    Checking webpki-roots v1.0.10
+    Checking form_urlencoded v1.2.2
+    Checking ordered-float v5.5.0
+    Checking arrayref v0.3.9
+    Checking cursor-icon v1.2.0
+    Checking fixedbitset v0.5.7
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling semver v1.0.28
+   Compiling zip v2.4.2
+    Checking profiling v1.0.18
+    Checking glow v0.17.0
+    Checking xcursor v0.3.11
+    Checking renderdoc-sys v1.1.0
+    Checking ttf-parser v0.25.1
+    Checking winnow v1.0.4
+    Checking xkeysym v0.2.1
+    Checking bumpalo v3.20.3
+    Checking strict-num v0.1.1
+    Checking tiny-skia-path v0.11.4
+    Checking zopfli v0.8.4
+    Checking owned_ttf_parser v0.25.1
+    Checking toml_parser v1.1.3+spec-1.1.0
+    Checking wayland-cursor v0.31.14
+   Compiling rustc_version v0.4.1
+    Checking petgraph v0.8.3
+    Checking wayland-csd-frame v0.3.0
+    Checking url v2.5.8
+    Checking webpki-roots v0.26.11
+    Checking symphonia-metadata v0.5.5
+    Checking calloop-wayland-source v0.3.0
+    Checking gethostname v1.1.0
+    Checking nom v8.0.0
+   Compiling hidapi v2.6.7
+   Compiling libmimalloc-sys v0.1.49
+   Compiling wgpu-core v30.0.1
+   Compiling ahash v0.8.12
+    Checking toml_datetime v1.1.1+spec-1.1.0
+    Checking serde_spanned v1.1.2
+    Checking memmap2 v0.9.11
+   Compiling x11-dl v2.21.0
+   Compiling cpal v0.16.0
+    Checking base64 v0.22.1
+    Checking x11rb-protocol v0.13.2
+   Compiling inotify-sys v0.1.8
+    Checking as-raw-xcb-connection v1.0.1
+    Checking toml_writer v1.1.3+spec-1.1.0
+    Checking ab_glyph_rasterizer v0.1.10
+   Compiling litrs v1.0.0
+    Checking toml v1.1.6+spec-1.1.0
+   Compiling document-features v0.2.12
+    Checking ab_glyph v0.2.32
+    Checking ureq v2.12.1
+    Checking gpu-allocator v0.28.0
+    Checking tree_magic_mini v3.2.2
+    Checking horizon-client-core v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-client-core)
+    Checking alsa v0.9.1
+    Checking symphonia-utils-xiph v0.5.5
+   Compiling curve25519-dalek v4.1.3
+    Checking tiny-skia v0.11.4
+    Checking sha1 v0.10.7
+    Checking inout v0.1.4
+   Compiling wgpu v30.0.1
+    Checking wgpu-core-deps-windows-linux-android v30.0.1
+   Compiling winit v0.30.13
+   Compiling nix v0.31.3
+    Checking os_pipe v1.2.3
+   Compiling libudev-sys v0.1.4
+    Checking tracing-core v0.1.36
+    Checking dasp_sample v0.11.0
+    Checking twox-hash v2.1.5
+    Checking cty v0.2.2
+    Checking pin-project-lite v0.2.17
+    Checking ruzstd v0.9.1
+    Checking tracing v0.1.44
+    Checking sctk-adwaita v0.10.1
+    Checking wl-clipboard-rs v0.9.4
+    Checking cipher v0.4.4
+    Checking horizon-protocol v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-protocol)
+    Checking xkbcommon-dl v0.4.2
+    Checking wayland-protocols-plasma v0.3.12
+    Checking x11rb v0.13.2
+    Checking miniz_oxide v0.8.9
+    Checking hmac v0.12.1
+    Checking fdeflate v0.3.7
+   Compiling curve25519-dalek-derive v0.1.1
+    Checking universal-hash v0.5.1
+    Checking opaque-debug v0.3.1
+    Checking smol_str v0.2.2
+    Checking dpi v0.1.2
+    Checking poly1305 v0.8.0
+    Checking arboard v3.6.1
+    Checking png v0.18.1
+    Checking hkdf v0.12.4
+    Checking inotify v0.11.5
+    Checking horizon-dualsense v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-dualsense)
+    Checking chacha20 v0.9.1
+    Checking horizon-telemetry v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-telemetry)
+    Checking mimalloc v0.1.52
+    Checking horizon-shader-api v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-shader-api)
+    Checking symphonia-codec-vorbis v0.5.5
+    Checking symphonia-format-ogg v0.5.5
+    Checking aead v0.5.2
+    Checking iana-time-zone v0.1.65
+    Checking uuid v1.28.0
+    Checking horizon-theme v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-theme)
+   Compiling gilrs v0.11.2
+    Checking vec_map v0.8.2
+    Checking horizon-hdr v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-hdr)
+    Checking chrono v0.4.45
+    Checking gilrs-core v0.6.8
+    Checking wasmparser v0.254.2
+    Checking symphonia v0.5.5
+    Checking chacha20poly1305 v0.10.1
+    Checking horizon-bench v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-bench)
+    Checking horizon-client-input v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-client-input)
+    Checking horizon-threads v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-threads)
+    Checking spake2 v0.4.0
+    Checking horizon-command v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-command)
+    Checking horizon-shaders v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-shaders)
+    Checking horizon-items v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-items)
+    Checking horizon-assets v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-assets)
+    Checking socket2 v0.5.10
+    Checking if-addrs v0.13.4
+    Checking fnv v1.0.7
+    Checking pollster v0.4.0
+   Compiling horizon-client v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-client)
+    Checking glam v0.30.10
+    Checking unicode-bidi v0.3.18
+    Checking minisign-verify v0.3.0
+    Checking horizon-friends v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-friends)
+    Checking horizon-server-files v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-server-files)
+    Checking horizon-anticheat v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-anticheat)
+    Checking fs4 v1.1.0
+    Checking horizon-mods v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-mods)
+    Checking horizon-client-render v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-client-render)
+error: expected identifier, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:6541:39
+     |
+6541 |         fn sync(&mut self, ctx: &Ctx, gen: u64, ui: &OptionsUi) {
+     |                                       ^^^ expected identifier, found reserved keyword
+     |
+help: escape `gen` to use it as an identifier
+     |
+6541 |         fn sync(&mut self, ctx: &Ctx, r#gen: u64, ui: &OptionsUi) {
+     |                                       ++
+
+error: expected expression, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:6542:16
+     |
+6542 |             if gen != self.wp_gen {
+     |                ^^^ expected expression
+
+error: expected identifier, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:7873:34
+     |
+7873 |         let (cfg, fps, in_world, gen, tab) = with(|sh| {
+     |                                  ^^^ expected identifier, found reserved keyword
+     |
+help: escape `gen` to use it as an identifier
+     |
+7873 |         let (cfg, fps, in_world, r#gen, tab) = with(|sh| {
+     |                                  ++
+
+error: expected expression, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:7884:77
+     |
+7884 |             let wps = if stale || cell.as_ref().is_some_and(|v| v.wp_gen != gen) {
+     |                                                             ---             ^^^ expected expression
+     |                                                             |
+     |                                                             while parsing the body of this closure
+     |
+help: you might have meant to open the body of the closure
+     |
+7884 |             let wps = if stale || cell.as_ref().is_some_and(|v| { v.wp_gen != gen}) {
+     |                                                                 +                +
+
+error: expected expression, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:7892:67
+     |
+7892 |                 *cell = Some(View::new(i, &ctx, tab.unwrap_or(0), gen));
+     |                                                                   ^^^ expected expression
+
+error: this `if` expression is missing a block after the condition
+    --> crates/horizon-client-render/src/options_ui.rs:7901:27
+     |
+7901 |             let current = if wps.is_empty() && view.wp_gen == gen {
+     |                           ^^
+     |
+help: add a block here
+    --> crates/horizon-client-render/src/options_ui.rs:7903:14
+     |
+7903 |             } else {
+     |              ^
+
+error: expected expression, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:7912:29
+     |
+7912 |             view.sync(&ctx, gen, ui);
+     |                             ^^^ expected expression
+
+error[E0658]: gen blocks are experimental
+    --> crates/horizon-client-render/src/options_ui.rs:7901:63
+     |
+7901 |             let current = if wps.is_empty() && view.wp_gen == gen {
+     |                                                               ^^^
+     |
+     = note: see issue #117078 <https://github.com/rust-lang/rust/issues/117078> for more information
+
+error[E0308]: mismatched types
+    --> crates/horizon-client-render/src/options_ui.rs:7902:32
+     |
+7902 |                 std::mem::take(&mut view.wps)
+     |                 -------------- ^^^^^^^^^^^^^ expected `&mut ()`, found `&mut Vec<WaypointRow>`
+     |                 |
+     |                 arguments to this function are incorrect
+     |
+     = note: expected mutable reference `&mut ()`
+                found mutable reference `&mut Vec<WaypointRow>`
+note: function defined here
+    --> /rustc/58cf8f9c35b355199727627d07ae34a4e2846d67/library/core/src/mem/mod.rs:894:13
+
+error[E0277]: can't compare `u64` with `{gen block@crates/horizon-client-render/src/options_ui.rs:7901:63: 7901:66}`
+    --> crates/horizon-client-render/src/options_ui.rs:7901:60
+     |
+7901 |               let current = if wps.is_empty() && view.wp_gen == gen {
+     |  ________________________________________________-----------_^^_-
+     | |                                                            |
+     | |                                                            no implementation for `u64 == {gen block@crates/horizon-client-render/src/options_ui.rs:7901:63: 7901:66}`
+7902 | |                 std::mem::take(&mut view.wps)
+7903 | |             } else {
+     | |_____________-
+     |
+     = help: the trait `PartialEq<{gen block@crates/horizon-client-render/src/options_ui.rs:7901:63: 7901:66}>` is not implemented for `u64`
+help: `u64` implements trait `PartialEq<Rhs>`
+    --> /rustc/58cf8f9c35b355199727627d07ae34a4e2846d67/library/core/src/cmp.rs:2103:12
+     |
+     = note: `PartialEq`
+    ::: /rustc/58cf8f9c35b355199727627d07ae34a4e2846d67/library/core/src/cmp.rs:2115:5
+     |
+     = note: in this macro invocation
+     |
+    ::: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/src/value/partial_eq.rs:76:13
+     |
+  76 |               impl PartialEq<Value> for $ty {
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `PartialEq<serde_json::Value>`
+...
+  97 | / partialeq_numeric! {
+  98 | |     eq_i64[i8 i16 i32 i64 isize]
+  99 | |     eq_u64[u8 u16 u32 u64 usize]
+ 100 | |     eq_f32[f32]
+ 101 | |     eq_f64[f64]
+ 102 | |     eq_bool[bool]
+ 103 | | }
+     | |_- in this macro invocation
+     = note: this error originates in the macro `impl_partial_eq_for_primitive` which comes from the expansion of the macro `partialeq_numeric` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+Some errors have detailed explanations: E0277, E0308, E0658.
+For more information about an error, try `rustc --explain E0277`.
+error: could not compile `horizon-client-render` (lib) due to 10 previous errors
 Traceback (most recent call last):
   File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 247, in <module>
     main()
-  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 226, in main
-    out = stage(mods, revision)
-          ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 151, in stage
-    subprocess.run([str(tool(mods)), "apply", "--workspace", str(tree), "--mods", str(bundles), "--out", str(fresh)],
+  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 228, in main
+    cargo(out, "check")
+  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 171, in cargo
+    subprocess.run(command, cwd=stage_dir, env=env, check=True)
   File "/usr/lib/python3.12/subprocess.py", line 571, in run
     raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['/home/runner/work/aetherium/aetherium/horizon-native/target/horizon-mixins/4342a0bfbe71d4d14185528d64e496d6022f16a1/bin/horizon-mixins', 'apply', '--workspace', '/home/runner/work/aetherium/aetherium/horizon-native/target/horizon/d91cab68ded29bd2b004f7050c468fb98c41a00b', '--mods', '/home/runner/work/aetherium/aetherium/horizon-native/target/mods/aetherium', '--out', '/home/runner/work/aetherium/aetherium/horizon-native/target/stage.new']' returned non-zero exit status 1.
+subprocess.CalledProcessError: Command '['cargo', 'check', '--locked', '-p', 'horizon-client', '--bin', 'horizon-client']' returned non-zero exit status 101.

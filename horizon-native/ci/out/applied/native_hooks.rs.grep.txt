@@ -1,0 +1,24 @@
+596:            fn aetherium_frame(
+600:                crate::game::aetherium_rt::frame(game, elapsed);
+602:            aetherium_frame(&mut *self, elapsed)
+649:            fn aetherium_hud(
+654:                crate::game::aetherium_rt::hud(game, batch, corners);
+656:            aetherium_hud(&mut *self, &mut *batch, &mut *corners)
+719:            fn aetherium_key(
+724:                crate::game::aetherium_rt::key(game, key, pressed);
+726:            aetherium_key(&mut *self, key, pressed)
+733:            fn aetherium_wheel(
+738:                crate::game::aetherium_rt::wheel(game, steps, claimed);
+740:            aetherium_wheel(&*self, steps, &mut *claimed)
+748:            fn aetherium_command(
+753:                crate::game::aetherium_rt::command(game, command, ran);
+755:            aetherium_command(&mut *self, command, &mut *ran)
+766:            fn aetherium_commands(commands: &mut Vec<&'static str>) {
+767:                crate::game::aetherium_rt::commands(commands);
+769:            aetherium_commands(&mut *commands)
+777:            fn aetherium_zoom(
+781:                crate::game::aetherium_rt::zoom(game, zoom);
+783:            aetherium_zoom(self, &mut *zoom)
+794:            fn aetherium_listed(mods: &mut Vec<crate::game::native_hooks::NativeMod>) {
+795:                crate::game::aetherium_rt::listed(mods);
+797:            aetherium_listed(&mut *mods)

@@ -1,22 +1,150 @@
-aetherium 1.0.0 on Horizon d91cab6
-Downloading Horizon d91cab6
-Building horizon-mixins 4342a0b
-{
-  "code": "E_INVALID_HELPER",
-  "message": "cancellable hook helper must return core::ops::ControlFlow<TargetResult>",
-  "file": "/home/runner/work/aetherium/aetherium/horizon-native/target/mods/aetherium/aetherium/horizon-mixin.toml",
-  "mod_id": "aetherium",
-  "injection_id": "ui_click",
-  "target": "horizon_client_render::options_ui::OptionsUi::click"
-}
+    Checking horizon-items v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-items)
+    Checking horizon-assets v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-assets)
+    Checking socket2 v0.5.10
+    Checking if-addrs v0.13.4
+    Checking fnv v1.0.7
+    Checking pollster v0.4.0
+   Compiling horizon-client v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-client)
+    Checking glam v0.30.10
+    Checking unicode-bidi v0.3.18
+    Checking minisign-verify v0.3.0
+    Checking horizon-friends v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-friends)
+    Checking horizon-server-files v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-server-files)
+    Checking horizon-anticheat v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-anticheat)
+    Checking fs4 v1.1.0
+    Checking horizon-mods v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-mods)
+    Checking horizon-client-render v0.1.0 (/home/runner/work/aetherium/aetherium/horizon-native/target/stage/aetherium/crates/horizon-client-render)
+error: expected identifier, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:6541:39
+     |
+6541 |         fn sync(&mut self, ctx: &Ctx, gen: u64, ui: &OptionsUi) {
+     |                                       ^^^ expected identifier, found reserved keyword
+     |
+help: escape `gen` to use it as an identifier
+     |
+6541 |         fn sync(&mut self, ctx: &Ctx, r#gen: u64, ui: &OptionsUi) {
+     |                                       ++
+
+error: expected expression, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:6542:16
+     |
+6542 |             if gen != self.wp_gen {
+     |                ^^^ expected expression
+
+error: expected identifier, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:7873:34
+     |
+7873 |         let (cfg, fps, in_world, gen, tab) = with(|sh| {
+     |                                  ^^^ expected identifier, found reserved keyword
+     |
+help: escape `gen` to use it as an identifier
+     |
+7873 |         let (cfg, fps, in_world, r#gen, tab) = with(|sh| {
+     |                                  ++
+
+error: expected expression, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:7884:77
+     |
+7884 |             let wps = if stale || cell.as_ref().is_some_and(|v| v.wp_gen != gen) {
+     |                                                             ---             ^^^ expected expression
+     |                                                             |
+     |                                                             while parsing the body of this closure
+     |
+help: you might have meant to open the body of the closure
+     |
+7884 |             let wps = if stale || cell.as_ref().is_some_and(|v| { v.wp_gen != gen}) {
+     |                                                                 +                +
+
+error: expected expression, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:7892:67
+     |
+7892 |                 *cell = Some(View::new(i, &ctx, tab.unwrap_or(0), gen));
+     |                                                                   ^^^ expected expression
+
+error: this `if` expression is missing a block after the condition
+    --> crates/horizon-client-render/src/options_ui.rs:7901:27
+     |
+7901 |             let current = if wps.is_empty() && view.wp_gen == gen {
+     |                           ^^
+     |
+help: add a block here
+    --> crates/horizon-client-render/src/options_ui.rs:7903:14
+     |
+7903 |             } else {
+     |              ^
+
+error: expected expression, found reserved keyword `gen`
+    --> crates/horizon-client-render/src/options_ui.rs:7912:29
+     |
+7912 |             view.sync(&ctx, gen, ui);
+     |                             ^^^ expected expression
+
+error[E0658]: gen blocks are experimental
+    --> crates/horizon-client-render/src/options_ui.rs:7901:63
+     |
+7901 |             let current = if wps.is_empty() && view.wp_gen == gen {
+     |                                                               ^^^
+     |
+     = note: see issue #117078 <https://github.com/rust-lang/rust/issues/117078> for more information
+
+error[E0308]: mismatched types
+    --> crates/horizon-client-render/src/options_ui.rs:7902:32
+     |
+7902 |                 std::mem::take(&mut view.wps)
+     |                 -------------- ^^^^^^^^^^^^^ expected `&mut ()`, found `&mut Vec<WaypointRow>`
+     |                 |
+     |                 arguments to this function are incorrect
+     |
+     = note: expected mutable reference `&mut ()`
+                found mutable reference `&mut Vec<WaypointRow>`
+note: function defined here
+    --> /rustc/58cf8f9c35b355199727627d07ae34a4e2846d67/library/core/src/mem/mod.rs:894:13
+
+error[E0277]: can't compare `u64` with `{gen block@crates/horizon-client-render/src/options_ui.rs:7901:63: 7901:66}`
+    --> crates/horizon-client-render/src/options_ui.rs:7901:60
+     |
+7901 |               let current = if wps.is_empty() && view.wp_gen == gen {
+     |  ________________________________________________-----------_^^_-
+     | |                                                            |
+     | |                                                            no implementation for `u64 == {gen block@crates/horizon-client-render/src/options_ui.rs:7901:63: 7901:66}`
+7902 | |                 std::mem::take(&mut view.wps)
+7903 | |             } else {
+     | |_____________-
+     |
+     = help: the trait `PartialEq<{gen block@crates/horizon-client-render/src/options_ui.rs:7901:63: 7901:66}>` is not implemented for `u64`
+help: `u64` implements trait `PartialEq<Rhs>`
+    --> /rustc/58cf8f9c35b355199727627d07ae34a4e2846d67/library/core/src/cmp.rs:2103:12
+     |
+     = note: `PartialEq`
+    ::: /rustc/58cf8f9c35b355199727627d07ae34a4e2846d67/library/core/src/cmp.rs:2115:5
+     |
+     = note: in this macro invocation
+     |
+    ::: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/src/value/partial_eq.rs:76:13
+     |
+  76 |               impl PartialEq<Value> for $ty {
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `PartialEq<serde_json::Value>`
+...
+  97 | / partialeq_numeric! {
+  98 | |     eq_i64[i8 i16 i32 i64 isize]
+  99 | |     eq_u64[u8 u16 u32 u64 usize]
+ 100 | |     eq_f32[f32]
+ 101 | |     eq_f64[f64]
+ 102 | |     eq_bool[bool]
+ 103 | | }
+     | |_- in this macro invocation
+     = note: this error originates in the macro `impl_partial_eq_for_primitive` which comes from the expansion of the macro `partialeq_numeric` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+Some errors have detailed explanations: E0277, E0308, E0658.
+For more information about an error, try `rustc --explain E0277`.
+error: could not compile `horizon-client-render` (lib) due to 10 previous errors
 Traceback (most recent call last):
   File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 247, in <module>
     main()
-  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 226, in main
-    out = stage(mods, revision)
-          ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 151, in stage
-    subprocess.run([str(tool(mods)), "apply", "--workspace", str(tree), "--mods", str(bundles), "--out", str(fresh)],
+  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 228, in main
+    cargo(out, "check")
+  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 171, in cargo
+    subprocess.run(command, cwd=stage_dir, env=env, check=True)
   File "/usr/lib/python3.12/subprocess.py", line 571, in run
     raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['/home/runner/work/aetherium/aetherium/horizon-native/target/horizon-mixins/4342a0bfbe71d4d14185528d64e496d6022f16a1/bin/horizon-mixins', 'apply', '--workspace', '/home/runner/work/aetherium/aetherium/horizon-native/target/horizon/d91cab68ded29bd2b004f7050c468fb98c41a00b', '--mods', '/home/runner/work/aetherium/aetherium/horizon-native/target/mods/aetherium', '--out', '/home/runner/work/aetherium/aetherium/horizon-native/target/stage.new']' returned non-zero exit status 1.
+subprocess.CalledProcessError: Command '['cargo', 'check', '--locked', '-p', 'horizon-client', '--bin', 'horizon-client']' returned non-zero exit status 101.

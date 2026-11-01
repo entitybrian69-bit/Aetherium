@@ -1,0 +1,20 @@
+1748:            fn aetherium_ui_rows(
+1752:                crate::options_ui::aetherium::video_rows(ui, s)
+1754:            aetherium_ui_rows(self, s)
+2670:            fn aetherium_ui_draw(
+2677:                crate::options_ui::aetherium::draw(ui, s, batch, atlas, cursor)
+2679:            aetherium_ui_draw(&mut *self, s, &mut *batch, atlas, cursor)
+2971:            fn aetherium_ui_click(
+2979:                crate::options_ui::aetherium::click(ui, s, x, y, drag, right)
+2981:            aetherium_ui_click(&mut *self, &mut *s, x, y, drag, right)
+3254:            fn aetherium_ui_release(
+3257:                crate::options_ui::aetherium::release(ui)
+3259:            aetherium_ui_release(&mut *self)
+3320:            fn aetherium_ui_wheel(
+3325:                crate::options_ui::aetherium::wheel(ui, s, amount)
+3327:            aetherium_ui_wheel(&mut *self, &mut *s, amount)
+3565:            fn aetherium_ui_key(
+3570:                crate::options_ui::aetherium::key(ui, s, key)
+3572:            aetherium_ui_key(&mut *self, &mut *s, key)
+5035:pub mod aetherium {
+5045:    pub const ID: &str = "aetherium";
