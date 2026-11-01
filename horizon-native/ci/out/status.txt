@@ -3,4 +3,4 @@
 == package
    ok
 == check
-   FAILED
+   ok
