@@ -1,0 +1,4 @@
+running 2 scripts against /home/runner/work/_temp/hz/target/horizon-mod/aetherium.hmod
+test tests/hud_and_waypoints.toml ... ok (17 steps)
+test tests/settings.toml ... ok (13 steps)
+test result: ok. 2 passed

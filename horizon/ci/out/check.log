@@ -1,0 +1,11 @@
+aetherium 1.0.0 (mod, API 0.1, client)
+  62211 bytes, SHA-256 d0a4044bf7c038434daa29c87a62ec5d837127410187ccb55915efa79b67940c, unsigned
+  needs mod API level 0 or newer
+  may see your position, health and the time
+  may draw text on your screen
+  may show you chat messages
+  may save its own settings to disk
+  may draw on your screen, shake and zoom the camera
+  may see the keys you hold and your clicks, take over the use button on its own items and the mouse wheel, and add keys
+  may show its own screens and a settings page
+  trial run: started, 40 ticks, 120 frames, a chat line, /aetherium, /wp: ok

@@ -1,0 +1,69 @@
+info: syncing channel updates for 1.95.0-x86_64-unknown-linux-gnu
+info: latest update on 2026-04-16 for version 1.95.0 (59807616e 2026-04-14)
+info: downloading 2 components
+ Downloading crates ...
+  Downloaded wit-bindgen-rust-macro v0.60.0
+  Downloaded prettyplease v0.2.37
+  Downloaded wit-bindgen-rust v0.60.0
+  Downloaded wit-bindgen v0.60.0
+  Downloaded wit-bindgen-core v0.60.0
+   Compiling serde_core v1.0.229
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling foldhash v0.2.0
+   Compiling hashbrown v0.17.1
+   Compiling equivalent v1.0.2
+   Compiling semver v1.0.28
+   Compiling anyhow v1.0.104
+   Compiling bitflags v2.13.2
+   Compiling zmij v1.0.23
+   Compiling serde_json v1.0.151
+   Compiling serde v1.0.229
+   Compiling syn v3.0.6
+   Compiling itoa v1.0.18
+   Compiling memchr v2.8.3
+   Compiling prettyplease v0.2.37
+   Compiling id-arena v2.3.0
+   Compiling log v0.4.34
+   Compiling leb128fmt v0.1.0
+   Compiling syn v2.0.119
+   Compiling heck v0.5.0
+   Compiling wit-bindgen-rust v0.60.0
+   Compiling wit-bindgen-rust-macro v0.60.0
+   Compiling wit-bindgen v0.60.0
+   Compiling indexmap v2.14.2
+   Compiling wasmparser v0.254.2
+   Compiling serde_derive v1.0.229
+   Compiling wasm-encoder v0.254.2
+   Compiling wit-parser v0.254.2
+   Compiling wasm-metadata v0.254.2
+   Compiling wit-bindgen-core v0.60.0
+   Compiling wit-component v0.254.2
+   Compiling horizon-mod-sdk v0.1.0 (/home/runner/work/_temp/hz/crates/horizon-mod-sdk)
+   Compiling aetherium v1.0.0 (/home/runner/work/_temp/hz/mods/aetherium)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 12.09s
+     Running unittests src/lib.rs (/home/runner/work/_temp/hz/target/debug/deps/aetherium-26f515d111f63c41)
+
+running 18 tests
+test settings::tests::bad_lines_keep_defaults ... ok
+test settings::tests::cycles_wrap_and_recover ... ok
+test settings::tests::every_key_is_unique_and_found ... ok
+test waypoints::tests::directions_follow_minecraft_yaw ... ok
+test waypoints::tests::find_by_name_or_number_and_replace ... ok
+test settings::tests::round_trips_through_text ... ok
+test waypoints::tests::names_are_cleaned ... ok
+test waypoints::tests::full_list_refuses ... ok
+test waypoints::tests::nether_conversion ... ok
+test waypoints::tests::projection_centre_right_and_behind ... ok
+test waypoints::tests::storage_round_trip_and_bad_lines ... ok
+test zoom::tests::easing_is_zumes_quartic ... ok
+test waypoints::tests::projection_looking_down ... ok
+test zoom::tests::hitches_and_bad_frames_are_bounded ... ok
+test zoom::tests::hold_zooms_to_default_and_back ... ok
+test zoom::tests::keys_and_wheel_change_the_zoom_within_limits ... ok
+test zoom::tests::toggle_mode_flips_on_press ... ok
+test zoom::tests::wheel_ignored_when_off_or_not_zooming ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

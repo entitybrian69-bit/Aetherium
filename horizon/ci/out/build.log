@@ -1,0 +1,31 @@
+   Compiling anyhow v1.0.104
+   Compiling indexmap v2.14.2
+   Compiling syn v3.0.6
+   Compiling prettyplease v0.2.37
+   Compiling syn v2.0.119
+   Compiling wit-bindgen-rust v0.60.0
+   Compiling wit-bindgen-rust-macro v0.60.0
+   Compiling wasmparser v0.254.2
+   Compiling wit-bindgen v0.60.0
+   Compiling serde_derive v1.0.229
+   Compiling wasm-encoder v0.254.2
+   Compiling wit-parser v0.254.2
+   Compiling wasm-metadata v0.254.2
+   Compiling wit-component v0.254.2
+   Compiling wit-bindgen-core v0.60.0
+   Compiling horizon-mod-sdk v0.1.0 (/home/runner/work/_temp/hz/crates/horizon-mod-sdk)
+   Compiling aetherium v1.0.0 (/home/runner/work/_temp/hz/mods/aetherium)
+warning: method `is_zooming` is never used
+   --> mods/aetherium/src/zoom.rs:129:12
+    |
+ 90 | impl Zoom {
+    | --------- method in this implementation
+...
+129 |     pub fn is_zooming(&self) -> bool {
+    |            ^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `aetherium` (lib) generated 1 warning
+    Finished `release` profile [optimized] target(s) in 10.52s
+Built /home/runner/work/_temp/hz/target/horizon-mod/aetherium.hmod

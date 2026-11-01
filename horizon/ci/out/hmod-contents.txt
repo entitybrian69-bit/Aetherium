@@ -1,0 +1,7 @@
+Archive:  /home/runner/work/aetherium/aetherium/dist/aetherium-1.0.0-horizon-26.3.hmod
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+      486  1980-01-01 00:00   horizon-mod.toml
+   164080  1980-01-01 00:00   mod.wasm
+---------                     -------
+   164566                     2 files

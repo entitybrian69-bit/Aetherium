@@ -1,0 +1,6 @@
+place=0
+unit_tests=0
+build=0
+check=0
+scenario_tests=0
+all=0
