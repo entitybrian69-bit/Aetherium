@@ -313,7 +313,7 @@ pub(super) fn frame(game: &mut Game<'_>, elapsed: Duration) {
     let mut rt = take(game);
     let playing = game.native_playing();
     let fov = game.settings.fov;
-    let (cfg, gen, dirty, actions) = gui::with(|sh| {
+    let (cfg, generation, dirty, actions) = gui::with(|sh| {
         (
             sh.config,
             sh.config_gen,
@@ -324,9 +324,9 @@ pub(super) fn frame(game: &mut Game<'_>, elapsed: Duration) {
     if dirty {
         game.native_set_setting(gui::ID, "config", &cfg.to_text());
     }
-    if gen != rt.config_gen || (fov - rt.fov).abs() > 1e-3 {
+    if generation != rt.config_gen || (fov - rt.fov).abs() > 1e-3 {
         rt.config = cfg;
-        rt.config_gen = gen;
+        rt.config_gen = generation;
         rt.fov = fov;
         rt.zoom.config = zoom_config(&cfg, fov);
     }

@@ -86,7 +86,7 @@ impl Config {
             let Some((key, value)) = line.split_once('=') else {
                 continue;
             };
-            let Some(k) = Cfg::ALL.iter().find(|k| k.key() == key.trim()) else {
+            let Some(k) = Cfg::ALL.into_iter().find(|k| k.key() == key.trim()) else {
                 continue;
             };
             let value = value.trim();
@@ -1725,9 +1725,9 @@ impl View {
 
     /// Brings rows up to date with the game: the waypoint list, a picked preset's values, keys
     /// and what is available.
-    fn sync(&mut self, ctx: &Ctx, gen: u64, ui: &OptionsUi) {
-        if gen != self.wp_gen {
-            self.wp_gen = gen;
+    fn sync(&mut self, ctx: &Ctx, generation: u64, ui: &OptionsUi) {
+        if generation != self.wp_gen {
+            self.wp_gen = generation;
             self.wps = ctx.wps.to_vec();
             let mut rows = waypoint_rows(ctx.wps);
             // Keep staged switches of waypoints still there.
@@ -2961,7 +2961,7 @@ pub(super) fn draw(
     let Some(i) = active(ui, s) else {
         return ControlFlow::Continue(());
     };
-    let (cfg, fps, in_world, gen, tab) = with(|sh| {
+    let (cfg, fps, in_world, generation, tab) = with(|sh| {
         (
             sh.config,
             sh.fps,
@@ -2976,7 +2976,7 @@ pub(super) fn draw(
         let stale = cell
             .as_ref()
             .is_none_or(|v| v.index != i || now.duration_since(v.last).as_secs_f32() > 0.25);
-        let wps = if stale || cell.as_ref().is_some_and(|v| v.wp_gen != gen) {
+        let wps = if stale || cell.as_ref().is_some_and(|v| v.wp_gen != generation) {
             with(|sh| sh.waypoints.clone())
         } else {
             Vec::new()
@@ -2989,7 +2989,7 @@ pub(super) fn draw(
                 wps: &wps,
                 in_world,
             };
-            *cell = Some(View::new(i, &ctx, tab.unwrap_or(0), gen));
+            *cell = Some(View::new(i, &ctx, tab.unwrap_or(0), generation));
         }
         let Some(view) = cell.as_mut() else {
             return;
@@ -2998,7 +2998,7 @@ pub(super) fn draw(
         view.last = now;
         view.width = batch.width.max(1.0) as i32;
         view.height = batch.height.max(1.0) as i32;
-        let current = if wps.is_empty() && view.wp_gen == gen {
+        let current = if wps.is_empty() && view.wp_gen == generation {
             std::mem::take(&mut view.wps)
         } else {
             wps
@@ -3009,7 +3009,7 @@ pub(super) fn draw(
             wps: &current,
             in_world,
         };
-        view.sync(&ctx, gen, ui);
+        view.sync(&ctx, generation, ui);
         view.wps = current;
         let mut c = Canvas {
             batch,
