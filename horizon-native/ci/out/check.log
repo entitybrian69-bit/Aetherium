@@ -1,0 +1,22 @@
+aetherium 1.0.0 on Horizon d91cab6
+Downloading Horizon d91cab6
+Building horizon-mixins 4342a0b
+{
+  "code": "E_INVALID_HELPER",
+  "message": "cancellable hook helper must return core::ops::ControlFlow<TargetResult>",
+  "file": "/home/runner/work/aetherium/aetherium/horizon-native/target/mods/aetherium/aetherium/horizon-mixin.toml",
+  "mod_id": "aetherium",
+  "injection_id": "ui_click",
+  "target": "horizon_client_render::options_ui::OptionsUi::click"
+}
+Traceback (most recent call last):
+  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 247, in <module>
+    main()
+  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 226, in main
+    out = stage(mods, revision)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/aetherium/aetherium/horizon-native/tools/native.py", line 151, in stage
+    subprocess.run([str(tool(mods)), "apply", "--workspace", str(tree), "--mods", str(bundles), "--out", str(fresh)],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/runner/work/aetherium/aetherium/horizon-native/target/horizon-mixins/4342a0bfbe71d4d14185528d64e496d6022f16a1/bin/horizon-mixins', 'apply', '--workspace', '/home/runner/work/aetherium/aetherium/horizon-native/target/horizon/d91cab68ded29bd2b004f7050c468fb98c41a00b', '--mods', '/home/runner/work/aetherium/aetherium/horizon-native/target/mods/aetherium', '--out', '/home/runner/work/aetherium/aetherium/horizon-native/target/stage.new']' returned non-zero exit status 1.

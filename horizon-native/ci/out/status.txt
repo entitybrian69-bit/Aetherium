@@ -1,0 +1,6 @@
+== assemble
+   ok
+== package
+   ok
+== check
+   FAILED

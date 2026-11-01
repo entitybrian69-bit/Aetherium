@@ -1,0 +1,3 @@
+3:Building horizon-mixins 4342a0b
+5:  "code": "E_INVALID_HELPER",
+22:subprocess.CalledProcessError: Command '['/home/runner/work/aetherium/aetherium/horizon-native/target/horizon-mixins/4342a0bfbe71d4d14185528d64e496d6022f16a1/bin/horizon-mixins', 'apply', '--workspace', '/home/runner/work/aetherium/aetherium/horizon-native/target/horizon/d91cab68ded29bd2b004f7050c468fb98c41a00b', '--mods', '/home/runner/work/aetherium/aetherium/horizon-native/target/mods/aetherium', '--out', '/home/runner/work/aetherium/aetherium/horizon-native/target/stage.new']' returned non-zero exit status 1.
