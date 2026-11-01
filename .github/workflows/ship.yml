@@ -35,6 +35,8 @@ on:
       - 'backport189/**'
       - 'horizon/**'
       - '.github/workflows/horizon.yml'
+      - 'horizon-native/**'
+      - '.github/workflows/horizon-native.yml'
       - '.github/workflows/backport189.yml'
       - '.github/workflows/curseforge.yml'
       - 'tools/curseforge/**'
