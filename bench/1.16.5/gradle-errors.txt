@@ -1,2 +1,2 @@
-360:[04:48:24] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
-531:BUILD SUCCESSFUL in 7m 19s
+521:[03:01:39] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+692:BUILD SUCCESSFUL in 7m 11s

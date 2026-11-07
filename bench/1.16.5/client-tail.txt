@@ -1,120 +1,120 @@
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.16.14.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[04:48:25] [main/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[04:48:25] [main/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[04:48:25] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[04:48:25] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[04:48:25] [main/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[04:48:25] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[04:48:25] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[04:48:26] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[04:48:26] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[04:48:26] [main/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[04:48:28] [main/INFO] (AutoBench) Auto benchmark: creating world aetherium-bench
-[04:48:28] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[04:48:28] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[04:48:28] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[04:48:28] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[04:48:28] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[04:48:28] [main/INFO] (Minecraft) Reloading ResourceManager: Default
-[04:48:28] [main/INFO] (Minecraft) Loaded 7 recipes
-[04:48:28] [main/INFO] (Minecraft) Loaded 927 advancements
-[04:48:29] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[04:48:29] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.16.5
-[04:48:29] [Server thread/INFO] (Minecraft) Generating keypair
-[04:48:31] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[04:48:31] [main/INFO] (Minecraft) Preparing spawn area: 0%
-[04:48:31] [main/INFO] (Minecraft) Preparing spawn area: 0%
-[04:48:32] [main/INFO] (Minecraft) Preparing spawn area: 4%
-[04:48:32] [main/INFO] (Minecraft) Preparing spawn area: 10%
-[04:48:33] [main/INFO] (Minecraft) Preparing spawn area: 17%
-[04:48:33] [main/INFO] (Minecraft) Preparing spawn area: 24%
-[04:48:34] [main/INFO] (Minecraft) Preparing spawn area: 36%
-[04:48:34] [main/INFO] (Minecraft) Preparing spawn area: 48%
-[04:48:35] [main/INFO] (Minecraft) Preparing spawn area: 63%
-[04:48:35] [main/INFO] (Minecraft) Preparing spawn area: 70%
-[04:48:36] [main/INFO] (Minecraft) Time elapsed: 4957 ms
-[04:48:36] [Server thread/INFO] (Minecraft) Changing view distance to 7, from 10
-[04:48:36] [Server thread/INFO] (Minecraft) Player776[local:E:0afc7a8f] logged in with entity id 266 at (10.5, 70.0, 56.5)
-[04:48:36] [Server thread/INFO] (Minecraft) Player776 joined the game
-[04:48:36] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[04:48:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:overworld
-[04:48:36] [main/INFO] (Minecraft) Loaded 0 advancements
-[04:48:36] [main/INFO] (ChunkRenderer) Aetherium pipeline on (compatible mode: vanilla vertex format and GL calls): rebuilding the loaded chunks sorted by face direction
-[04:48:37] [main/INFO] (ChunkRenderer) Aetherium pipeline GL: renderer 'llvmpipe (LLVM 20.1.2, 256 bits)', version '3.3 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.4', GLSL '4.50'
-[04:48:37] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:the_nether
-[04:48:37] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:the_end
-[04:48:37] [main/INFO] (ChunkRenderer) Aetherium pipeline: first compatible-mode terrain layer drawn (1 sections, 1 sorted by face)
-[04:48:38] [Server thread/INFO] (Minecraft) [Player776: Gamerule doDaylightCycle is now set to: false]
-[04:48:38] [Server thread/INFO] (Minecraft) [Player776: Gamerule doWeatherCycle is now set to: false]
-[04:48:38] [Server thread/INFO] (Minecraft) [Player776: Set the time to 6000]
-[04:48:38] [Server thread/INFO] (Minecraft) [Player776: Set the weather to clear]
-[04:48:38] [Server thread/INFO] (Minecraft) [Player776: Teleported Player776 to 10.5, 110.0, 56.5]
-[04:48:38] [Server thread/INFO] (Minecraft) [Player776: Changed the block at 10, 109, 61]
-[04:48:38] [Server thread/INFO] (Minecraft) [Player776: Changed the block at 12, 109, 61]
-[04:48:38] [Server thread/INFO] (Minecraft) [Player776: Changed the block at 13, 109, 61]
-[04:48:38] [Server thread/INFO] (Minecraft) [Player776: Changed the block at 8, 109, 61]
-[04:48:38] [main/INFO] (Minecraft) [CHAT] Gamerule doDaylightCycle is now set to: false
-[04:48:38] [main/INFO] (Minecraft) [CHAT] Gamerule doWeatherCycle is now set to: false
-[04:48:38] [main/INFO] (Minecraft) [CHAT] Set the time to 6000
-[04:48:38] [main/INFO] (Minecraft) [CHAT] Set the weather to clear
-[04:48:38] [main/INFO] (Minecraft) [CHAT] Teleported Player776 to 10.5, 110.0, 56.5
-[04:48:38] [main/INFO] (Minecraft) [CHAT] Changed the block at 10, 109, 61
-[04:48:38] [main/INFO] (Minecraft) [CHAT] Changed the block at 12, 109, 61
-[04:48:38] [main/INFO] (Minecraft) [CHAT] Changed the block at 13, 109, 61
-[04:48:38] [main/INFO] (Minecraft) [CHAT] Changed the block at 8, 109, 61
-[04:48:40] [main/INFO] (AutoBench) Auto benchmark: scenario warmup
-[04:49:16] [main/INFO] (AutoBench) Auto benchmark: warmup -> | Warm-up | 39.5 | 23.5 | 24.28 | 38.59 | 48.90 | 48.9 | 0 | 0 |
-[04:49:18] [main/INFO] (AutoBench) Auto benchmark: scenario vanilla
-[04:49:18] [main/INFO] (ChunkRenderer) Aetherium pipeline off: rebuilding the loaded chunks for vanilla
-[04:49:43] [main/INFO] (AutoBench) Auto benchmark: vanilla -> | Vanilla (Aetherium off) | 35.9 | 22.1 | 27.07 | 43.58 | 51.62 | 51.6 | 1 | 0 |
-[04:49:46] [main/INFO] (AutoBench) Auto benchmark: scenario aetherium
-[04:49:46] [main/INFO] (ChunkRenderer) Aetherium pipeline on (compatible mode: vanilla vertex format and GL calls): rebuilding the loaded chunks sorted by face direction
-[04:50:11] [main/INFO] (AutoBench) Auto benchmark: aetherium -> | Aetherium (defaults) | 42.1 | 27.0 | 23.55 | 31.04 | 49.24 | 49.2 | 0 | 0 |
-[04:50:13] [main/INFO] (AutoBench) Auto benchmark: scenario new-off
-[04:50:38] [main/INFO] (AutoBench) Auto benchmark: new-off -> | Aetherium, all 1.12.0 options off | 42.3 | 30.1 | 23.58 | 29.60 | 39.59 | 39.6 | 0 | 0 |
-[04:50:40] [main/INFO] (AutoBench) Auto benchmark: scenario no-cull
-[04:51:05] [main/INFO] (AutoBench) Auto benchmark: no-cull -> | Aetherium, directional culling + view-first building off | 42.5 | 28.4 | 23.35 | 32.06 | 39.60 | 39.6 | 0 | 0 |
-[04:51:07] [main/INFO] (AutoBench) Auto benchmark: scenario no-gl
-[04:51:33] [main/INFO] (AutoBench) Auto benchmark: no-gl -> | Aetherium, GL call trimming + cheap damage tint off | 42.8 | 26.3 | 23.14 | 31.35 | 51.28 | 51.3 | 1 | 0 |
-[04:51:35] [main/INFO] (AutoBench) Auto benchmark: scenario boost-off
-[04:52:00] [main/INFO] (AutoBench) Auto benchmark: boost-off -> | Aetherium, all 1.17.2 options off | 43.6 | 28.0 | 22.89 | 30.34 | 46.37 | 46.4 | 0 | 0 |
-[04:52:02] [main/INFO] (AutoBench) Auto benchmark: scenario occlusion
-[04:52:27] [main/INFO] (AutoBench) Auto benchmark: occlusion -> | Aetherium + GPU occlusion culling | 43.9 | 33.6 | 22.67 | 27.91 | 33.01 | 33.0 | 0 | 0 |
-[04:52:30] [main/INFO] (AutoBench) Auto benchmark: scenario aetherium-again
-[04:52:55] [main/INFO] (AutoBench) Auto benchmark: aetherium-again -> | Aetherium (defaults), measured again | 42.9 | 29.4 | 23.11 | 30.37 | 42.46 | 42.5 | 0 | 0 |
-[04:52:57] [main/INFO] (AutoBench) Auto benchmark: scenario scale70
-[04:53:22] [main/INFO] (AutoBench) Auto benchmark: scale70 -> | Aetherium + render scale 70% | 47.0 | 35.8 | 21.36 | 25.17 | 38.38 | 38.4 | 0 | 0 |
-[04:53:24] [main/INFO] (AutoBench) Auto benchmark: scenario fly-vanilla
-[04:53:24] [main/INFO] (ChunkRenderer) Aetherium pipeline off: rebuilding the loaded chunks for vanilla
-[04:53:49] [main/INFO] (AutoBench) Auto benchmark: fly-vanilla -> | Flying into new terrain (+X), Aetherium off | 63.0 | 24.8 | 14.14 | 35.08 | 42.99 | 48.9 | 0 | 0 |
-[04:53:51] [main/INFO] (AutoBench) Auto benchmark: scenario fly-aetherium
-[04:53:51] [main/INFO] (ChunkRenderer) Aetherium pipeline on (compatible mode: vanilla vertex format and GL calls): rebuilding the loaded chunks sorted by face direction
-[04:54:16] [main/INFO] (AutoBench) Auto benchmark: fly-aetherium -> | Flying into new terrain (-X), Aetherium defaults | 54.8 | 28.3 | 17.28 | 31.60 | 38.47 | 42.5 | 0 | 0 |
-[04:54:18] [main/INFO] (AutoBench) Auto benchmark: scenario fly-boost-off
-[04:54:43] [main/INFO] (AutoBench) Auto benchmark: fly-boost-off -> | Flying into new terrain (+Z), all 1.17.2 options off | 63.4 | 30.9 | 14.79 | 28.79 | 37.48 | 40.8 | 0 | 0 |
-[04:54:45] [main/INFO] (AutoBench) Auto benchmark: scenario fly-aetherium-z
-[04:55:11] [main/INFO] (AutoBench) Auto benchmark: fly-aetherium-z -> | Flying into new terrain (-Z), Aetherium defaults | 67.1 | 29.6 | 13.98 | 30.12 | 39.15 | 44.3 | 0 | 0 |
-[04:55:16] [main/INFO] (AutoBench) Auto benchmark finished, closing the game
-[04:55:16] [main/INFO] (Minecraft) Stopping!
-[04:55:16] [Server thread/INFO] (Minecraft) Player776 lost connection: Disconnected
-[04:55:16] [Server thread/INFO] (Minecraft) Player776 left the game
-[04:55:16] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[04:55:16] [Server thread/INFO] (Minecraft) Stopping server
-[04:55:16] [Server thread/INFO] (Minecraft) Saving players
-[04:55:16] [Server thread/INFO] (Minecraft) Saving worlds
-[04:55:16] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:overworld
-[04:55:16] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (aetherium-bench): All chunks are saved
-[04:55:16] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:the_nether
-[04:55:16] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[04:55:16] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:the_end
-[04:55:16] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[04:55:16] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (aetherium-bench): All chunks are saved
-[04:55:16] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[04:55:16] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1792644480363.json
+[03:01:40] [main/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[03:01:40] [main/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[03:01:40] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[03:01:40] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[03:01:40] [main/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[03:01:40] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[03:01:40] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[03:01:40] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[03:01:40] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[03:01:40] [main/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[03:01:43] [main/INFO] (AutoBench) Auto benchmark: creating world aetherium-bench
+[03:01:43] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[03:01:43] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[03:01:43] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[03:01:43] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[03:01:43] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[03:01:43] [main/INFO] (Minecraft) Reloading ResourceManager: Default
+[03:01:43] [main/INFO] (Minecraft) Loaded 7 recipes
+[03:01:43] [main/INFO] (Minecraft) Loaded 927 advancements
+[03:01:44] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[03:01:44] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.16.5
+[03:01:44] [Server thread/INFO] (Minecraft) Generating keypair
+[03:01:46] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[03:01:46] [main/INFO] (Minecraft) Preparing spawn area: 0%
+[03:01:46] [main/INFO] (Minecraft) Preparing spawn area: 0%
+[03:01:47] [main/INFO] (Minecraft) Preparing spawn area: 6%
+[03:01:47] [main/INFO] (Minecraft) Preparing spawn area: 13%
+[03:01:48] [main/INFO] (Minecraft) Preparing spawn area: 18%
+[03:01:48] [main/INFO] (Minecraft) Preparing spawn area: 25%
+[03:01:49] [main/INFO] (Minecraft) Preparing spawn area: 37%
+[03:01:49] [main/INFO] (Minecraft) Preparing spawn area: 51%
+[03:01:50] [main/INFO] (Minecraft) Preparing spawn area: 60%
+[03:01:50] [main/INFO] (Minecraft) Preparing spawn area: 85%
+[03:01:50] [main/INFO] (Minecraft) Time elapsed: 4903 ms
+[03:01:51] [Server thread/INFO] (Minecraft) Changing view distance to 7, from 10
+[03:01:51] [Server thread/INFO] (Minecraft) Player619[local:E:b0c4daad] logged in with entity id 274 at (20.5, 70.0, 51.5)
+[03:01:51] [Server thread/INFO] (Minecraft) Player619 joined the game
+[03:01:51] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[03:01:51] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:overworld
+[03:01:51] [main/INFO] (Minecraft) Loaded 0 advancements
+[03:01:51] [main/INFO] (ChunkRenderer) Aetherium pipeline on (compatible mode: vanilla vertex format and GL calls): rebuilding the loaded chunks sorted by face direction
+[03:01:52] [main/INFO] (ChunkRenderer) Aetherium pipeline GL: renderer 'llvmpipe (LLVM 21.1.8, 256 bits)', version '3.3 (Compatibility Profile) Mesa 26.0.8-1ubuntu0.3', GLSL '4.50'
+[03:01:52] [main/INFO] (ChunkRenderer) Aetherium pipeline: first compatible-mode terrain layer drawn (1 sections, 1 sorted by face)
+[03:01:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:the_nether
+[03:01:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:the_end
+[03:01:53] [Server thread/INFO] (Minecraft) [Player619: Gamerule doDaylightCycle is now set to: false]
+[03:01:53] [Server thread/INFO] (Minecraft) [Player619: Gamerule doWeatherCycle is now set to: false]
+[03:01:53] [Server thread/INFO] (Minecraft) [Player619: Set the time to 6000]
+[03:01:53] [Server thread/INFO] (Minecraft) [Player619: Set the weather to clear]
+[03:01:53] [Server thread/INFO] (Minecraft) [Player619: Teleported Player619 to 20.5, 110.0, 51.5]
+[03:01:53] [Server thread/INFO] (Minecraft) [Player619: Changed the block at 20, 109, 56]
+[03:01:53] [Server thread/INFO] (Minecraft) [Player619: Changed the block at 22, 109, 56]
+[03:01:53] [Server thread/INFO] (Minecraft) [Player619: Changed the block at 23, 109, 56]
+[03:01:53] [Server thread/INFO] (Minecraft) [Player619: Changed the block at 18, 109, 56]
+[03:01:53] [main/INFO] (Minecraft) [CHAT] Gamerule doDaylightCycle is now set to: false
+[03:01:53] [main/INFO] (Minecraft) [CHAT] Gamerule doWeatherCycle is now set to: false
+[03:01:53] [main/INFO] (Minecraft) [CHAT] Set the time to 6000
+[03:01:53] [main/INFO] (Minecraft) [CHAT] Set the weather to clear
+[03:01:53] [main/INFO] (Minecraft) [CHAT] Teleported Player619 to 20.5, 110.0, 51.5
+[03:01:53] [main/INFO] (Minecraft) [CHAT] Changed the block at 20, 109, 56
+[03:01:53] [main/INFO] (Minecraft) [CHAT] Changed the block at 22, 109, 56
+[03:01:53] [main/INFO] (Minecraft) [CHAT] Changed the block at 23, 109, 56
+[03:01:53] [main/INFO] (Minecraft) [CHAT] Changed the block at 18, 109, 56
+[03:01:55] [main/INFO] (AutoBench) Auto benchmark: scenario warmup
+[03:02:19] [main/INFO] (AutoBench) Auto benchmark: warmup -> | Warm-up | 37.9 | 19.5 | 25.21 | 41.21 | 76.82 | 76.8 | 1 | 0 |
+[03:02:21] [main/INFO] (AutoBench) Auto benchmark: scenario vanilla
+[03:02:21] [main/INFO] (ChunkRenderer) Aetherium pipeline off: rebuilding the loaded chunks for vanilla
+[03:02:46] [main/INFO] (AutoBench) Auto benchmark: vanilla -> | Vanilla (Aetherium off) | 35.4 | 19.9 | 27.79 | 41.87 | 59.68 | 59.7 | 3 | 0 |
+[03:02:48] [main/INFO] (AutoBench) Auto benchmark: scenario aetherium
+[03:02:48] [main/INFO] (ChunkRenderer) Aetherium pipeline on (compatible mode: vanilla vertex format and GL calls): rebuilding the loaded chunks sorted by face direction
+[03:03:13] [main/INFO] (AutoBench) Auto benchmark: aetherium -> | Aetherium (defaults) | 38.5 | 21.3 | 24.99 | 40.16 | 64.53 | 64.5 | 2 | 0 |
+[03:03:16] [main/INFO] (AutoBench) Auto benchmark: scenario new-off
+[03:03:43] [main/INFO] (AutoBench) Auto benchmark: new-off -> | Aetherium, all 1.12.0 options off | 39.2 | 23.1 | 24.83 | 36.54 | 64.84 | 64.8 | 1 | 0 |
+[03:03:45] [main/INFO] (AutoBench) Auto benchmark: scenario no-cull
+[03:04:10] [main/INFO] (AutoBench) Auto benchmark: no-cull -> | Aetherium, directional culling + view-first building off | 38.8 | 24.5 | 24.58 | 39.51 | 42.72 | 42.7 | 0 | 0 |
+[03:04:12] [main/INFO] (AutoBench) Auto benchmark: scenario no-gl
+[03:04:38] [main/INFO] (AutoBench) Auto benchmark: no-gl -> | Aetherium, GL call trimming + cheap damage tint off | 37.2 | 22.3 | 25.82 | 41.90 | 57.17 | 57.2 | 1 | 0 |
+[03:04:40] [main/INFO] (AutoBench) Auto benchmark: scenario boost-off
+[03:05:05] [main/INFO] (AutoBench) Auto benchmark: boost-off -> | Aetherium, all 1.17.2 options off | 37.4 | 24.9 | 26.14 | 38.31 | 42.43 | 42.4 | 0 | 0 |
+[03:05:07] [main/INFO] (AutoBench) Auto benchmark: scenario occlusion
+[03:05:32] [main/INFO] (AutoBench) Auto benchmark: occlusion -> | Aetherium + GPU occlusion culling | 39.3 | 23.0 | 24.88 | 35.46 | 59.72 | 59.7 | 1 | 0 |
+[03:05:34] [main/INFO] (AutoBench) Auto benchmark: scenario aetherium-again
+[03:06:00] [main/INFO] (AutoBench) Auto benchmark: aetherium-again -> | Aetherium (defaults), measured again | 35.3 | 22.3 | 27.31 | 43.20 | 47.97 | 48.0 | 0 | 0 |
+[03:06:02] [main/INFO] (AutoBench) Auto benchmark: scenario scale70
+[03:06:27] [main/INFO] (AutoBench) Auto benchmark: scale70 -> | Aetherium + render scale 70% | 39.1 | 24.8 | 24.63 | 39.38 | 42.18 | 42.2 | 0 | 0 |
+[03:06:29] [main/INFO] (AutoBench) Auto benchmark: scenario fly-vanilla
+[03:06:29] [main/INFO] (ChunkRenderer) Aetherium pipeline off: rebuilding the loaded chunks for vanilla
+[03:06:56] [main/INFO] (AutoBench) Auto benchmark: fly-vanilla -> | Flying into new terrain (+X), Aetherium off | 56.4 | 22.8 | 15.99 | 38.00 | 47.26 | 66.1 | 1 | 0 |
+[03:06:58] [main/INFO] (AutoBench) Auto benchmark: scenario fly-aetherium
+[03:06:58] [main/INFO] (ChunkRenderer) Aetherium pipeline on (compatible mode: vanilla vertex format and GL calls): rebuilding the loaded chunks sorted by face direction
+[03:07:23] [main/INFO] (AutoBench) Auto benchmark: fly-aetherium -> | Flying into new terrain (-X), Aetherium defaults | 46.1 | 22.7 | 20.48 | 38.98 | 51.15 | 51.2 | 1 | 0 |
+[03:07:25] [main/INFO] (AutoBench) Auto benchmark: scenario fly-boost-off
+[03:07:50] [main/INFO] (AutoBench) Auto benchmark: fly-boost-off -> | Flying into new terrain (+Z), all 1.17.2 options off | 55.6 | 29.2 | 16.76 | 31.27 | 35.86 | 39.7 | 0 | 0 |
+[03:07:52] [main/INFO] (AutoBench) Auto benchmark: scenario fly-aetherium-z
+[03:08:18] [main/INFO] (AutoBench) Auto benchmark: fly-aetherium-z -> | Flying into new terrain (-Z), Aetherium defaults | 52.5 | 23.2 | 17.78 | 36.17 | 50.29 | 56.4 | 2 | 0 |
+[03:08:23] [main/INFO] (AutoBench) Auto benchmark finished, closing the game
+[03:08:23] [main/INFO] (Minecraft) Stopping!
+[03:08:23] [Server thread/INFO] (Minecraft) Player619 lost connection: Disconnected
+[03:08:23] [Server thread/INFO] (Minecraft) Player619 left the game
+[03:08:23] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[03:08:23] [Server thread/INFO] (Minecraft) Stopping server
+[03:08:23] [Server thread/INFO] (Minecraft) Saving players
+[03:08:23] [Server thread/INFO] (Minecraft) Saving worlds
+[03:08:23] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:overworld
+[03:08:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (aetherium-bench): All chunks are saved
+[03:08:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:the_nether
+[03:08:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[03:08:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[aetherium-bench]'/minecraft:the_end
+[03:08:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[03:08:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (aetherium-bench): All chunks are saved
+[03:08:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[03:08:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1794020475984.json
 
 [Incubating] Problems report is available at: file:///home/runner/work/_temp/tree/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 7m 19s
+BUILD SUCCESSFUL in 7m 11s
 8 actionable tasks: 7 executed, 1 up-to-date

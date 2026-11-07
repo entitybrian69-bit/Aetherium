@@ -1,19 +1,23 @@
-# Aetherium stutter log Thu Oct 22 04:48:24 UTC 2026 cores=4 heapMB=3996 java=17.0.20.1
+# Aetherium stutter log Sat Nov 07 03:01:39 UTC 2026 cores=4 heapMB=3996 java=17.0.21
 # frame = this frame, avg = running average; packets = queued network tasks run this frame (backlog = queue length); uploads = chunk meshes sent to the GPU (prepared = already converted on a worker); builds = chunk meshes finished; deferred = sections whose rebuild was merged; gc = collections/time since the previous frame
-04:48:24.582 frame=623.1ms avg=16.7ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=15/143ms
-04:48:24.665 frame=82.7ms avg=22.7ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
-04:48:25.535 frame=59.8ms avg=17.6ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=1/24ms
-04:48:26.127 frame=591.4ms avg=18.0ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
-04:48:27.208 frame=48.3ms avg=17.0ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
-04:48:28.883 frame=708.5ms avg=16.7ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=1/23ms
-04:48:29.329 frame=446.4ms avg=23.6ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=1/13ms
-04:48:36.499 frame=355.8ms avg=58.7ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=2/124ms
-04:48:36.966 frame=271.7ms avg=42.9ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
-04:48:37.607 frame=640.4ms avg=45.2ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=1/10ms
-04:48:38.035 frame=428.6ms avg=51.2ms packets=349 backlog=1 uploads=4 prepared=4 builds=0 deferred=0 gc=0/0ms
-04:53:45.948 frame=48.6ms avg=16.2ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
-04:53:51.715 frame=46.8ms avg=17.7ms packets=46 backlog=4 uploads=0 prepared=0 builds=0 deferred=1 gc=0/0ms
-04:53:51.820 frame=61.6ms avg=19.2ms packets=269 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
-04:53:51.884 frame=63.9ms avg=19.6ms packets=274 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
-04:54:18.976 frame=53.4ms avg=20.1ms packets=397 backlog=5 uploads=0 prepared=0 builds=0 deferred=3 gc=0/0ms
-04:54:46.194 frame=50.0ms avg=17.1ms packets=449 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:01:39.574 frame=530.4ms avg=16.7ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=14/143ms
+03:01:39.683 frame=109.4ms avg=21.8ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:01:40.951 frame=526.2ms avg=17.6ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=1/6ms
+03:01:43.707 frame=712.7ms avg=16.7ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=1/19ms
+03:01:44.293 frame=586.1ms avg=23.7ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=1/23ms
+03:01:51.475 frame=350.8ms avg=58.9ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=1/115ms
+03:01:51.983 frame=295.8ms avg=43.9ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:01:52.586 frame=603.5ms avg=46.4ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:01:53.141 frame=554.7ms avg=52.0ms packets=161 backlog=1 uploads=7 prepared=7 builds=0 deferred=0 gc=1/8ms
+03:02:14.713 frame=75.9ms avg=29.3ms packets=10 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:06:50.991 frame=65.8ms avg=20.7ms packets=0 backlog=0 uploads=0 prepared=0 builds=0 deferred=0 gc=1/6ms
+03:06:58.866 frame=74.3ms avg=23.6ms packets=62 backlog=5 uploads=0 prepared=0 builds=0 deferred=4 gc=1/8ms
+03:06:58.975 frame=109.0ms avg=24.1ms packets=46 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:06:59.079 frame=103.9ms avg=25.0ms packets=64 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:06:59.160 frame=80.9ms avg=25.8ms packets=210 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:07:25.993 frame=78.0ms avg=23.4ms packets=58 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=1/6ms
+03:07:26.063 frame=70.0ms avg=24.0ms packets=137 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:07:26.127 frame=64.2ms avg=24.4ms packets=386 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:07:53.185 frame=73.0ms avg=21.2ms packets=53 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:07:53.261 frame=76.1ms avg=21.7ms packets=328 backlog=5 uploads=0 prepared=0 builds=0 deferred=0 gc=0/0ms
+03:08:09.500 frame=45.4ms avg=17.8ms packets=6 backlog=0 uploads=0 prepared=0 builds=0 deferred=18 gc=0/0ms
