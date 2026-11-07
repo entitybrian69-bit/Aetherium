@@ -1,4 +1,4 @@
-aetherium: aetherium-fabric-1.17.4.jar
+aetherium: aetherium-fabric-1.17.5.jar
 test mod fabric-api: 0.42.0+1.16 -> fabric-api-0.42.0+1.16.jar
 test mod lithium: mc1.16.5-0.6.6 -> lithium-fabric-mc1.16.5-0.6.6.jar
 test mod ferrite-core: 2.1.1-fabric -> ferritecore-2.1.1-fabric.jar (wanted 2.1.1)
