@@ -3,6 +3,13 @@
 One `## <mod_version>` section per release. tools/modrinth_publish.py uses the section matching
 `mod_version` in gradle.properties as the changelog of every Modrinth version it uploads.
 
+## 1.17.5
+**Four performance options removed (test build for Minecraft 1.16.5 only).**
+
+- Removed: Compact block states, Cached block fluids, Lock-free entity data and Faster mob AI. They changed the same parts of the game as other popular performance mods, which is where the start-up conflicts came from. Aetherium no longer touches those parts of the game at all, so nothing is left for another mod to clash with, and you can use a dedicated mod for them instead.
+- Their settings are simply ignored if they are still in your aetherium.json; nothing needs to be changed by hand.
+- Everything else from 1.17.2 to 1.17.4 stays, including the start-up check that lets an option step aside when another mod already changes the same game method.
+
 ## 1.17.4
 **Really works next to other performance mods now (test build for Minecraft 1.16.5 only).**
 

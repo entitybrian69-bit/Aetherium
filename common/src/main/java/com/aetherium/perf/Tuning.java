@@ -83,13 +83,10 @@ public final class Tuning {
     public static volatile boolean aoCache;
     public static volatile boolean asyncSkins;
 
-    // 1.17.2 (compact block states is start-up only: EarlyFlags; the HUD rate lives in HudRate)
+    // 1.17.2 (the HUD rate lives in HudRate)
     public static volatile boolean lazySearch;
     public static volatile boolean entityTickCulling;
-    public static volatile boolean fastBlockData;
     public static volatile boolean fastSectionSnapshots;
-    public static volatile boolean fastMobAi;
-    public static volatile boolean fastEntityData;
     public static volatile boolean fastNetwork;
     public static volatile boolean multiDraw;
     public static volatile boolean batchedChests;
@@ -178,10 +175,7 @@ public final class Tuning {
         lazySearch = active && c.lazySearch.get().booleanValue() && free("lazy_search");
         HudRate.setFps(active && free("hud_fps") ? c.hudFps.get().intValue() : HudRate.OFF);
         entityTickCulling = active && c.entityTickCulling.get().booleanValue() && free("entity_tick_culling");
-        fastBlockData = active && c.fastBlockData.get().booleanValue() && free("fast_block_data");
         fastSectionSnapshots = active && c.fastSectionSnapshots.get().booleanValue() && free("fast_section_snapshots");
-        fastMobAi = active && c.fastMobAi.get().booleanValue() && free("fast_mob_ai");
-        fastEntityData = active && c.fastEntityData.get().booleanValue() && free("fast_entity_data");
         fastNetwork = active && c.fastNetwork.get().booleanValue() && free("fast_network");
         multiDraw = active && c.multiDraw.get().booleanValue();
         batchedChests = active && c.batchedChests.get().booleanValue() && free("batched_chests");

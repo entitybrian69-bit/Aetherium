@@ -312,7 +312,7 @@ index bf639c3..a9861d9 100644
      // @era:scroll-end
  
 diff --git a/common/src/main/java/com/aetherium/client/AutoBench.java b/common/src/main/java/com/aetherium/client/AutoBench.java
-index e43d233..3564c62 100644
+index 0bdfb84..c43b2c0 100644
 --- a/common/src/main/java/com/aetherium/client/AutoBench.java
 +++ b/common/src/main/java/com/aetherium/client/AutoBench.java
 @@ -1,34 +1,34 @@
@@ -376,7 +376,7 @@ index e43d233..3564c62 100644
  // @era:autobench-end
  
  /**
-@@ -44,100 +44,100 @@ public final class AutoBench {
+@@ -44,99 +44,99 @@ public final class AutoBench {
      public static final String PROPERTY = "aetherium.autobench";
      public static final boolean ACTIVE = System.getProperty(PROPERTY) != null;
  
@@ -471,16 +471,14 @@ index e43d233..3564c62 100644
  
 -    //~ /** The 1.17.2 performance options that are on by default (HUD refresh rate goes to 0 = vanilla). */
 -    //~ private static final String[] BOOST_OPTIONS = {
--        //~ "performance.compact_block_states", "performance.fast_block_data", "performance.lazy_search",
--        //~ "performance.hud_fps", "performance.entity_tick_culling", "performance.fast_section_snapshots",
--        //~ "performance.fast_mob_ai", "performance.fast_entity_data", "performance.fast_network",
+-        //~ "performance.lazy_search", "performance.hud_fps", "performance.entity_tick_culling",
+-        //~ "performance.fast_section_snapshots", "performance.fast_network",
 -        //~ "performance.batched_chests", "performance.packed_terrain", "performance.multi_draw",
 -    //~ };
 +    /** The 1.17.2 performance options that are on by default (HUD refresh rate goes to 0 = vanilla). */
 +    private static final String[] BOOST_OPTIONS = {
-+        "performance.compact_block_states", "performance.fast_block_data", "performance.lazy_search",
-+        "performance.hud_fps", "performance.entity_tick_culling", "performance.fast_section_snapshots",
-+        "performance.fast_mob_ai", "performance.fast_entity_data", "performance.fast_network",
++        "performance.lazy_search", "performance.hud_fps", "performance.entity_tick_culling",
++        "performance.fast_section_snapshots", "performance.fast_network",
 +        "performance.batched_chests", "performance.packed_terrain", "performance.multi_draw",
 +    };
  
@@ -564,7 +562,7 @@ index e43d233..3564c62 100644
      // @era:autobench-end
  
      private AutoBench() {
-@@ -148,24 +148,24 @@ public final class AutoBench {
+@@ -147,24 +147,24 @@ public final class AutoBench {
          if (!ACTIVE) {
              return;
          }
@@ -607,7 +605,7 @@ index e43d233..3564c62 100644
          // @era:autobench-end
      }
  
-@@ -174,272 +174,272 @@ public final class AutoBench {
+@@ -173,272 +173,272 @@ public final class AutoBench {
          if (!ACTIVE) {
              return;
          }
@@ -12984,158 +12982,6 @@ index cabb178..afc3e12 100644
      //~ }
  // @era:boost16-end
  }
-diff --git a/common/src/main/java/com/aetherium/mixin/core/TuningEntityDataMixin.java b/common/src/main/java/com/aetherium/mixin/core/TuningEntityDataMixin.java
-index 1613614..3dc772e 100644
---- a/common/src/main/java/com/aetherium/mixin/core/TuningEntityDataMixin.java
-+++ b/common/src/main/java/com/aetherium/mixin/core/TuningEntityDataMixin.java
-@@ -1,23 +1,23 @@
- package com.aetherium.mixin.core;
- 
- import org.spongepowered.asm.mixin.Mixin;
--// @era:boost16-begin none
--// @era:boost16-else v16
--//~ import com.aetherium.perf.NoLock;
--//~ import com.aetherium.perf.Tuning;
--//~ import java.util.Map;
--//~ import java.util.concurrent.locks.ReadWriteLock;
--//~ import net.minecraft.network.syncher.EntityDataAccessor;
--//~ import net.minecraft.network.syncher.SynchedEntityData;
--//~ import net.minecraft.world.entity.Entity;
--//~ import org.spongepowered.asm.mixin.Final;
--//~ import org.spongepowered.asm.mixin.Mutable;
--//~ import org.spongepowered.asm.mixin.Shadow;
--//~ import org.spongepowered.asm.mixin.Unique;
--//~ import org.spongepowered.asm.mixin.injection.At;
--//~ import org.spongepowered.asm.mixin.injection.Inject;
--//~ import org.spongepowered.asm.mixin.injection.Redirect;
--//~ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-+// @era:boost16-begin v16
-+import com.aetherium.perf.NoLock;
-+import com.aetherium.perf.Tuning;
-+import java.util.Map;
-+import java.util.concurrent.locks.ReadWriteLock;
-+import net.minecraft.network.syncher.EntityDataAccessor;
-+import net.minecraft.network.syncher.SynchedEntityData;
-+import net.minecraft.world.entity.Entity;
-+import org.spongepowered.asm.mixin.Final;
-+import org.spongepowered.asm.mixin.Mutable;
-+import org.spongepowered.asm.mixin.Shadow;
-+import org.spongepowered.asm.mixin.Unique;
-+import org.spongepowered.asm.mixin.injection.At;
-+import org.spongepowered.asm.mixin.injection.Inject;
-+import org.spongepowered.asm.mixin.injection.Redirect;
-+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-+// @era:boost16-else none
- // @era:boost16-end
- 
- /**
-@@ -30,58 +30,58 @@ import org.spongepowered.asm.mixin.Mixin;
-  */
- @Mixin(targets = "net.minecraft.network.syncher.SynchedEntityData")
- public abstract class TuningEntityDataMixin {
--    // @era:boost16-begin none
--    // @era:boost16-else v16
--    //~ @Shadow
--    //~ @Final
--    //~ @Mutable
--    //~ private ReadWriteLock lock;
-+    // @era:boost16-begin v16
-+    @Shadow
-+    @Final
-+    @Mutable
-+    private ReadWriteLock lock;
- 
--    //~ @Shadow
--    //~ @Final
--    //~ private Map<Integer, SynchedEntityData.DataItem<?>> itemsById;
-+    @Shadow
-+    @Final
-+    private Map<Integer, SynchedEntityData.DataItem<?>> itemsById;
- 
--    //~ /** Items by id; replaced (never changed in place) when an item is defined. */
--    //~ @Unique
--    //~ private SynchedEntityData.DataItem<?>[] aetherium$byId;
-+    /** Items by id; replaced (never changed in place) when an item is defined. */
-+    @Unique
-+    private SynchedEntityData.DataItem<?>[] aetherium$byId;
- 
--    //~ @Inject(method = "<init>", at = @At("TAIL"), require = 0)
--    //~ private void aetherium$noLock(final Entity entity, final CallbackInfo ci) {
--        //~ if (Tuning.fastEntityData) {
--            //~ this.lock = NoLock.INSTANCE;
--        //~ }
--    //~ }
-+    @Inject(method = "<init>", at = @At("TAIL"), require = 0)
-+    private void aetherium$noLock(final Entity entity, final CallbackInfo ci) {
-+        if (Tuning.fastEntityData) {
-+            this.lock = NoLock.INSTANCE;
-+        }
-+    }
- 
--    //~ @Inject(method = "createDataItem", at = @At("TAIL"), require = 0)
--    //~ private void aetherium$index(final EntityDataAccessor<?> accessor, final Object value, final CallbackInfo ci) {
--        //~ final int id = accessor.getId();
--        //~ final SynchedEntityData.DataItem<?> item = this.itemsById.get(Integer.valueOf(id));
--        //~ if (id < 0 || id > 255 || item == null) {
--            //~ return;
--        //~ }
--        //~ final SynchedEntityData.DataItem<?>[] old = this.aetherium$byId;
--        //~ final SynchedEntityData.DataItem<?>[] grown = new SynchedEntityData.DataItem<?>[Math.max(id + 1, old == null ? 0 : old.length)];
--        //~ if (old != null) {
--            //~ System.arraycopy(old, 0, grown, 0, old.length);
--        //~ }
--        //~ grown[id] = item;
--        //~ this.aetherium$byId = grown;
--    //~ }
-+    @Inject(method = "createDataItem", at = @At("TAIL"), require = 0)
-+    private void aetherium$index(final EntityDataAccessor<?> accessor, final Object value, final CallbackInfo ci) {
-+        final int id = accessor.getId();
-+        final SynchedEntityData.DataItem<?> item = this.itemsById.get(Integer.valueOf(id));
-+        if (id < 0 || id > 255 || item == null) {
-+            return;
-+        }
-+        final SynchedEntityData.DataItem<?>[] old = this.aetherium$byId;
-+        final SynchedEntityData.DataItem<?>[] grown = new SynchedEntityData.DataItem<?>[Math.max(id + 1, old == null ? 0 : old.length)];
-+        if (old != null) {
-+            System.arraycopy(old, 0, grown, 0, old.length);
-+        }
-+        grown[id] = item;
-+        this.aetherium$byId = grown;
-+    }
- 
--    //~ @Redirect(method = "getItem", at = @At(value = "INVOKE", target = "Ljava/util/Map;get(Ljava/lang/Object;)Ljava/lang/Object;"),
--            //~ require = 0)
--    //~ private Object aetherium$lookup(final Map<Integer, ?> map, final Object key) {
--        //~ final SynchedEntityData.DataItem<?>[] byId = this.aetherium$byId;
--        //~ if (Tuning.fastEntityData && byId != null && key instanceof Integer) {
--            //~ final int id = ((Integer) key).intValue();
--            //~ if (id >= 0 && id < byId.length) {
--                //~ final Object item = byId[id];
--                //~ if (item != null) {
--                    //~ return item;
--                //~ }
--            //~ }
--        //~ }
--        //~ return map.get(key);
--    //~ }
-+    @Redirect(method = "getItem", at = @At(value = "INVOKE", target = "Ljava/util/Map;get(Ljava/lang/Object;)Ljava/lang/Object;"),
-+            require = 0)
-+    private Object aetherium$lookup(final Map<Integer, ?> map, final Object key) {
-+        final SynchedEntityData.DataItem<?>[] byId = this.aetherium$byId;
-+        if (Tuning.fastEntityData && byId != null && key instanceof Integer) {
-+            final int id = ((Integer) key).intValue();
-+            if (id >= 0 && id < byId.length) {
-+                final Object item = byId[id];
-+                if (item != null) {
-+                    return item;
-+                }
-+            }
-+        }
-+        return map.get(key);
-+    }
-+    // @era:boost16-else none
-     // @era:boost16-end
- }
 diff --git a/common/src/main/java/com/aetherium/mixin/core/TuningEntityTickMixin.java b/common/src/main/java/com/aetherium/mixin/core/TuningEntityTickMixin.java
 index d9e5378..816b0d1 100644
 --- a/common/src/main/java/com/aetherium/mixin/core/TuningEntityTickMixin.java
@@ -13391,101 +13237,6 @@ index 852237b..251cf99 100644
      //~ }
 -    // @era:t-far-draw-else v16|none
      // @era:t-far-draw-end
- }
-diff --git a/common/src/main/java/com/aetherium/mixin/core/TuningFluidCacheMixin.java b/common/src/main/java/com/aetherium/mixin/core/TuningFluidCacheMixin.java
-index 46b9859..2546d61 100644
---- a/common/src/main/java/com/aetherium/mixin/core/TuningFluidCacheMixin.java
-+++ b/common/src/main/java/com/aetherium/mixin/core/TuningFluidCacheMixin.java
-@@ -1,18 +1,18 @@
- package com.aetherium.mixin.core;
- 
- import org.spongepowered.asm.mixin.Mixin;
--// @era:boost16-begin none
--// @era:boost16-else v16
--//~ import com.aetherium.perf.Tuning;
--//~ import net.minecraft.world.level.block.Block;
--//~ import net.minecraft.world.level.block.state.BlockState;
--//~ import net.minecraft.world.level.material.FluidState;
--//~ import org.spongepowered.asm.mixin.Shadow;
--//~ import org.spongepowered.asm.mixin.Unique;
--//~ import org.spongepowered.asm.mixin.injection.At;
--//~ import org.spongepowered.asm.mixin.injection.Inject;
--//~ import org.spongepowered.asm.mixin.injection.Redirect;
--//~ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-+// @era:boost16-begin v16
-+import com.aetherium.perf.Tuning;
-+import net.minecraft.world.level.block.Block;
-+import net.minecraft.world.level.block.state.BlockState;
-+import net.minecraft.world.level.material.FluidState;
-+import org.spongepowered.asm.mixin.Shadow;
-+import org.spongepowered.asm.mixin.Unique;
-+import org.spongepowered.asm.mixin.injection.At;
-+import org.spongepowered.asm.mixin.injection.Inject;
-+import org.spongepowered.asm.mixin.injection.Redirect;
-+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-+// @era:boost16-else none
- // @era:boost16-end
- 
- /**
-@@ -25,34 +25,34 @@ import org.spongepowered.asm.mixin.Mixin;
-  */
- @Mixin(targets = "net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase")
- public abstract class TuningFluidCacheMixin {
--    // @era:boost16-begin none
--    // @era:boost16-else v16
--    //~ @Unique
--    //~ private FluidState aetherium$fluid;
-+    // @era:boost16-begin v16
-+    @Unique
-+    private FluidState aetherium$fluid;
- 
--    //~ @Shadow
--    //~ public abstract Block getBlock();
-+    @Shadow
-+    public abstract Block getBlock();
- 
--    //~ @Shadow
--    //~ protected abstract BlockState asState();
-+    @Shadow
-+    protected abstract BlockState asState();
- 
--    //~ @Inject(method = "initCache", at = @At("TAIL"), require = 0)
--    //~ private void aetherium$cacheFluid(final CallbackInfo ci) {
--        //~ final Block block = this.getBlock();
--        //~ if (block != null && block.getClass().getName().startsWith("net.minecraft.")) {
--            //~ this.aetherium$fluid = block.getFluidState(this.asState());
--        //~ }
--    //~ }
-+    @Inject(method = "initCache", at = @At("TAIL"), require = 0)
-+    private void aetherium$cacheFluid(final CallbackInfo ci) {
-+        final Block block = this.getBlock();
-+        if (block != null && block.getClass().getName().startsWith("net.minecraft.")) {
-+            this.aetherium$fluid = block.getFluidState(this.asState());
-+        }
-+    }
- 
--    //~ @Redirect(method = "getFluidState", at = @At(value = "INVOKE",
--            //~ target = "Lnet/minecraft/world/level/block/Block;getFluidState(Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;"),
--            //~ require = 0)
--    //~ private FluidState aetherium$cachedFluid(final Block block, final BlockState state) {
--        //~ final FluidState cached = this.aetherium$fluid;
--        //~ if (cached != null && Tuning.fastBlockData) {
--            //~ return cached;
--        //~ }
--        //~ return block.getFluidState(state);
--    //~ }
-+    @Redirect(method = "getFluidState", at = @At(value = "INVOKE",
-+            target = "Lnet/minecraft/world/level/block/Block;getFluidState(Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;"),
-+            require = 0)
-+    private FluidState aetherium$cachedFluid(final Block block, final BlockState state) {
-+        final FluidState cached = this.aetherium$fluid;
-+        if (cached != null && Tuning.fastBlockData) {
-+            return cached;
-+        }
-+        return block.getFluidState(state);
-+    }
-+    // @era:boost16-else none
-     // @era:boost16-end
  }
 diff --git a/common/src/main/java/com/aetherium/mixin/core/TuningFrameDecoderMixin.java b/common/src/main/java/com/aetherium/mixin/core/TuningFrameDecoderMixin.java
 index 1a90c44..6e345b9 100644
@@ -14003,236 +13754,6 @@ index c4a5001..688b9e5 100644
      // @era:t-glint-else g219
      //~ @ModifyVariable(method = {"getFoilBuffer", "getFoilRenderTypes"}, at = @At("HEAD"),
              //~ argsOnly = true, ordinal = 1, require = 0)
-diff --git a/common/src/main/java/com/aetherium/mixin/core/TuningGoalMixin.java b/common/src/main/java/com/aetherium/mixin/core/TuningGoalMixin.java
-index 5d4f57e..c00e326 100644
---- a/common/src/main/java/com/aetherium/mixin/core/TuningGoalMixin.java
-+++ b/common/src/main/java/com/aetherium/mixin/core/TuningGoalMixin.java
-@@ -1,22 +1,22 @@
- package com.aetherium.mixin.core;
- 
- import org.spongepowered.asm.mixin.Mixin;
--// @era:boost16-begin none
--// @era:boost16-else v16
--//~ import com.aetherium.perf.Tuning;
--//~ import java.util.EnumSet;
--//~ import java.util.Iterator;
--//~ import java.util.Map;
--//~ import java.util.Set;
--//~ import java.util.function.Supplier;
--//~ import net.minecraft.util.profiling.ProfilerFiller;
--//~ import net.minecraft.world.entity.ai.goal.Goal;
--//~ import net.minecraft.world.entity.ai.goal.WrappedGoal;
--//~ import org.spongepowered.asm.mixin.Final;
--//~ import org.spongepowered.asm.mixin.Shadow;
--//~ import org.spongepowered.asm.mixin.injection.At;
--//~ import org.spongepowered.asm.mixin.injection.Inject;
--//~ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-+// @era:boost16-begin v16
-+import com.aetherium.perf.Tuning;
-+import java.util.EnumSet;
-+import java.util.Iterator;
-+import java.util.Map;
-+import java.util.Set;
-+import java.util.function.Supplier;
-+import net.minecraft.util.profiling.ProfilerFiller;
-+import net.minecraft.world.entity.ai.goal.Goal;
-+import net.minecraft.world.entity.ai.goal.WrappedGoal;
-+import org.spongepowered.asm.mixin.Final;
-+import org.spongepowered.asm.mixin.Shadow;
-+import org.spongepowered.asm.mixin.injection.At;
-+import org.spongepowered.asm.mixin.injection.Inject;
-+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-+// @era:boost16-else none
- // @era:boost16-end
- 
- /**
-@@ -39,100 +39,100 @@ import org.spongepowered.asm.mixin.Mixin;
-  */
- @Mixin(targets = "net.minecraft.world.entity.ai.goal.GoalSelector")
- public abstract class TuningGoalMixin {
--    // @era:boost16-begin none
--    // @era:boost16-else v16
--    //~ @Shadow
--    //~ @Final
--    //~ private static WrappedGoal NO_GOAL;
-+    // @era:boost16-begin v16
-+    @Shadow
-+    @Final
-+    private static WrappedGoal NO_GOAL;
- 
--    //~ @Shadow
--    //~ @Final
--    //~ private Map<Goal.Flag, WrappedGoal> lockedFlags;
-+    @Shadow
-+    @Final
-+    private Map<Goal.Flag, WrappedGoal> lockedFlags;
- 
--    //~ @Shadow
--    //~ @Final
--    //~ private Set<WrappedGoal> availableGoals;
-+    @Shadow
-+    @Final
-+    private Set<WrappedGoal> availableGoals;
- 
--    //~ @Shadow
--    //~ @Final
--    //~ private Supplier<ProfilerFiller> profiler;
-+    @Shadow
-+    @Final
-+    private Supplier<ProfilerFiller> profiler;
- 
--    //~ @Shadow
--    //~ @Final
--    //~ private EnumSet<Goal.Flag> disabledFlags;
-+    @Shadow
-+    @Final
-+    private EnumSet<Goal.Flag> disabledFlags;
- 
--    //~ @Inject(method = "tick", at = @At("HEAD"), cancellable = true, require = 0)
--    //~ private void aetherium$tick(final CallbackInfo ci) {
--        //~ if (!Tuning.fastMobAi) {
--            //~ return;
--        //~ }
--        //~ ci.cancel();
--        //~ final ProfilerFiller profilerFiller = this.profiler.get();
--        //~ final Map<Goal.Flag, WrappedGoal> locked = this.lockedFlags;
--        //~ final EnumSet<Goal.Flag> disabled = this.disabledFlags;
--        //~ final WrappedGoal none = NO_GOAL;
-+    @Inject(method = "tick", at = @At("HEAD"), cancellable = true, require = 0)
-+    private void aetherium$tick(final CallbackInfo ci) {
-+        if (!Tuning.fastMobAi) {
-+            return;
-+        }
-+        ci.cancel();
-+        final ProfilerFiller profilerFiller = this.profiler.get();
-+        final Map<Goal.Flag, WrappedGoal> locked = this.lockedFlags;
-+        final EnumSet<Goal.Flag> disabled = this.disabledFlags;
-+        final WrappedGoal none = NO_GOAL;
- 
--        //~ profilerFiller.push("goalCleanup");
--        //~ for (final WrappedGoal goal : this.availableGoals) {
--            //~ if (goal.isRunning() && (aetherium$usesAny(goal.getFlags(), disabled) || !goal.canContinueToUse())) {
--                //~ goal.stop();
--            //~ }
--        //~ }
--        //~ final Iterator<Map.Entry<Goal.Flag, WrappedGoal>> held = locked.entrySet().iterator();
--        //~ while (held.hasNext()) {
--            //~ if (!held.next().getValue().isRunning()) {
--                //~ held.remove();
--            //~ }
--        //~ }
--        //~ profilerFiller.pop();
-+        profilerFiller.push("goalCleanup");
-+        for (final WrappedGoal goal : this.availableGoals) {
-+            if (goal.isRunning() && (aetherium$usesAny(goal.getFlags(), disabled) || !goal.canContinueToUse())) {
-+                goal.stop();
-+            }
-+        }
-+        final Iterator<Map.Entry<Goal.Flag, WrappedGoal>> held = locked.entrySet().iterator();
-+        while (held.hasNext()) {
-+            if (!held.next().getValue().isRunning()) {
-+                held.remove();
-+            }
-+        }
-+        profilerFiller.pop();
- 
--        //~ profilerFiller.push("goalUpdate");
--        //~ for (final WrappedGoal goal : this.availableGoals) {
--            //~ if (goal.isRunning()) {
--                //~ continue;
--            //~ }
--            //~ final EnumSet<Goal.Flag> flags = goal.getFlags();
--            //~ if (aetherium$usesAny(flags, disabled)) {
--                //~ continue;
--            //~ }
--            //~ boolean replaceable = true;
--            //~ for (final Goal.Flag flag : flags) {
--                //~ if (!locked.getOrDefault(flag, none).canBeReplacedBy(goal)) {
--                    //~ replaceable = false;
--                    //~ break;
--                //~ }
--            //~ }
--            //~ if (!replaceable || !goal.canUse()) {
--                //~ continue;
--            //~ }
--            //~ for (final Goal.Flag flag : flags) {
--                //~ locked.getOrDefault(flag, none).stop();
--                //~ locked.put(flag, goal);
--            //~ }
--            //~ goal.start();
--        //~ }
--        //~ profilerFiller.pop();
-+        profilerFiller.push("goalUpdate");
-+        for (final WrappedGoal goal : this.availableGoals) {
-+            if (goal.isRunning()) {
-+                continue;
-+            }
-+            final EnumSet<Goal.Flag> flags = goal.getFlags();
-+            if (aetherium$usesAny(flags, disabled)) {
-+                continue;
-+            }
-+            boolean replaceable = true;
-+            for (final Goal.Flag flag : flags) {
-+                if (!locked.getOrDefault(flag, none).canBeReplacedBy(goal)) {
-+                    replaceable = false;
-+                    break;
-+                }
-+            }
-+            if (!replaceable || !goal.canUse()) {
-+                continue;
-+            }
-+            for (final Goal.Flag flag : flags) {
-+                locked.getOrDefault(flag, none).stop();
-+                locked.put(flag, goal);
-+            }
-+            goal.start();
-+        }
-+        profilerFiller.pop();
- 
--        //~ profilerFiller.push("goalTick");
--        //~ for (final WrappedGoal goal : this.availableGoals) {
--            //~ if (goal.isRunning()) {
--                //~ goal.tick();
--            //~ }
--        //~ }
--        //~ profilerFiller.pop();
--    //~ }
-+        profilerFiller.push("goalTick");
-+        for (final WrappedGoal goal : this.availableGoals) {
-+            if (goal.isRunning()) {
-+                goal.tick();
-+            }
-+        }
-+        profilerFiller.pop();
-+    }
- 
--    //~ @org.spongepowered.asm.mixin.Unique
--    //~ private static boolean aetherium$usesAny(final EnumSet<Goal.Flag> flags, final EnumSet<Goal.Flag> disabled) {
--        //~ if (disabled.isEmpty() || flags.isEmpty()) {
--            //~ return false;
--        //~ }
--        //~ for (final Goal.Flag flag : flags) {
--            //~ if (disabled.contains(flag)) {
--                //~ return true;
--            //~ }
--        //~ }
--        //~ return false;
--    //~ }
-+    @org.spongepowered.asm.mixin.Unique
-+    private static boolean aetherium$usesAny(final EnumSet<Goal.Flag> flags, final EnumSet<Goal.Flag> disabled) {
-+        if (disabled.isEmpty() || flags.isEmpty()) {
-+            return false;
-+        }
-+        for (final Goal.Flag flag : flags) {
-+            if (disabled.contains(flag)) {
-+                return true;
-+            }
-+        }
-+        return false;
-+    }
-+    // @era:boost16-else none
-     // @era:boost16-end
- }
 diff --git a/common/src/main/java/com/aetherium/mixin/core/TuningGrassMixin.java b/common/src/main/java/com/aetherium/mixin/core/TuningGrassMixin.java
 index 2762fb3..ad1cf55 100644
 --- a/common/src/main/java/com/aetherium/mixin/core/TuningGrassMixin.java
@@ -16765,101 +16286,6 @@ index 770fbd4..1e8a6d7 100644
 +    // @era:boost16-else none
      // @era:boost16-end
  }
-diff --git a/common/src/main/java/com/aetherium/mixin/core/TuningStateMixin.java b/common/src/main/java/com/aetherium/mixin/core/TuningStateMixin.java
-index d860c4e..e6d57df 100644
---- a/common/src/main/java/com/aetherium/mixin/core/TuningStateMixin.java
-+++ b/common/src/main/java/com/aetherium/mixin/core/TuningStateMixin.java
-@@ -1,20 +1,20 @@
- package com.aetherium.mixin.core;
- 
- import org.spongepowered.asm.mixin.Mixin;
--// @era:boost16-begin none
--// @era:boost16-else v16
--//~ import com.aetherium.perf.CompactNeighbours;
--//~ import com.aetherium.perf.EarlyFlags;
--//~ import com.aetherium.perf.StateIndex;
--//~ import com.google.common.collect.ImmutableMap;
--//~ import com.google.common.collect.Table;
--//~ import java.util.Map;
--//~ import net.minecraft.world.level.block.state.properties.Property;
--//~ import org.spongepowered.asm.mixin.Final;
--//~ import org.spongepowered.asm.mixin.Shadow;
--//~ import org.spongepowered.asm.mixin.injection.At;
--//~ import org.spongepowered.asm.mixin.injection.Inject;
--//~ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-+// @era:boost16-begin v16
-+import com.aetherium.perf.CompactNeighbours;
-+import com.aetherium.perf.EarlyFlags;
-+import com.aetherium.perf.StateIndex;
-+import com.google.common.collect.ImmutableMap;
-+import com.google.common.collect.Table;
-+import java.util.Map;
-+import net.minecraft.world.level.block.state.properties.Property;
-+import org.spongepowered.asm.mixin.Final;
-+import org.spongepowered.asm.mixin.Shadow;
-+import org.spongepowered.asm.mixin.injection.At;
-+import org.spongepowered.asm.mixin.injection.Inject;
-+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-+// @era:boost16-else none
- // @era:boost16-end
- 
- /**
-@@ -30,31 +30,31 @@ import org.spongepowered.asm.mixin.Mixin;
-  */
- @Mixin(targets = "net.minecraft.world.level.block.state.StateHolder")
- public abstract class TuningStateMixin {
--    // @era:boost16-begin none
--    // @era:boost16-else v16
--    //~ @Shadow
--    //~ @Final
--    //~ private ImmutableMap<Property<?>, Comparable<?>> values;
-+    // @era:boost16-begin v16
-+    @Shadow
-+    @Final
-+    private ImmutableMap<Property<?>, Comparable<?>> values;
- 
--    //~ @Shadow
--    //~ private Table<Property<?>, Comparable<?>, Object> neighbours;
-+    @Shadow
-+    private Table<Property<?>, Comparable<?>, Object> neighbours;
- 
--    //~ @Inject(method = "populateNeighbours", at = @At("HEAD"), cancellable = true, require = 0)
--    //~ private void aetherium$compact(final Map<Map<Property<?>, Comparable<?>>, Object> byValues, final CallbackInfo ci) {
--        //~ if (this.neighbours != null || byValues == null || !EarlyFlags.compactBlockStates()) {
--            //~ return; // vanilla (and its "populated twice" error)
--        //~ }
--        //~ final StateIndex index = StateIndex.forBlock(byValues, this.values,
--                //~ property -> ((Property<?>) property).getPossibleValues());
--        //~ if (index == null) {
--            //~ return;
--        //~ }
--        //~ final int at = index.indexOf(this.values);
--        //~ if (at < 0 || index.state(at) != (Object) this) {
--            //~ return;
--        //~ }
--        //~ this.neighbours = new CompactNeighbours(index, at, this);
--        //~ ci.cancel();
--    //~ }
-+    @Inject(method = "populateNeighbours", at = @At("HEAD"), cancellable = true, require = 0)
-+    private void aetherium$compact(final Map<Map<Property<?>, Comparable<?>>, Object> byValues, final CallbackInfo ci) {
-+        if (this.neighbours != null || byValues == null || !EarlyFlags.compactBlockStates()) {
-+            return; // vanilla (and its "populated twice" error)
-+        }
-+        final StateIndex index = StateIndex.forBlock(byValues, this.values,
-+                property -> ((Property<?>) property).getPossibleValues());
-+        if (index == null) {
-+            return;
-+        }
-+        final int at = index.indexOf(this.values);
-+        if (at < 0 || index.state(at) != (Object) this) {
-+            return;
-+        }
-+        this.neighbours = new CompactNeighbours(index, at, this);
-+        ci.cancel();
-+    }
-+    // @era:boost16-else none
-     // @era:boost16-end
- }
 diff --git a/common/src/main/java/com/aetherium/mixin/core/TuningViewAreaAccessor.java b/common/src/main/java/com/aetherium/mixin/core/TuningViewAreaAccessor.java
 index 11cb0ee..1f6e260 100644
 --- a/common/src/main/java/com/aetherium/mixin/core/TuningViewAreaAccessor.java
@@ -17956,7 +17382,7 @@ index 3ccd445..f069e2d 100644
      // @era:options-end
  
 diff --git a/common/src/main/java/com/aetherium/perf/TuningSupport.java b/common/src/main/java/com/aetherium/perf/TuningSupport.java
-index ff73779..7aec996 100644
+index f00ac52..8bc374f 100644
 --- a/common/src/main/java/com/aetherium/perf/TuningSupport.java
 +++ b/common/src/main/java/com/aetherium/perf/TuningSupport.java
 @@ -105,10 +105,10 @@ public final class TuningSupport {
@@ -18157,7 +17583,7 @@ index 8e1185d..9bed01b 100644
      }
  
 diff --git a/common/src/main/resources/aetherium-common.mixins.json b/common/src/main/resources/aetherium-common.mixins.json
-index bef6a9a..896f274 100644
+index c4ffc82..89f63ae 100644
 --- a/common/src/main/resources/aetherium-common.mixins.json
 +++ b/common/src/main/resources/aetherium-common.mixins.json
 @@ -3,7 +3,7 @@
@@ -18170,7 +17596,7 @@ index bef6a9a..896f274 100644
      "defaultRequire": 0,
      "defaultExpect": 0
 diff --git a/gradle.properties b/gradle.properties
-index 8e26805..d30d0a8 100644
+index ea77363..4b6c6dd 100644
 --- a/gradle.properties
 +++ b/gradle.properties
 @@ -11,10 +11,10 @@ org.gradle.configuration-cache=false

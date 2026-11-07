@@ -35,7 +35,7 @@ final class OverlapTest {
         targets.add("net.minecraft.world.level.block.state.StateHolder");
         Overlap.resolve(targets);
         assertTrue(targets.contains("net.minecraft.world.level.block.state.StateHolder"));
-        assertFalse(Overlap.yielded("compact_block_states"));
+        assertFalse(Overlap.yielded("fast_network"));
         assertTrue(Overlap.yieldedOptions().isEmpty());
         assertTrue(Overlap.notes().isEmpty());
         assertFalse(Overlap.yielded(null));

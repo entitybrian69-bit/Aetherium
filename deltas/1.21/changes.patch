@@ -5,7 +5,7 @@
 # apply:  git apply --whitespace=nowarn deltas/1.21/changes.patch
 # undo:   git apply -R --whitespace=nowarn deltas/1.21/changes.patch
 diff --git a/gradle.properties b/gradle.properties
-index 8e26805..d197fb1 100644
+index ea77363..276d278 100644
 --- a/gradle.properties
 +++ b/gradle.properties
 @@ -14,7 +14,7 @@ org.gradle.daemon=true

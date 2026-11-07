@@ -416,8 +416,6 @@ public final class TuningSupport {
                 return SIGN;
             case "TuningSkinMixin":
                 return SKIN;
-            case "TuningStateMixin":
-            case "TuningFluidCacheMixin":
             case "TuningSearchMixin":
             case "TuningSearchTreeMixin":
             case "TuningHudMixin":
@@ -427,8 +425,6 @@ public final class TuningSupport {
             case "TuningEntityTickMixin":
             case "TuningLerpAccessor":
             case "TuningSnapshotMixin":
-            case "TuningGoalMixin":
-            case "TuningEntityDataMixin":
             case "TuningFrameDecoderMixin":
             case "TuningInflateMixin":
             case "TuningChestBakeMixin":
@@ -497,14 +493,10 @@ public final class TuningSupport {
             "perf.lightmap_rate",
             "perf.ao_cache",
             "perf.async_skins",
-            "perf.compact_block_states",
-            "perf.fast_block_data",
             "perf.lazy_search",
             "perf.hud_fps",
             "perf.entity_tick_culling",
             "perf.fast_section_snapshots",
-            "perf.fast_mob_ai",
-            "perf.fast_entity_data",
             "perf.fast_network",
             "perf.multi_draw",
             "perf.batched_chests",
@@ -595,14 +587,10 @@ public final class TuningSupport {
                 return AO_CACHE;
             case "perf.async_skins":
                 return SKIN;
-            case "perf.compact_block_states":
-            case "perf.fast_block_data":
             case "perf.lazy_search":
             case "perf.hud_fps":
             case "perf.entity_tick_culling":
             case "perf.fast_section_snapshots":
-            case "perf.fast_mob_ai":
-            case "perf.fast_entity_data":
             case "perf.fast_network":
             case "perf.batched_chests":
                 return BOOST;

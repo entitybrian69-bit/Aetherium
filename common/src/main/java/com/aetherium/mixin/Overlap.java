@@ -48,10 +48,6 @@ public final class Overlap {
      * carries the source names.
      */
     private static final String[][] TABLE = {
-        {"TuningStateMixin", "compact_block_states", ANY, "aetherium$compact"},
-        {"TuningFluidCacheMixin", "fast_block_data", ANY, "aetherium$cachedFluid"},
-        {"TuningEntityDataMixin", "fast_entity_data", ANY, "aetherium$lookup"},
-        {"TuningGoalMixin", "fast_mob_ai", ANY, "aetherium$tick"},
         {"TuningFrameDecoderMixin", "fast_network", ANY, "aetherium$decode"},
         {"TuningInflateMixin", "fast_network", ANY, "aetherium$decode"},
         {"TuningSearchMixin", "lazy_search", ANY, "aetherium$deferRefresh", "aetherium$deferIndex"},
@@ -78,7 +74,7 @@ public final class Overlap {
     private Overlap() {
     }
 
-    /** Whether the option (e.g. {@code "fast_block_data"}) stepped aside this launch. */
+    /** Whether the option (e.g. {@code "fast_network"}) stepped aside this launch. */
     public static boolean yielded(final String option) {
         return option != null && YIELDED.contains(option);
     }

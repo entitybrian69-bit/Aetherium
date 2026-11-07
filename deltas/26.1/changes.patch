@@ -9067,7 +9067,7 @@ index f85e6e7..a00bf0e 100644
 -//~ }
  // @era:zoom-fov-end
 diff --git a/common/src/main/java/com/aetherium/perf/TuningSupport.java b/common/src/main/java/com/aetherium/perf/TuningSupport.java
-index ff73779..dd3e623 100644
+index f00ac52..e4693f0 100644
 --- a/common/src/main/java/com/aetherium/perf/TuningSupport.java
 +++ b/common/src/main/java/com/aetherium/perf/TuningSupport.java
 @@ -10,10 +10,10 @@ public final class TuningSupport {
@@ -9302,7 +9302,7 @@ index ff73779..dd3e623 100644
  
      // @era:t-view-areaacc-begin none
 diff --git a/common/src/main/resources/aetherium-common.mixins.json b/common/src/main/resources/aetherium-common.mixins.json
-index bef6a9a..8f783c0 100644
+index c4ffc82..54a2d85 100644
 --- a/common/src/main/resources/aetherium-common.mixins.json
 +++ b/common/src/main/resources/aetherium-common.mixins.json
 @@ -3,7 +3,7 @@
@@ -9369,7 +9369,7 @@ index a2a8bd6..151bd9f 100644
  neoforge-moddev = { id = "net.neoforged.moddev", version.ref = "moddev" }
  gitversion = { id = "com.palantir.git-version", version.ref = "gitversion" }
 diff --git a/gradle.properties b/gradle.properties
-index 8e26805..783a0f6 100644
+index ea77363..65c2887 100644
 --- a/gradle.properties
 +++ b/gradle.properties
 @@ -11,10 +11,10 @@ org.gradle.configuration-cache=false

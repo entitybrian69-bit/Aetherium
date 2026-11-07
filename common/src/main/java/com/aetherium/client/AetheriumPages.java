@@ -369,15 +369,11 @@ public final class AetheriumPages {
         page.add(tuningRow(bool("perf.lightmap_rate", "Calmer light table updates", config.lightmapRate)));
         page.add(tuningRow(bool("perf.ao_cache", "Bigger smooth-lighting cache", config.aoCache)));
         page.add(tuningRow(bool("perf.async_skins", "Background skin loading", config.asyncSkins)));
-        page.add(tuningRow(bool("perf.compact_block_states", "Compact block states", config.compactBlockStates)));
-        page.add(tuningRow(bool("perf.fast_block_data", "Cached block fluids", config.fastBlockData)));
         page.add(tuningRow(bool("perf.lazy_search", "Search index on demand", config.lazySearch)));
         page.add(tuningRow(intSlider("perf.hud_fps", "HUD refresh rate", config.hudFps, 5,
                 v -> v <= 0 ? "Every frame" : v + " FPS")));
         page.add(tuningRow(bool("perf.entity_tick_culling", "Skip unseen entity updates", config.entityTickCulling)));
         page.add(tuningRow(bool("perf.fast_section_snapshots", "Faster chunk snapshots", config.fastSectionSnapshots)));
-        page.add(tuningRow(bool("perf.fast_mob_ai", "Faster mob AI", config.fastMobAi)));
-        page.add(tuningRow(bool("perf.fast_entity_data", "Lock-free entity data", config.fastEntityData)));
         page.add(tuningRow(bool("perf.fast_network", "Faster packet decoding", config.fastNetwork)));
         page.add(tuningRow(bool("perf.batched_chests", "Batched chests", config.batchedChests)));
         page.add(tuningRow(bool("perf.packed_terrain", "Packed terrain", config.packedTerrain)));

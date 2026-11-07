@@ -93,9 +93,8 @@ public final class AutoBench {
 
     //~ /** The 1.17.2 performance options that are on by default (HUD refresh rate goes to 0 = vanilla). */
     //~ private static final String[] BOOST_OPTIONS = {
-        //~ "performance.compact_block_states", "performance.fast_block_data", "performance.lazy_search",
-        //~ "performance.hud_fps", "performance.entity_tick_culling", "performance.fast_section_snapshots",
-        //~ "performance.fast_mob_ai", "performance.fast_entity_data", "performance.fast_network",
+        //~ "performance.lazy_search", "performance.hud_fps", "performance.entity_tick_culling",
+        //~ "performance.fast_section_snapshots", "performance.fast_network",
         //~ "performance.batched_chests", "performance.packed_terrain", "performance.multi_draw",
     //~ };
 

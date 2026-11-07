@@ -142,22 +142,14 @@ public final class AetheriumConfig {
             "performance.async_skins", true, "Minecraft 1.16.5: player skins and capes that are already saved on your device are read and decoded on a background thread instead of the main thread, so players joining a server or coming into view no longer cause small freezes.");
 
     // 1.17.2 (Minecraft 1.16.5)
-    public final ConfigValue<Boolean> compactBlockStates = ConfigValue.bool(
-            "performance.compact_block_states", true, "Minecraft 1.16.5: every block keeps one small shared table of its variants instead of a separate lookup table inside each of its tens of thousands of variants. Saves tens of megabytes of memory (more with mods) and makes block changes slightly faster. Takes effect after a restart.");
     public final ConfigValue<Boolean> lazySearch = ConfigValue.bool(
             "performance.lazy_search", true, "Minecraft 1.16.5: the search index of the creative inventory and the recipe book is built the first time you actually search, instead of while the game starts and every time you join a world. Faster start-up and world joins, less memory; the first search takes a moment longer.");
     public final ConfigValue<Integer> hudFps = ConfigValue.intRange(
             "performance.hud_fps", 30, 0, 60, false, "Minecraft 1.16.5: the HUD (hotbar, hearts, chat, F3 screen, boss bars) is redrawn this many times a second and reused in between, which saves hundreds of small draws per frame. The crosshair and the screen-edge shadow stay live, and switching slots or resizing redraws at once. Only used while the game runs clearly faster than this rate. 0 = redraw every frame (vanilla).");
     public final ConfigValue<Boolean> entityTickCulling = ConfigValue.bool(
             "performance.entity_tick_culling", true, "Minecraft 1.16.5: mobs, items and other entities that are out of view and more than 8 blocks away skip their client-side animation update; they still follow the server's position updates and catch up the moment they come into view. Players, vehicles, bosses, projectiles and anything you ride are always updated.");
-    public final ConfigValue<Boolean> fastBlockData = ConfigValue.bool(
-            "performance.fast_block_data", true, "Minecraft 1.16.5: the fluid inside every block variant (water in a waterlogged stair, for example) is looked up once at start-up and then read from memory, instead of being worked out again on each of the millions of checks per second that physics, mobs and chunk building make.");
     public final ConfigValue<Boolean> fastSectionSnapshots = ConfigValue.bool(
             "performance.fast_section_snapshots", true, "Minecraft 1.16.5: when a chunk section is handed to the chunk builders, its block and fluid copy reads every block once instead of twice. That copy runs on the main thread, so chunk updates cost less frame time.");
-    public final ConfigValue<Boolean> fastMobAi = ConfigValue.bool(
-            "performance.fast_mob_ai", true, "Minecraft 1.16.5, singleplayer: the built-in server picks and runs each mob's goals with plain loops instead of building several temporary lists per mob per tick. Same decisions in the same order, less work and much less garbage with many mobs.");
-    public final ConfigValue<Boolean> fastEntityData = ConfigValue.bool(
-            "performance.fast_entity_data", true, "Minecraft 1.16.5: an entity's synced values (health, pose, flags) are read from a direct table without locking. Entities read these values many times per tick on both the client and the built-in server. Applies to entities created after the change.");
     public final ConfigValue<Boolean> fastNetwork = ConfigValue.bool(
             "performance.fast_network", true, "Minecraft 1.16.5: incoming packets are cut out of the network stream without being copied, and compressed packets are unpacked through reused buffers instead of new ones for each packet. Less garbage and less work while chunks stream in on servers.");
     public final ConfigValue<Boolean> multiDraw = ConfigValue.bool(

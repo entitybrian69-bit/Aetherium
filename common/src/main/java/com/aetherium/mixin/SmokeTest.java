@@ -198,7 +198,6 @@ public final class SmokeTest {
             foodOutline = "FAILED: " + error;
         }
         out.append("food outline ").append(foodOutline).append('\n');
-        out.append("compact block states ").append(com.aetherium.perf.CompactNeighbours.created()).append('\n');
         out.append("stepped aside ").append(Overlap.yieldedOptions().size()).append('\n');
         out.append("overlap check ").append(Overlap.summary()).append('\n');
         for (final String note : Overlap.notes()) {

@@ -3086,7 +3086,7 @@ index f85e6e7..5c91b44 100644
  //~ }
  // @era:zoom-fov-else camera
 diff --git a/common/src/main/java/com/aetherium/perf/TuningSupport.java b/common/src/main/java/com/aetherium/perf/TuningSupport.java
-index ff73779..249550b 100644
+index f00ac52..1015d08 100644
 --- a/common/src/main/java/com/aetherium/perf/TuningSupport.java
 +++ b/common/src/main/java/com/aetherium/perf/TuningSupport.java
 @@ -34,10 +34,10 @@ public final class TuningSupport {
@@ -3200,7 +3200,7 @@ index ff73779..249550b 100644
  
      // @era:t-view-areaacc-begin none
 diff --git a/gradle.properties b/gradle.properties
-index 8e26805..7595436 100644
+index ea77363..60f1805 100644
 --- a/gradle.properties
 +++ b/gradle.properties
 @@ -14,7 +14,7 @@ org.gradle.daemon=true

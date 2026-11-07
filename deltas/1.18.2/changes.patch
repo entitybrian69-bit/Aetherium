@@ -5942,7 +5942,7 @@ index 3ccd445..f069e2d 100644
      // @era:options-end
  
 diff --git a/common/src/main/java/com/aetherium/perf/TuningSupport.java b/common/src/main/java/com/aetherium/perf/TuningSupport.java
-index ff73779..67f4687 100644
+index f00ac52..9b4377d 100644
 --- a/common/src/main/java/com/aetherium/perf/TuningSupport.java
 +++ b/common/src/main/java/com/aetherium/perf/TuningSupport.java
 @@ -178,10 +178,10 @@ public final class TuningSupport {
@@ -5976,7 +5976,7 @@ index ff73779..67f4687 100644
  
      // @era:t-shadow-begin s17|s212|s219|v16
 diff --git a/common/src/main/resources/aetherium-common.mixins.json b/common/src/main/resources/aetherium-common.mixins.json
-index bef6a9a..465e2b5 100644
+index c4ffc82..c6e8752 100644
 --- a/common/src/main/resources/aetherium-common.mixins.json
 +++ b/common/src/main/resources/aetherium-common.mixins.json
 @@ -3,7 +3,7 @@
@@ -5989,7 +5989,7 @@ index bef6a9a..465e2b5 100644
      "defaultRequire": 0,
      "defaultExpect": 0
 diff --git a/gradle.properties b/gradle.properties
-index 8e26805..d3c8e7b 100644
+index ea77363..1970bc8 100644
 --- a/gradle.properties
 +++ b/gradle.properties
 @@ -11,10 +11,10 @@ org.gradle.configuration-cache=false
