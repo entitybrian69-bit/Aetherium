@@ -198,6 +198,13 @@ public final class SmokeTest {
             foodOutline = "FAILED: " + error;
         }
         out.append("food outline ").append(foodOutline).append('\n');
+        try {
+            out.append("1.19.0 ").append(com.aetherium.perf.ChunkUnpack.stats()).append("; ")
+                    .append(com.aetherium.perf.SoundBudget.stats()).append("; ")
+                    .append(com.aetherium.perf.TextureCopies.stats()).append('\n');
+        } catch (final Throwable error) {
+            out.append("1.19.0 FAILED: ").append(error).append('\n');
+        }
         out.append("stepped aside ").append(Overlap.yieldedOptions().size()).append('\n');
         out.append("overlap check ").append(Overlap.summary()).append('\n');
         for (final String note : Overlap.notes()) {

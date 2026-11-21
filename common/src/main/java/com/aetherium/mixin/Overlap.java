@@ -65,6 +65,8 @@ public final class Overlap {
         {"TuningDropsMixin", "distant_drops", REPLACED, "aetherium$copies"},
         // Chunk data is read exactly as vanilla reads it; another mod changing that method may read more.
         {"TuningUnpackChunkMixin", "chunk_unpacking", ANY, "aetherium$prepared"},
+        // Freed sprites answer transparency from a map; another mod reading those pixels some other way wins.
+        {"TuningTextureSpriteMixin", "free_texture_copies", ANY, "aetherium$freedPixels"},
     };
 
     private static final String OWN_PACKAGE = "com.aetherium.";

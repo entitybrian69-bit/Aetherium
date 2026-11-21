@@ -158,6 +158,8 @@
     "TuningUnpackSectionMixin",
     "TuningUnpackChunkMixin",
     "TuningUnpackNetMixin",
+    "TuningTextureSpriteMixin",
+    "TuningTextureAtlasMixin",
     "QolPlacementMixin",
     "QolContainerScreenMixin",
     "QolScrollMixin",

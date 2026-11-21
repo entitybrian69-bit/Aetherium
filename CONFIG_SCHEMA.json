@@ -364,6 +364,12 @@
               "description": "Minecraft 1.16.5: the red hurt flash and white creeper flash on mobs set up their overlay once instead of with 16 GL calls for every group of mobs drawn. Looks exactly the same. Turned off automatically next to OptiFine, Iris, Canvas or Sodium.",
               "x-java-field": "cheapDamageTint"
             },
+            "performance.chunk_unpacking": {
+              "type": "boolean",
+              "default": true,
+              "description": "The blocks of chunks arriving from a server (or the built-in server) are unpacked on a background thread as soon as they arrive, so the main thread only has to put them in place. Less stutter while flying or joining. A prepared part is only used for exactly the bytes it was read from; anything not ready in time is read the normal way.",
+              "x-java-field": "chunkUnpacking"
+            },
             "performance.coalesce_rebuilds": {
               "type": "boolean",
               "default": true,
@@ -387,6 +393,12 @@
               "default": true,
               "description": "Minecraft 1.16.5: the search for visible chunk sections only ever moves away from you, never back towards you. Caves, ravines and rooms you cannot see into are skipped much more often, which means fewer chunks drawn and built underground and in mountains.",
               "x-java-field": "directionalCulling"
+            },
+            "performance.distant_drops": {
+              "type": "boolean",
+              "default": true,
+              "description": "Dropped item stacks further than 16 blocks away are drawn as one item instead of up to five stacked copies. At that distance the copies cover each other; up close nothing changes.",
+              "x-java-field": "distantDrops"
             },
             "performance.dynamic_fps": {
               "type": "boolean",
@@ -477,6 +489,12 @@
               "default": true,
               "description": "With a Max framerate set, frames are spaced evenly: each frame ends one frame-length after the previous one was due, so a late frame is made up instead of pushing every later frame back. Set Max framerate to your screen's refresh rate (60, 90 or 120) for the steadiest picture.",
               "x-java-field": "framePacing"
+            },
+            "performance.free_texture_copies": {
+              "type": "boolean",
+              "default": true,
+              "description": "After block and item textures have been sent to the graphics card, the copies kept in main memory for textures that never change are freed. Saves memory, most with high-resolution resource packs. Animated textures keep theirs. Takes effect at the next resource reload (F3+T) or restart.",
+              "x-java-field": "freeTextureCopies"
             },
             "performance.gl_state_cache": {
               "type": "boolean",
@@ -620,6 +638,14 @@
               "description": "Draw the 3D world at this percentage of the window resolution and scale it up to the window; the HUD, menus and text stay sharp. 100 = full resolution. Lower values give a large FPS gain when the graphics chip is the limit (phones, integrated graphics, high resolutions). Not used with Fabulous graphics or while a glowing entity is on screen.",
               "x-java-field": "renderScale"
             },
+            "performance.same_sound_limit": {
+              "type": "integer",
+              "default": 8,
+              "minimum": 1,
+              "maximum": 33,
+              "description": "How many copies of the same short world sound may start within one tick (1/20 of a second). Big farms, explosions and mob crowds start dozens of identical sounds at once; beyond this number they only add load, not loudness. 33 = no limit.",
+              "x-java-field": "sameSoundLimit"
+            },
             "performance.server_idle": {
               "type": "boolean",
               "default": true,
@@ -655,6 +681,18 @@
               "default": true,
               "description": "Spread the work of arriving chunks over several frames: incoming chunk, light and entity packets get a time budget per frame instead of all being processed in one frame, and chunk meshes are converted for the GPU on the worker threads. Removes the big frame drops when walking or flying into unloaded terrain.",
               "x-java-field": "smoothStreaming"
+            },
+            "performance.sound_culling": {
+              "type": "boolean",
+              "default": true,
+              "description": "Short world sounds that start too far away to be heard at all do not get an audio channel. Music, ambience and anything that loops or follows a moving object always plays.",
+              "x-java-field": "soundCulling"
+            },
+            "performance.text_width_cache": {
+              "type": "boolean",
+              "default": true,
+              "description": "Remembers how wide recently measured text is, so name tags, the scoreboard, menus and the F3 screen do not measure the same words letter by letter every frame. Refreshed every second, so font and resource pack changes show up right away.",
+              "x-java-field": "textWidthCache"
             },
             "performance.threaded_chunk_builder": {
               "type": "boolean",

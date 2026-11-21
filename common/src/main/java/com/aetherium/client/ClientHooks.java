@@ -219,6 +219,7 @@ public final class ClientHooks {
         // The client thread owns the text measurement caches (other threads measure normally).
         com.aetherium.perf.TextWidths.setOwner(Thread.currentThread());
         com.aetherium.perf.TextWidths.tick();
+        com.aetherium.perf.TextureCopies.tick();
         AutoBench.tick(mc);
         com.aetherium.mixin.SmokeTest.tick();
         final Aetherium.Subsystems sub = Aetherium.subsystemsOrNull();

@@ -11,6 +11,7 @@ import com.aetherium.gui.PixelArt;
 import com.aetherium.perf.TuningSupport;
 import com.aetherium.perf.BlockEntityCull;
 import com.aetherium.perf.RenderToggles;
+import com.aetherium.perf.SoundBudget;
 import com.aetherium.perf.Tuning;
 import com.aetherium.perf.WorkerThreads;
 import com.aetherium.qol.ParticleFilter;
@@ -379,6 +380,13 @@ public final class AetheriumPages {
         page.add(tuningRow(bool("perf.packed_terrain", "Packed terrain", config.packedTerrain)));
         page.add(tuningRow(bool("perf.multi_draw", "Multi-draw terrain", config.multiDraw)));
         page.add(tuningRow(bool("perf.occlusion_queries", "GPU occlusion culling", config.occlusionQueries)));
+        page.add(tuningRow(bool("perf.text_width_cache", "Text measurement cache", config.textWidthCache)));
+        page.add(tuningRow(bool("perf.sound_culling", "Sound culling", config.soundCulling)));
+        page.add(tuningRow(intSlider("perf.same_sound_limit", "Same sound per tick", config.sameSoundLimit, 1,
+                v -> v >= SoundBudget.SAME_UNLIMITED ? "Unlimited" : String.valueOf(v))));
+        page.add(tuningRow(bool("perf.distant_drops", "Simpler distant item drops", config.distantDrops)));
+        page.add(tuningRow(bool("perf.chunk_unpacking", "Background chunk unpacking", config.chunkUnpacking)));
+        page.add(tuningRow(bool("perf.free_texture_copies", "Free texture copies", config.freeTextureCopies)));
     }
 
     private static Setting tuningRow(final Setting setting) {

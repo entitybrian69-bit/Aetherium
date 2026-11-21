@@ -97,8 +97,6 @@ public final class Tuning {
     public static volatile boolean fastGrass;
 
     // 1.19.0 (every version)
-    public static volatile boolean iconCache;
-    public static volatile boolean batchedGui;
     public static volatile boolean textWidthCache;
     public static volatile boolean soundCulling;
     /** Same short sound starts per tick ({@code SoundBudget.SAME_UNLIMITED} = no limit). */
@@ -198,8 +196,6 @@ public final class Tuning {
         }
         cloudDistance = active ? clouds : 100;
         fastGrass = active && (low || c.fastGrass.get().booleanValue());
-        iconCache = active && c.iconCache.get().booleanValue() && free("icon_cache");
-        batchedGui = active && c.batchedGui.get().booleanValue() && free("batched_gui");
         textWidthCache = active && c.textWidthCache.get().booleanValue() && free("text_width_cache");
         TextWidths.invalidateAll();
         soundCulling = active && (low || c.soundCulling.get().booleanValue()) && free("sound_culling");

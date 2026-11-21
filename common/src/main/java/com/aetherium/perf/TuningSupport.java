@@ -350,6 +350,8 @@ public final class TuningSupport {
 
     public static final boolean UNPACK = true;
 
+    public static final boolean TEXTURE_COPIES = true;
+
     /** Whether the {@code Tuning*} mixin (or tuning accessor) with this simple name applies here. */
     public static boolean mixin(final String simpleName) {
         switch (simpleName) {
@@ -472,6 +474,9 @@ public final class TuningSupport {
             case "TuningUnpackNetMixin":
             case "TuningUnpackSectionMixin":
                 return UNPACK;
+            case "TuningTextureSpriteMixin":
+            case "TuningTextureAtlasMixin":
+                return TEXTURE_COPIES;
             default:
                 return false;
         }
@@ -526,6 +531,7 @@ public final class TuningSupport {
             "perf.same_sound_limit",
             "perf.distant_drops",
             "perf.chunk_unpacking",
+            "perf.free_texture_copies",
             "quality.far_terrain",
             "quality.shader_preset",
             "quality.cloud_distance",
@@ -632,6 +638,8 @@ public final class TuningSupport {
                 return DROPS;
             case "perf.chunk_unpacking":
                 return UNPACK;
+            case "perf.free_texture_copies":
+                return TEXTURE_COPIES;
             case "quality.far_terrain":
                 return FAR_TERRAIN && FAR_DRAW && LIGHT && (LEVEL || !LEVEL_DRAWS_FAR)
                         && com.aetherium.client.FarTerrain.available();
