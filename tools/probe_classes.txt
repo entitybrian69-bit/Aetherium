@@ -568,3 +568,6 @@ net.minecraft.client.renderer.texture.TextureAtlas$Preparations
 net.minecraft.client.renderer.texture.MissingTextureAtlasSprite
 net.minecraft.client.gui.screens.Screen
 org.lwjgl.system.MemoryUtil
+net.minecraft.client.sounds.SoundEngine$PlayResult
+net.minecraft.client.resources.sounds.SoundInstance$Attenuation
+com.mojang.blaze3d.platform.NativeImage$Format
