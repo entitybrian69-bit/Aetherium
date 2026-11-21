@@ -59,6 +59,7 @@ neoforge_version=20.4.251
 - `simdist=sim`
 - `sky=rb193`
 - `t-chunk-save=v16`
+- `t-drops=v16`
 - `t-far-draw=j193`
 - `t-glint=v16`
 - `t-portal=v16`
@@ -113,6 +114,7 @@ Minecraft signatures CI extracted from this version's jar (`tools/probe/1.20.4.t
 - `common/src/main/java/com/aetherium/mixin/core/SectionSpritesMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/SkyMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningChunkSaveMixin.java`
+- `common/src/main/java/com/aetherium/mixin/core/TuningDropsMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningFarDrawMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningGlintMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningPortalMixin.java`

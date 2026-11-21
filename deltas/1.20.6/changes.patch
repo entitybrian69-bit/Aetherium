@@ -38,10 +38,10 @@ index 58ebebd..739933b 100644
  
      /** Fog controls, sky toggles and per-type particle toggles (every version since 1.8.0). */
 diff --git a/common/src/main/java/com/aetherium/client/ClientHooks.java b/common/src/main/java/com/aetherium/client/ClientHooks.java
-index 304df5d..dfd0280 100644
+index f19ce54..aab3045 100644
 --- a/common/src/main/java/com/aetherium/client/ClientHooks.java
 +++ b/common/src/main/java/com/aetherium/client/ClientHooks.java
-@@ -434,10 +434,10 @@ public final class ClientHooks {
+@@ -438,10 +438,10 @@ public final class ClientHooks {
      /** Opens vanilla's own video screen on top of ours (escape hatch). */
      public static void openVanillaVideoSettings(final Minecraft mc, final Screen parent) {
          bypassVideoScreen = true;
@@ -56,7 +56,7 @@ index 304df5d..dfd0280 100644
          // @era:screen-pkg-end
          bypassVideoScreen = false;
      }
-@@ -534,10 +534,10 @@ public final class ClientHooks {
+@@ -538,10 +538,10 @@ public final class ClientHooks {
      }
  
      private static boolean isVideoSettings(final Screen screen) {

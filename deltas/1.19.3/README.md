@@ -83,6 +83,7 @@ neoforge_version=unavailable (module disabled)
 - `t-crowd=c17`
 - `t-cull=c17`
 - `t-damage-tint=none`
+- `t-drops=v16`
 - `t-explosion=v16`
 - `t-far-acc=none`
 - `t-far-color=material`
@@ -122,6 +123,7 @@ neoforge_version=unavailable (module disabled)
 - `t-skull=none`
 - `t-sky=e17`
 - `t-sort=none`
+- `t-unpack-make=r193`
 - `t-view-areaacc=none`
 - `t-weather=none`
 - `t-world-cache=r17`
@@ -161,6 +163,7 @@ Minecraft signatures CI extracted from this version's jar (`tools/probe/1.19.3.t
 - `common/src/main/resources/aetherium-common.mixins.json`
 - `common/src/main/java/com/aetherium/Capabilities.java`
 - `common/src/main/java/com/aetherium/client/AetheriumScreen.java`
+- `common/src/main/java/com/aetherium/client/ChunkUnpacking.java`
 - `common/src/main/java/com/aetherium/client/ClientHooks.java`
 - `common/src/main/java/com/aetherium/client/FarTerrainBridge.java`
 - `common/src/main/java/com/aetherium/client/FlightPreload.java`
@@ -201,6 +204,7 @@ Minecraft signatures CI extracted from this version's jar (`tools/probe/1.19.3.t
 - `common/src/main/java/com/aetherium/mixin/core/TuningBuildOrderMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningChunkSaveMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningCullMixin.java`
+- `common/src/main/java/com/aetherium/mixin/core/TuningDropsMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningFarDrawMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningGlintMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningLevelMixin.java`

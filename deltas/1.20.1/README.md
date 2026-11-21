@@ -70,6 +70,7 @@ neoforge_version=unavailable (module disabled)
 - `t-build-order=b17`
 - `t-chunk-save=v16`
 - `t-cull=c17`
+- `t-drops=v16`
 - `t-far-color=map`
 - `t-far-draw=j193`
 - `t-far-gl=id17`
@@ -148,6 +149,7 @@ Minecraft signatures CI extracted from this version's jar (`tools/probe/1.20.1.t
 - `common/src/main/java/com/aetherium/mixin/core/TuningBuildOrderMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningChunkSaveMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningCullMixin.java`
+- `common/src/main/java/com/aetherium/mixin/core/TuningDropsMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningFarDrawMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningGlintMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningLevelMixin.java`

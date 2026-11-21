@@ -94,6 +94,7 @@ neoforge_version=unavailable (module disabled)
 - `t-crowd=none`
 - `t-cull=v16`
 - `t-damage-tint=v16`
+- `t-drops=v16`
 - `t-explosion=v16`
 - `t-far-acc=none`
 - `t-far-color=material`
@@ -134,6 +135,11 @@ neoforge_version=unavailable (module disabled)
 - `t-skull=v16`
 - `t-sky=v16`
 - `t-sort=none`
+- `t-tex-atlas=v16`
+- `t-tex-sprite=v16`
+- `t-unpack-make=v16`
+- `t-unpack-net=v16`
+- `t-unpack-sec=v16`
 - `t-view-areaacc=v16`
 - `t-weather=none`
 - `t-world-cache=v16`
@@ -175,6 +181,7 @@ Minecraft signatures CI extracted from this version's jar (`tools/probe/1.16.5.t
 - `common/src/main/java/com/aetherium/client/AetheriumScreen.java`
 - `common/src/main/java/com/aetherium/client/AutoBench.java`
 - `common/src/main/java/com/aetherium/client/ChestQuads.java`
+- `common/src/main/java/com/aetherium/client/ChunkUnpacking.java`
 - `common/src/main/java/com/aetherium/client/ClientHooks.java`
 - `common/src/main/java/com/aetherium/client/ColorFilter.java`
 - `common/src/main/java/com/aetherium/client/FarTerrain.java`
@@ -253,6 +260,7 @@ Minecraft signatures CI extracted from this version's jar (`tools/probe/1.16.5.t
 - `common/src/main/java/com/aetherium/mixin/core/TuningCrowdMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningCullMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningDestroyMixin.java`
+- `common/src/main/java/com/aetherium/mixin/core/TuningDropsMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningEnderLidMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningEntityTickMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningFarDrawMixin.java`
@@ -281,6 +289,10 @@ Minecraft signatures CI extracted from this version's jar (`tools/probe/1.16.5.t
 - `common/src/main/java/com/aetherium/mixin/core/TuningSkullMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningSkyMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningSnapshotMixin.java`
+- `common/src/main/java/com/aetherium/mixin/core/TuningTextureAtlasMixin.java`
+- `common/src/main/java/com/aetherium/mixin/core/TuningTextureSpriteMixin.java`
+- `common/src/main/java/com/aetherium/mixin/core/TuningUnpackNetMixin.java`
+- `common/src/main/java/com/aetherium/mixin/core/TuningUnpackSectionMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningViewAreaAccessor.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningWorldMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/VertexBufferMixin.java`

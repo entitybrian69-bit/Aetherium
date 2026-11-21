@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.DisplayName;
@@ -42,6 +41,19 @@ final class Tuning119LogicTest {
     @Test
     @DisplayName("Distant drops: one copy beyond 16 blocks, unchanged up close and outside a drop")
     void drops() {
+        final boolean was = Tuning.distantDrops;
+        Tuning.distantDrops = false;
+        assertEquals(5, DropDetail.copies(5, 30.0 * 30.0), "off");
+        Tuning.distantDrops = true;
+        try {
+            drops(true);
+        } finally {
+            Tuning.distantDrops = was;
+        }
+    }
+
+    private static void drops(final boolean on) {
+        assertTrue(on);
         assertEquals(5, DropDetail.copies(5, 15.0 * 15.0));
         assertEquals(1, DropDetail.copies(5, 17.0 * 17.0));
         assertEquals(1, DropDetail.copies(1, 40.0 * 40.0));
@@ -64,12 +76,12 @@ final class Tuning119LogicTest {
         assertNull(ChunkUnpack.take(data, 3), "not where a section starts");
         final ChunkUnpack.Taken first = ChunkUnpack.take(data, 0);
         assertNotNull(first);
-        assertSame(s0, first.section);
+        assertTrue(s0 == first.section);
         assertEquals(40, first.end);
         assertNull(ChunkUnpack.take(data, 0), "handed out once");
         final ChunkUnpack.Taken second = ChunkUnpack.take(data, 40);
         assertNotNull(second);
-        assertSame(s1, second.section);
+        assertTrue(s1 == second.section);
         assertEquals(100, second.end);
     }
 

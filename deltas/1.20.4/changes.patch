@@ -31,10 +31,10 @@ index 58ebebd..1b54e72 100644
      // @era:model-fast-else v16|mojang
      //~ public static final boolean FAST_MODELS = true;
 diff --git a/common/src/main/java/com/aetherium/client/ClientHooks.java b/common/src/main/java/com/aetherium/client/ClientHooks.java
-index 304df5d..dfd0280 100644
+index f19ce54..aab3045 100644
 --- a/common/src/main/java/com/aetherium/client/ClientHooks.java
 +++ b/common/src/main/java/com/aetherium/client/ClientHooks.java
-@@ -434,10 +434,10 @@ public final class ClientHooks {
+@@ -438,10 +438,10 @@ public final class ClientHooks {
      /** Opens vanilla's own video screen on top of ours (escape hatch). */
      public static void openVanillaVideoSettings(final Minecraft mc, final Screen parent) {
          bypassVideoScreen = true;
@@ -49,7 +49,7 @@ index 304df5d..dfd0280 100644
          // @era:screen-pkg-end
          bypassVideoScreen = false;
      }
-@@ -534,10 +534,10 @@ public final class ClientHooks {
+@@ -538,10 +538,10 @@ public final class ClientHooks {
      }
  
      private static boolean isVideoSettings(final Screen screen) {
@@ -1663,6 +1663,104 @@ index 018e37c..2e89aaf 100644
      // @era:t-chunk-save-else c214
      //~ @Unique
      //~ private static final int AETHERIUM$PER_TICK = 16;
+diff --git a/common/src/main/java/com/aetherium/mixin/core/TuningDropsMixin.java b/common/src/main/java/com/aetherium/mixin/core/TuningDropsMixin.java
+index 7b5a210..0f68b14 100644
+--- a/common/src/main/java/com/aetherium/mixin/core/TuningDropsMixin.java
++++ b/common/src/main/java/com/aetherium/mixin/core/TuningDropsMixin.java
+@@ -4,19 +4,19 @@ import com.aetherium.perf.DropDetail;
+ import net.minecraft.client.renderer.entity.ItemEntityRenderer;
+ import org.spongepowered.asm.mixin.Mixin;
+ import org.spongepowered.asm.mixin.injection.At;
+-// @era:t-drops-begin c205
++// @era:t-drops-begin v16
+ import com.aetherium.client.ClientHooks;
+-import com.llamalad7.mixinextras.injector.ModifyReturnValue;
++import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
++import com.llamalad7.mixinextras.sugar.Local;
+ import net.minecraft.client.Minecraft;
+ import net.minecraft.world.entity.item.ItemEntity;
+-import org.spongepowered.asm.mixin.injection.Inject;
+-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+-// @era:t-drops-else v16
++// @era:t-drops-else c205
+ //~ import com.aetherium.client.ClientHooks;
+-//~ import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
+-//~ import com.llamalad7.mixinextras.sugar.Local;
++//~ import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+ //~ import net.minecraft.client.Minecraft;
+ //~ import net.minecraft.world.entity.item.ItemEntity;
++//~ import org.spongepowered.asm.mixin.injection.Inject;
++//~ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+ // @era:t-drops-else c212
+ //~ import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+ //~ import net.minecraft.client.renderer.entity.state.ItemEntityRenderState;
+@@ -42,38 +42,38 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+  */
+ @Mixin(ItemEntityRenderer.class)
+ public abstract class TuningDropsMixin {
+-    // @era:t-drops-begin c205
+-    @Inject(method = "render(Lnet/minecraft/world/entity/item/ItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V",
+-            at = @At("HEAD"), require = 0)
+-    private void aetherium$enter(final ItemEntity entity, final float yaw, final float partialTick,
+-                                 final com.mojang.blaze3d.vertex.PoseStack pose,
+-                                 final net.minecraft.client.renderer.MultiBufferSource buffers, final int light,
+-                                 final CallbackInfo ci) {
++    // @era:t-drops-begin v16
++    @ModifyExpressionValue(method = "render(Lnet/minecraft/world/entity/item/ItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V",
++            at = @At(value = "INVOKE",
++                    target = "Lnet/minecraft/client/renderer/entity/ItemEntityRenderer;getRenderAmount(Lnet/minecraft/world/item/ItemStack;)I"),
++            require = 0)
++    private int aetherium$copies(final int copies, @Local(argsOnly = true) final ItemEntity entity) {
+         final net.minecraft.client.Camera camera = ClientHooks.mainCamera(Minecraft.getInstance());
+-        DropDetail.enter(camera == null ? -1.0 : entity.distanceToSqr(ClientHooks.cameraPosition(camera)));
++        return camera == null ? copies : DropDetail.copies(copies, entity.distanceToSqr(ClientHooks.cameraPosition(camera)));
+     }
++    // @era:t-drops-else c205
++    //~ @Inject(method = "render(Lnet/minecraft/world/entity/item/ItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V",
++            //~ at = @At("HEAD"), require = 0)
++    //~ private void aetherium$enter(final ItemEntity entity, final float yaw, final float partialTick,
++                                 //~ final com.mojang.blaze3d.vertex.PoseStack pose,
++                                 //~ final net.minecraft.client.renderer.MultiBufferSource buffers, final int light,
++                                 //~ final CallbackInfo ci) {
++        //~ final net.minecraft.client.Camera camera = ClientHooks.mainCamera(Minecraft.getInstance());
++        //~ DropDetail.enter(camera == null ? -1.0 : entity.distanceToSqr(ClientHooks.cameraPosition(camera)));
++    //~ }
+ 
+-    @Inject(method = "render(Lnet/minecraft/world/entity/item/ItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V",
+-            at = @At("RETURN"), require = 0)
+-    private void aetherium$leave(final ItemEntity entity, final float yaw, final float partialTick,
+-                                 final com.mojang.blaze3d.vertex.PoseStack pose,
+-                                 final net.minecraft.client.renderer.MultiBufferSource buffers, final int light,
+-                                 final CallbackInfo ci) {
+-        DropDetail.leave();
+-    }
++    //~ @Inject(method = "render(Lnet/minecraft/world/entity/item/ItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V",
++            //~ at = @At("RETURN"), require = 0)
++    //~ private void aetherium$leave(final ItemEntity entity, final float yaw, final float partialTick,
++                                 //~ final com.mojang.blaze3d.vertex.PoseStack pose,
++                                 //~ final net.minecraft.client.renderer.MultiBufferSource buffers, final int light,
++                                 //~ final CallbackInfo ci) {
++        //~ DropDetail.leave();
++    //~ }
+ 
+-    @ModifyReturnValue(method = "getRenderedAmount(I)I", at = @At("RETURN"), require = 0)
+-    private static int aetherium$copies(final int copies) {
+-        return DropDetail.copiesHere(copies);
+-    }
+-    // @era:t-drops-else v16
+-    //~ @ModifyExpressionValue(method = "render(Lnet/minecraft/world/entity/item/ItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V",
+-            //~ at = @At(value = "INVOKE",
+-                    //~ target = "Lnet/minecraft/client/renderer/entity/ItemEntityRenderer;getRenderAmount(Lnet/minecraft/world/item/ItemStack;)I"),
+-            //~ require = 0)
+-    //~ private int aetherium$copies(final int copies, @Local(argsOnly = true) final ItemEntity entity) {
+-        //~ final net.minecraft.client.Camera camera = ClientHooks.mainCamera(Minecraft.getInstance());
+-        //~ return camera == null ? copies : DropDetail.copies(copies, entity.distanceToSqr(ClientHooks.cameraPosition(camera)));
++    //~ @ModifyReturnValue(method = "getRenderedAmount(I)I", at = @At("RETURN"), require = 0)
++    //~ private static int aetherium$copies(final int copies) {
++        //~ return DropDetail.copiesHere(copies);
+     //~ }
+     // @era:t-drops-else c212
+     //~ @Inject(method = "render(Lnet/minecraft/client/renderer/entity/state/ItemEntityRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V",
 diff --git a/common/src/main/java/com/aetherium/mixin/core/TuningFarDrawMixin.java b/common/src/main/java/com/aetherium/mixin/core/TuningFarDrawMixin.java
 index 852237b..2cc9c6d 100644
 --- a/common/src/main/java/com/aetherium/mixin/core/TuningFarDrawMixin.java
@@ -2257,7 +2355,7 @@ index df6c58d..98d2889 100644
      // @era:zoom-cam-else align
      //~ @ModifyArg(method = "alignWithEntity", at = @At(value = "INVOKE",
 diff --git a/common/src/main/resources/aetherium-common.mixins.json b/common/src/main/resources/aetherium-common.mixins.json
-index c4ffc82..c6e8752 100644
+index ce8ceae..3106678 100644
 --- a/common/src/main/resources/aetherium-common.mixins.json
 +++ b/common/src/main/resources/aetherium-common.mixins.json
 @@ -3,7 +3,7 @@

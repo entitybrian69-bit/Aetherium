@@ -82,6 +82,7 @@ neoforge_version=21.7.25-beta
 - `t-crowd=c17`
 - `t-cull=c215`
 - `t-damage-tint=none`
+- `t-drops=s214`
 - `t-explosion=x212`
 - `t-far-acc=none`
 - `t-far-color=map`
@@ -122,6 +123,8 @@ neoforge_version=21.7.25-beta
 - `t-skull=none`
 - `t-sky=none`
 - `t-sort=s212`
+- `t-sound=r216`
+- `t-unpack-make=l212`
 - `t-view-areaacc=none`
 - `t-weather=w212`
 - `t-world-cache=r17`
@@ -158,6 +161,7 @@ Minecraft signatures CI extracted from this version's jar (`tools/probe/1.21.7.t
 
 - `gradle.properties`
 - `common/src/main/java/com/aetherium/Capabilities.java`
+- `common/src/main/java/com/aetherium/client/ChunkUnpacking.java`
 - `common/src/main/java/com/aetherium/client/ClientHooks.java`
 - `common/src/main/java/com/aetherium/client/CoalesceHooks.java`
 - `common/src/main/java/com/aetherium/client/FarTerrainBridge.java`
@@ -203,6 +207,7 @@ Minecraft signatures CI extracted from this version's jar (`tools/probe/1.21.7.t
 - `common/src/main/java/com/aetherium/mixin/core/TuningCloudsMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningCompileQueueMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningCullMixin.java`
+- `common/src/main/java/com/aetherium/mixin/core/TuningDropsMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningExplosionMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningFarDrawMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningFarGroupMixin.java`
@@ -223,6 +228,7 @@ Minecraft signatures CI extracted from this version's jar (`tools/probe/1.21.7.t
 - `common/src/main/java/com/aetherium/mixin/core/TuningSkinMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningSkyMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningSortMixin.java`
+- `common/src/main/java/com/aetherium/mixin/core/TuningSoundMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/TuningWeatherMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/VisibleSectionsMixin.java`
 - `common/src/main/java/com/aetherium/mixin/core/VisibleSpritesMixin.java`
