@@ -1,0 +1,17 @@
+1:Picked up JAVA_TOOL_OPTIONS: -Daetherium.smoke=/home/runner/work/Aetherium/Aetherium/smoke/26.3
+15:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/Aetherium.java:265: warning: [deprecation] URL(String) in URL has been deprecated
+18:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/config/Json.java:269: warning: [cast] redundant cast to String
+21:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/perf/DirectPool.java:30: warning: [rawtypes] found raw type: ConcurrentLinkedQueue
+27:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/qol/Scenery.java:146: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+30:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/client/TerrainRegions.java:219: warning: [rawtypes] found raw type: ArrayList
+36:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/client/ClientHooks.java:408: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+52:Picked up JAVA_TOOL_OPTIONS: -Daetherium.smoke=/home/runner/work/Aetherium/Aetherium/smoke/26.3
+56:	- aetherium 1.17.5
+62:[09:40:38] [main/INFO] (Overlap) Aetherium overlap check: 51 classes, 0 also changed by other mods, 0 options stepped aside
+68:[09:40:44] [Render thread/INFO] (AetheriumFabric) Aetherium 1.17.5 entry point ran on Fabric Loader 0.19.5 for Minecraft 26.3
+69:[09:40:44] [Render thread/INFO] (ConfigStore) No config file at /home/runner/work/_temp/tree/fabric/run/config/aetherium.json; writing defaults
+71:[09:40:44] [Render thread/INFO] (Aetherium) Aetherium 1.17.5 ready on fabric for MC 26.3 - backend OpenGL 3.0 - state=ACTIVE
+77:[09:40:46] [Render thread/ERROR] (Minecraft) Failed to create backend OpenGL
+79:com.mojang.renderpearl.api.device.BackendCreationException: Failed to create window for OpenGL context: Couldn't find matching GLX visual
+88:[09:40:46] [Render thread/ERROR] (Minecraft) Failed to create backend Vulkan
+90:com.mojang.renderpearl.api.device.BackendCreationException: Vulkan is not supported: Installed Vulkan doesn't implement the VK_KHR_surface extension

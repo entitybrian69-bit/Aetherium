@@ -1,0 +1,80 @@
+                - file:/home/runner/.gradle/caches/fabric-loom/minecraftMaven/org/apache/commons/commons-parent/34/commons-parent-34.pom
+                - file:/home/runner/work/_temp/tree/.gradle/loom-cache/minecraftMaven/org/apache/commons/commons-parent/34/commons-parent-34.pom
+                - https://maven.fabricmc.net/org/apache/commons/commons-parent/34/commons-parent-34.pom
+                - https://libraries.minecraft.net/org/apache/commons/commons-parent/34/commons-parent-34.pom
+                - https://libraries.minecraft.net/org/apache/commons/commons-parent/34/commons-parent-34.jar
+                - https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/34/commons-parent-34.jar
+                - https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/34/commons-parent-34.pom
+                - file:/home/runner/.m2/repository/org/apache/commons/commons-parent/34/commons-parent-34.pom
+   > Could not resolve org.apache.httpcomponents:httpcore:4.4.14.
+     Required by:
+         project ':fabric'
+      > Could not resolve org.apache.httpcomponents:httpcore:4.4.14.
+         > Could not parse POM https://libraries.minecraft.net/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.pom
+            > Could not find org.apache.httpcomponents:httpcomponents-core:4.4.14.
+              Searched in the following locations:
+                - file:/home/runner/work/_temp/tree/.gradle/loom-cache/remapped_mods/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.pom
+                - file:/home/runner/.gradle/caches/fabric-loom/minecraftMaven/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.pom
+                - file:/home/runner/work/_temp/tree/.gradle/loom-cache/minecraftMaven/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.pom
+                - https://maven.fabricmc.net/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.pom
+                - https://libraries.minecraft.net/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.pom
+                - https://libraries.minecraft.net/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.jar
+                - https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.jar
+                - https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.pom
+                - file:/home/runner/.m2/repository/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.pom
+   > Could not resolve all dependencies for configuration ':fabric:compileClasspath'.
+      > Could not find org.lwjgl:lwjgl:3.3.1.
+        Searched in the following locations:
+          - https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1.pom
+        Required by:
+            project ':fabric'
+   > Could not resolve all dependencies for configuration ':fabric:compileClasspath'.
+      > Could not find org.lwjgl:lwjgl-jemalloc:3.3.1.
+        Searched in the following locations:
+          - https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1.pom
+        Required by:
+            project ':fabric'
+   > Could not resolve all dependencies for configuration ':fabric:compileClasspath'.
+      > Could not find org.lwjgl:lwjgl-openal:3.3.1.
+        Searched in the following locations:
+          - https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1.pom
+        Required by:
+            project ':fabric'
+   > Could not resolve all dependencies for configuration ':fabric:compileClasspath'.
+      > Could not find org.lwjgl:lwjgl-opengl:3.3.1.
+        Searched in the following locations:
+          - https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1.pom
+        Required by:
+            project ':fabric'
+   > Could not resolve all dependencies for configuration ':fabric:compileClasspath'.
+      > Could not find org.lwjgl:lwjgl-glfw:3.3.1.
+        Searched in the following locations:
+          - https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1.pom
+        Required by:
+            project ':fabric'
+   > Could not resolve all dependencies for configuration ':fabric:compileClasspath'.
+      > Could not find org.lwjgl:lwjgl-stb:3.3.1.
+        Searched in the following locations:
+          - https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1.pom
+        Required by:
+            project ':fabric'
+   > Could not resolve all dependencies for configuration ':fabric:compileClasspath'.
+      > Could not find org.lwjgl:lwjgl-tinyfd:3.3.1.
+        Searched in the following locations:
+          - https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1.pom
+        Required by:
+            project ':fabric'
+> There are 26 more failures with identical causes.
+
+* Try:
+> The project declares repositories, effectively ignoring the repositories you have declared in the settings.
+   To determine how project repositories are declared, configure your build to fail on project repositories.
+   For more information, please refer to https://docs.gradle.org/9.4.1/userguide/declaring_repositories.html#sub:fail_build_on_project_repositories in the Gradle documentation.
+> If the artifact you are trying to retrieve can be found in the repository but without metadata in 'Maven POM' format, you need to adjust the 'metadataSources { ... }' of the repository declaration.
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 9s
+1 actionable task: 1 executed

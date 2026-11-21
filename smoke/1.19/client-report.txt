@@ -1,0 +1,1 @@
+1:Picked up JAVA_TOOL_OPTIONS: -Daetherium.smoke=/home/runner/work/Aetherium/Aetherium/smoke/1.19

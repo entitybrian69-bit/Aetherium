@@ -1,0 +1,40 @@
+11:> Task :fabric:compileJava FAILED
+16:* What went wrong:
+18:> Could not resolve all files for configuration ':fabric:compileClasspath'.
+19:   > Could not resolve all dependencies for configuration ':fabric:compileClasspath'.
+20:      > Could not find org.jetbrains:annotations:26.0.2.
+33:   > Could not resolve all dependencies for configuration ':fabric:compileClasspath'.
+34:      > Could not find io.github.llamalad7:mixinextras-common:0.5.3.
+47:   > Could not resolve org.ow2.asm:asm:9.8.
+50:      > Could not resolve org.ow2.asm:asm:9.8.
+51:         > Could not parse POM https://maven.fabricmc.net/org/ow2/asm/asm/9.8/asm-9.8.pom
+52:            > Could not find org.ow2:ow2:1.5.1.
+63:   > Could not resolve com.github.oshi:oshi-core:5.8.5.
+66:      > Could not resolve com.github.oshi:oshi-core:5.8.5.
+67:         > Could not parse POM https://libraries.minecraft.net/com/github/oshi/oshi-core/5.8.5/oshi-core-5.8.5.pom
+68:            > Could not find com.github.oshi:oshi-parent:5.8.5.
+79:   > Could not resolve org.slf4j:slf4j-api:1.8.0-beta4.
+82:      > Could not resolve org.slf4j:slf4j-api:1.8.0-beta4.
+83:         > Could not parse POM https://libraries.minecraft.net/org/slf4j/slf4j-api/1.8.0-beta4/slf4j-api-1.8.0-beta4.pom
+84:            > Could not find org.slf4j:slf4j-parent:1.8.0-beta4.
+95:   > Could not resolve org.apache.logging.log4j:log4j-slf4j18-impl:2.17.0.
+98:      > Could not resolve org.apache.logging.log4j:log4j-slf4j18-impl:2.17.0.
+99:         > Could not parse POM https://libraries.minecraft.net/org/apache/logging/log4j/log4j-slf4j18-impl/2.17.0/log4j-slf4j18-impl-2.17.0.pom
+100:            > Could not find org.apache.logging.log4j:log4j:2.17.0.
+111:   > Could not resolve net.sf.jopt-simple:jopt-simple:5.0.4.
+114:      > Could not resolve net.sf.jopt-simple:jopt-simple:5.0.4.
+115:         > Could not parse POM https://libraries.minecraft.net/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.pom
+116:            > Could not find org.sonatype.oss:oss-parent:7.
+127:   > Could not resolve io.netty:netty-common:4.1.77.Final.
+130:      > Could not resolve io.netty:netty-common:4.1.77.Final.
+131:         > Could not parse POM https://libraries.minecraft.net/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.pom
+132:            > Could not find io.netty:netty-parent:4.1.77.Final.
+143:   > Could not resolve com.google.guava:failureaccess:1.0.1.
+146:      > Could not resolve com.google.guava:failureaccess:1.0.1.
+147:         > Could not parse POM https://libraries.minecraft.net/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom
+148:            > Could not find com.google.guava:guava-parent:26.0-android.
+159:   > Could not resolve com.google.guava:guava:31.0.1-jre.
+162:      > Could not resolve com.google.guava:guava:31.0.1-jre.
+163:         > Could not parse POM https://libraries.minecraft.net/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.pom
+164:            > Could not find com.google.guava:guava-parent:31.0.1-jre.
+175:   > Could not resolve org.apache.commons:commons-lang3:3.12.0.

@@ -1,0 +1,80 @@
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.16.14.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at knot/net.minecraft.client.model.geom.LayerDefinitions.createRoots(LayerDefinitions.java:389) ~[minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.client.model.geom.EntityModelSet.onResourceManagerReload(EntityModelSet.java:24) ~[minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.server.packs.resources.ResourceManagerReloadListener.method_29490(ResourceManagerReloadListener.java:16) ~[minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at knot/net.minecraft.server.packs.resources.SimpleReloadInstance.method_18365(SimpleReloadInstance.java:68) ~[minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:164) ~[minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:138) ~[minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:123) ~[minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.client.Minecraft.mixinextras$bridge$runAllTasks$248(Minecraft.java) ~[minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.client.Minecraft.wrapOperation$zbd000$aetherium$budgetTasks(Minecraft.java:5128) [minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.client.Minecraft.runTick(Minecraft.java:1307) [minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.client.Minecraft.run(Minecraft.java:933) [minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.client.main.Main.main(Main.java:265) [minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+[09:38:14] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[09:38:14] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[09:38:14] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[09:38:14] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[09:38:14] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[09:38:22] [Render thread/WARN] (FabricLoader/Mixin) Mixin apply for mod aetherium failed aetherium-common.mixins.json:TuningChunkSaveMixin from mod aetherium -> net.minecraft.server.level.ChunkMap: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException @Shadow method saveChunkIfNeeded in aetherium-common.mixins.json:TuningChunkSaveMixin from mod aetherium was not located in the target class net.minecraft.server.level.ChunkMap. No refMap loaded.
+org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: @Shadow method saveChunkIfNeeded in aetherium-common.mixins.json:TuningChunkSaveMixin from mod aetherium was not located in the target class net.minecraft.server.level.ChunkMap. No refMap loaded.
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attachSpecialMethod(MixinPreProcessorStandard.java:436) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attachShadowMethod(MixinPreProcessorStandard.java:412) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attachMethods(MixinPreProcessorStandard.java:340) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:299) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.createContextFor(MixinPreProcessorStandard.java:277) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.createContextFor(MixinInfo.java:1292) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:203) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) [sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:234) [sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) [sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:422) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) [fabric-loader-0.16.14.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) [?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:536) [?:?]
+	at java.base/java.lang.Class.forName(Class.java:515) [?:?]
+	at knot/com.aetherium.mixin.SmokeTest.tick(SmokeTest.java:146) [main/:?]
+	at knot/com.aetherium.client.ClientHooks.onClientTick(ClientHooks.java:224) [main/:?]
+	at knot/net.minecraft.client.Minecraft.handler$zza000$aetherium$tick(Minecraft.java:3124) [minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.client.Minecraft.tick(Minecraft.java:1949) [minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.client.Minecraft.runTick(Minecraft.java:1313) [minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.client.Minecraft.run(Minecraft.java:933) [minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at knot/net.minecraft.client.main.Main.main(Main.java:265) [minecraft-merged-1.21.3-loom.mappings.1_21_3.layered+hash.2198-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+[09:38:22] [Render thread/INFO] (Minecraft) [STDOUT]: [Aetherium smoke] report
+minecraft 1.21.3
+targets 62, failed 0
+unused injectors 1
+UNUSED MeshAllocMixin -> net.minecraft.client.renderer.block.ModelBlockRenderer :: redirect$zcb000$aetherium$directions
+applied 100: AoFaceAllocMixin BakedQuadAccessor BlockEntityCullMixin BlockParticleMixin BlockSpriteUseMixin BlockableEventLoopInvoker ChunkUploadMixin ClientTickMixin CloudHeightMixin CoalesceMixin CompiledChunkSpritesMixin EntityCullMixin EntityLightMixin EntityOcclusionMixin FastParticleMixin FogControlMixin FogCullMixin FrameMixin FramePacingMixin FreelookCameraMixin FreelookMouseMixin FrustumArmMixin FrustumCaptureMixin GlowSeenMixin GuiMixin ItemSpriteUseMixin KeyMappingAccessor LightLevelMixin MainTargetAccessor MeshAllocMixin MeshExecutorMixin OptionInstanceMixin OptionsMixin PacketBudgetMixin ParticleMixin ParticleTypeMixin QolContainerScreenMixin QolDeathScreenMixin QolFireMixin QolGuiMixin QolHandMixin QolPlacementMixin QolScrollMixin QolSlotMixin QolTooltipMixin RenderChunkDirtyMixin RenderScaleMixin ScreenSwapMixin SectionCullBufferMixin SectionCullLayerMixin SectionCullOwnerMixin SectionOcclusionGraphAccessor SectionSpritesMixin SkyMixin SpriteActivityMixin TextureAtlasMixin TuningAoCacheMixin TuningAutosaveMixin TuningBeamMixin TuningBlockEntityMixin TuningCompileQueueMixin TuningCrowdMixin TuningDropsMixin TuningExplosionMixin TuningFarDrawMixin TuningFrameItemMixin TuningGlStateMixin TuningGlintMixin TuningGrassMixin TuningHttpTextureAccessor TuningLayersMixin TuningLeafCullMixin TuningLeavesMixin TuningLightMixin TuningLightmapMixin TuningLoadingMixin TuningMapMixin TuningMinecartMixin TuningNameTagMixin TuningPortalMixin TuningServerIdleMixin TuningShadowMixin TuningSignMixin TuningSkinMixin TuningSortMixin TuningSoundMixin TuningTextWidthMixin TuningTextureAtlasMixin TuningTextureSpriteMixin TuningUnpackChunkMixin TuningUnpackNetMixin TuningUnpackSectionMixin TuningWeatherMixin TuningWorldMixin VisibleSectionsMixin VisibleSpritesMixin WeatherMixin ZoomCameraMixin ZoomFovMixin ZoomMouseMixin
+tuning options available: perf.low_end_mode perf.hitch_guard perf.redstone_particle_limit perf.lazy_far_rebuilds perf.dynamic_fps perf.menu_fps perf.loading_screen_gc perf.entity_detail_distance perf.crowd_culling perf.dimension_culling perf.translucent_sort_throttle quality.light_weather perf.explosion_particles perf.light_updates perf.map_updates perf.smooth_autosave perf.flight_preload perf.block_entity_limit perf.model_lod perf.menu_world_cache perf.directional_culling perf.view_first_building perf.portal_preload perf.fast_loading perf.server_idle perf.ocean_floor_culling perf.end_optimizations perf.gl_state_cache perf.lightmap_rate perf.ao_cache perf.async_skins perf.text_width_cache perf.sound_culling perf.same_sound_limit perf.distant_drops perf.chunk_unpacking perf.free_texture_copies quality.far_terrain quality.shader_preset quality.fast_grass quality.leaves quality.leaf_culling quality.enchant_glint quality.end_crystal_beams
+render scale ok (427x240 -> 854x480)
+far terrain ok (pixel ff0000)
+food outline 20 px from fallback (vanilla shank)
+1.19.0 0 sections unpacked early, 0 used, 0 read normally; 0 out of range, 0 over the per-tick limit; textures freed 3152 (12692 KiB)
+stepped aside 0
+overlap check 62 classes, 0 also changed by other mods, 0 options stepped aside
+
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1795253861104.json
+
+[Incubating] Problems report is available at: file:///home/runner/work/_temp/tree/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 44s
+7 actionable tasks: 6 executed, 1 up-to-date

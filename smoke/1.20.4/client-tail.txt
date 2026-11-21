@@ -1,0 +1,80 @@
+[09:38:33] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[09:38:33] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[09:38:33] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[09:38:33] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[09:38:33] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[09:38:33] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[09:38:33] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[09:38:34] [Render thread/WARN] (FabricLoader/Mixin) Mixin apply for mod aetherium failed aetherium-common.mixins.json:TuningNameTagMixin from mod aetherium -> net.minecraft.client.renderer.entity.EntityRenderer: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException Invalid descriptor on aetherium-common.mixins.json:TuningNameTagMixin from mod aetherium->@Inject::aetherium$livingNameTag(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V! Expected (Lnet/minecraft/world/entity/Entity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V but found (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V [ -> Inject -> aetherium-common.mixins.json:TuningNameTagMixin from mod aetherium->@Inject::aetherium$livingNameTag(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V]
+org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Invalid descriptor on aetherium-common.mixins.json:TuningNameTagMixin from mod aetherium->@Inject::aetherium$livingNameTag(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V! Expected (Lnet/minecraft/world/entity/Entity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V but found (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V [ -> Inject -> aetherium-common.mixins.json:TuningNameTagMixin from mod aetherium->@Inject::aetherium$livingNameTag(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V]
+	at org.spongepowered.asm.mixin.injection.callback.CallbackInjector.inject(CallbackInjector.java:560) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.injection.callback.CallbackInjector.inject(CallbackInjector.java:490) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.injection.code.Injector.inject(Injector.java:284) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.inject(InjectionInfo.java:508) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1483) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyInjections(MixinApplicatorStandard.java:752) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:330) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:246) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:234) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) ~[sponge-mixin-0.15.5+mixin.0.8.7.jar:0.15.5+mixin.0.8.7]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:422) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.16.14.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.defineClassFwd(KnotClassLoader.java:160) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:355) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.16.14.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at net.minecraft.client.model.geom.LayerDefinitions.createRoots(LayerDefinitions.java:186) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.client.model.geom.EntityModelSet.onResourceManagerReload(EntityModelSet.java:24) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.server.packs.resources.ResourceManagerReloadListener.method_29490(ResourceManagerReloadListener.java:15) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18365(SimpleReloadInstance.java:69) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:156) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:130) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:115) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.client.Minecraft.mixinextras$bridge$runAllTasks$262(Minecraft.java) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.client.Minecraft.wrapOperation$zbd000$aetherium$budgetTasks(Minecraft.java:5261) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1283) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:888) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:265) ~[minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.2198-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar:?]
+[09:38:34] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[09:38:34] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[09:38:34] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[09:38:34] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[09:38:34] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[09:38:41] [Render thread/INFO] (Minecraft) [STDOUT]: [Aetherium smoke] report
+minecraft 1.20.4
+targets 65, failed 0
+unused injectors 2
+UNUSED MeshAllocMixin -> net.minecraft.client.renderer.block.ModelBlockRenderer :: redirect$zcb000$aetherium$directions
+UNUSED TuningFarDrawMixin -> net.minecraft.client.renderer.LevelRenderer :: handler$zdp000$aetherium$farTerrain
+applied 108: AoFaceAllocMixin BakedQuadAccessor BlockEntityCullMixin BlockParticleMixin BlockSpriteUseMixin BlockableEventLoopInvoker BufferBuilderAccessor ChunkUploadMixin ClientTickMixin CloudHeightMixin CoalesceMixin CompiledChunkSpritesMixin DefaultedVertexAccessor EntityCullMixin EntityLightMixin EntityOcclusionMixin FastModelMixin FastParticleMixin FogControlMixin FogCullMixin FrameMixin FramePacingMixin FreelookCameraMixin FreelookMouseMixin FrustumArmMixin FrustumCaptureMixin GlowSeenMixin GuiMixin ItemSpriteUseMixin KeyMappingAccessor LightLevelMixin MainTargetAccessor MeshAllocMixin MeshExecutorMixin ModelCubeMixin ModelPolygonMixin ModelVertexMixin OptionInstanceMixin OptionsMixin PacketBudgetMixin ParticleMixin ParticleTypeMixin QolContainerScreenMixin QolDeathScreenMixin QolFireMixin QolGuiMixin QolHandMixin QolPlacementMixin QolScrollMixin QolSlotMixin QolTooltipMixin RenderChunkDirtyMixin RenderScaleMixin ScreenSwapMixin SectionCullBufferMixin SectionCullLayerMixin SectionCullOwnerMixin SectionOcclusionGraphAccessor SectionSpritesMixin SkyMixin SpriteActivityMixin TextureAtlasMixin TuningAoCacheMixin TuningAutosaveMixin TuningBeamMixin TuningBlockEntityMixin TuningBuildOrderMixin TuningChunkSaveMixin TuningCrowdMixin TuningCullMixin TuningDropsMixin TuningExplosionMixin TuningFarDrawMixin TuningFrameItemMixin TuningGlStateMixin TuningGlintMixin TuningGrassMixin TuningHttpTextureAccessor TuningLayersMixin TuningLeafCullMixin TuningLeavesMixin TuningLevelMixin TuningLightMixin TuningLightmapMixin TuningLoadingMixin TuningMapMixin TuningMinecartMixin TuningNameTagMixin TuningPortalMixin TuningServerIdleMixin TuningShadowMixin TuningSignMixin TuningSkinMixin TuningSkyMixin TuningSoundMixin TuningTextWidthMixin TuningTextureAtlasMixin TuningTextureSpriteMixin TuningUnpackChunkMixin TuningUnpackNetMixin TuningUnpackSectionMixin TuningWorldMixin VisibleSectionsMixin VisibleSpritesMixin WeatherMixin ZoomCameraMixin ZoomFovMixin ZoomMouseMixin
+tuning options available: perf.low_end_mode perf.hitch_guard perf.redstone_particle_limit perf.lazy_far_rebuilds perf.dynamic_fps perf.menu_fps perf.loading_screen_gc perf.entity_detail_distance perf.crowd_culling perf.dimension_culling perf.translucent_sort_throttle quality.light_weather perf.explosion_particles perf.light_updates perf.map_updates perf.smooth_autosave perf.flight_preload perf.block_entity_limit perf.model_lod perf.menu_world_cache perf.directional_culling perf.view_first_building perf.portal_preload perf.fast_loading perf.server_idle perf.ocean_floor_culling perf.end_optimizations perf.gl_state_cache perf.lightmap_rate perf.ao_cache perf.async_skins perf.text_width_cache perf.sound_culling perf.same_sound_limit perf.distant_drops perf.chunk_unpacking perf.free_texture_copies quality.far_terrain quality.shader_preset quality.cloud_distance quality.fast_grass quality.leaves quality.leaf_culling quality.enchant_glint quality.end_crystal_beams
+render scale ok (427x240 -> 854x480)
+far terrain ok (pixel ff0000)
+food outline 20 px from fallback (vanilla shank)
+1.19.0 0 sections unpacked early, 0 used, 0 read normally; 0 out of range, 0 over the per-tick limit; textures freed 2891 (11556 KiB)
+stepped aside 0
+overlap check 65 classes, 0 also changed by other mods, 0 options stepped aside
+
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1795253870914.json
+
+[Incubating] Problems report is available at: file:///home/runner/work/_temp/tree/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 55s
+7 actionable tasks: 6 executed, 1 up-to-date

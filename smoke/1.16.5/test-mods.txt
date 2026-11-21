@@ -1,3 +1,0 @@
-test mod lithium: mc1.16.5-0.6.6 -> lithium-fabric-mc1.16.5-0.6.6.jar
-test mod ferrite-core: 2.1.1-fabric -> ferritecore-2.1.1-fabric.jar (wanted 2.1.1)
-test mod modernfix: 5.18.0+mc1.16.5 -> modernfix-fabric-5.18.0+mc1.16.5.jar

@@ -1,0 +1,21 @@
+1:Picked up JAVA_TOOL_OPTIONS: -Daetherium.smoke=/home/runner/work/Aetherium/Aetherium/smoke/1.17
+12:Picked up JAVA_TOOL_OPTIONS: -Daetherium.smoke=/home/runner/work/Aetherium/Aetherium/smoke/1.17
+13:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/config/Json.java:269: warning: [cast] redundant cast to String
+16:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/perf/DirectPool.java:30: warning: [rawtypes] found raw type: ConcurrentLinkedQueue
+22:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/client/TerrainRegions.java:219: warning: [rawtypes] found raw type: ArrayList
+28:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/mixin/core/TextureAtlasMixin.java:82: warning: [deprecation] LOCATION_BLOCKS in TextureAtlas has been deprecated
+31:/home/runner/work/_temp/tree/common/src/main/java/com/aetherium/mixin/core/TextureAtlasMixin.java:94: warning: [deprecation] LOCATION_BLOCKS in TextureAtlas has been deprecated
+47:Picked up JAVA_TOOL_OPTIONS: -Daetherium.smoke=/home/runner/work/Aetherium/Aetherium/smoke/1.17
+50:	- aetherium 1.17.5
+58:[09:36:03] [main/INFO] (Overlap) Aetherium overlap check: 68 classes, 0 also changed by other mods, 0 options stepped aside
+65:[09:36:08] [Render thread/INFO] (AetheriumFabric) Aetherium 1.17.5 entry point ran on Fabric Loader 0.16.14 for Minecraft 1.17
+66:[09:36:08] [Render thread/INFO] (ConfigStore) No config file at /home/runner/work/_temp/tree/fabric/run/config/aetherium.json; writing defaults
+68:[09:36:08] [Render thread/INFO] (Aetherium) Aetherium 1.17.5 ready on fabric for MC 1.17 - backend OpenGL 3.0 - state=ACTIVE
+70:[09:36:11] [Render thread/WARN] (Minecraft) ERROR : Couldn't load Narrator library : Unable to load library 'fliteWrapper':
+74:[09:36:11] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+100:[09:36:14] [Render thread/ERROR] (Minecraft) Error starting SoundSystem. Turning off sounds & music
+101:java.lang.IllegalStateException: Failed to open OpenAL device
+137:[09:36:14] [Render thread/WARN] (FabricLoader/Mixin) Mixin apply for mod aetherium failed aetherium-common.mixins.json:TuningNameTagMixin from mod aetherium -> net.minecraft.client.renderer.entity.EntityRenderer: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException Invalid descriptor on aetherium-common.mixins.json:TuningNameTagMixin from mod aetherium->@Inject::aetherium$livingNameTag(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V! Expected (Lnet/minecraft/world/entity/Entity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V but found (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V [ -> Inject -> aetherium-common.mixins.json:TuningNameTagMixin from mod aetherium->@Inject::aetherium$livingNameTag(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V]
+138:org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Invalid descriptor on aetherium-common.mixins.json:TuningNameTagMixin from mod aetherium->@Inject::aetherium$livingNameTag(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V! Expected (Lnet/minecraft/world/entity/Entity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V but found (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V [ -> Inject -> aetherium-common.mixins.json:TuningNameTagMixin from mod aetherium->@Inject::aetherium$livingNameTag(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V]
+246:[09:36:21] [Render thread/INFO] (Minecraft) [STDOUT]: [Aetherium smoke] report
+250:UNUSED MeshAllocMixin -> net.minecraft.client.renderer.block.ModelBlockRenderer :: redirect$zce000$aetherium$directions

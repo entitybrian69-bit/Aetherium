@@ -1,0 +1,80 @@
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:726) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18365(SimpleReloadInstance.java:71) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:101) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18367(SimpleReloadInstance.java:70) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:572) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:726) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18365(SimpleReloadInstance.java:71) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:101) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18367(SimpleReloadInstance.java:70) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:572) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:726) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18365(SimpleReloadInstance.java:71) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:101) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18367(SimpleReloadInstance.java:70) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:572) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:726) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18365(SimpleReloadInstance.java:71) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:101) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18367(SimpleReloadInstance.java:70) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:572) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:726) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18365(SimpleReloadInstance.java:71) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:101) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.method_18367(SimpleReloadInstance.java:70) ~[minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:572) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:726) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at com.mojang.blaze3d.systems.RenderSystem.replayQueue(RenderSystem.java:207) [minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:194) [minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:310) [minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1142) [minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:733) [minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-1.18-loom.mappings.1_18.layered+hash.2198-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+[09:36:14] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[09:36:14] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[09:36:14] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[09:36:21] [Render thread/INFO] (Minecraft) [STDOUT]: [Aetherium smoke] report
+minecraft 1.18
+targets 67, failed 0
+unused injectors 1
+UNUSED MeshAllocMixin -> net.minecraft.client.renderer.block.ModelBlockRenderer :: redirect$zcb000$aetherium$directions
+applied 113: AoFaceAllocMixin BakedQuadAccessor BlockEntityCullMixin BlockParticleMixin BlockSpriteUseMixin BlockableEventLoopInvoker BufferBuilderAccessor ChunkUploadMixin ClientTickMixin CloudHeightMixin CoalesceMixin CompiledChunkSpritesMixin DefaultedVertexAccessor EntityCullMixin EntityLightMixin EntityOcclusionMixin FastModelMixin FastParticleMixin FogControlMixin FogCullMixin FrameMixin FramePacingMixin FreelookCameraMixin FreelookMouseMixin FrustumArmMixin FrustumCaptureMixin GlowSeenMixin GuiMixin ItemSpriteUseMixin KeyMappingAccessor LazyDataFixersMixin LightLevelMixin MainTargetAccessor Matrix3fAccessor MeshAllocMixin MeshExecutorMixin ModelCubeMixin ModelPolygonMixin ModelVertexMixin OptionsMixin PacketBudgetMixin ParticleMixin ParticleTypeMixin QolContainerScreenMixin QolDeathScreenMixin QolFireMixin QolGuiMixin QolHandMixin QolPlacementMixin QolScrollMixin QolSlotMixin QolTooltipMixin RenderChunkDirtyMixin RenderChunkInfoAccessor RenderChunkInfoMixin RenderScaleMixin ScreenSwapMixin SectionCullBufferMixin SectionCullLayerMixin SectionCullOwnerMixin SectionSpritesMixin SkyMixin SpriteActivityMixin TextureAtlasMixin TuningAoCacheMixin TuningAutosaveMixin TuningBeamMixin TuningBlockEntityMixin TuningBuildOrderMixin TuningChunkSaveMixin TuningCrowdMixin TuningCullMixin TuningDropsMixin TuningExplosionMixin TuningFarAreaAccessor TuningFarDrawMixin TuningFarViewAccessor TuningFrameItemMixin TuningGlStateMixin TuningGlintMixin TuningGrassMixin TuningHttpTextureAccessor TuningLayersMixin TuningLeafCullMixin TuningLeavesMixin TuningLevelMixin TuningLightMixin TuningLightmapMixin TuningLoadingMixin TuningMapMixin TuningMinecartMixin TuningNameTagMixin TuningPortalMixin TuningServerIdleMixin TuningServerLightMixin TuningShadowMixin TuningSignMixin TuningSkinMixin TuningSkyMixin TuningSoundMixin TuningTextWidthMixin TuningTextureAtlasMixin TuningTextureSpriteMixin TuningUnpackChunkMixin TuningUnpackNetMixin TuningUnpackSectionMixin TuningWorldMixin VisibleSectionsMixin VisibleSpritesMixin WeatherMixin ZoomCameraMixin ZoomFovMixin ZoomMouseMixin
+tuning options available: perf.low_end_mode perf.hitch_guard perf.redstone_particle_limit perf.lazy_far_rebuilds perf.dynamic_fps perf.menu_fps perf.loading_screen_gc perf.entity_detail_distance perf.crowd_culling perf.dimension_culling perf.translucent_sort_throttle quality.light_weather perf.explosion_particles perf.light_updates perf.map_updates perf.smooth_autosave perf.flight_preload perf.block_entity_limit perf.model_lod perf.menu_world_cache perf.server_lighting perf.directional_culling perf.view_first_building perf.portal_preload perf.fast_loading perf.server_idle perf.ocean_floor_culling perf.end_optimizations perf.gl_state_cache perf.lightmap_rate perf.ao_cache perf.async_skins perf.text_width_cache perf.sound_culling perf.same_sound_limit perf.distant_drops perf.chunk_unpacking perf.free_texture_copies quality.far_terrain quality.shader_preset quality.cloud_distance quality.fast_grass quality.leaves quality.leaf_culling quality.enchant_glint quality.end_crystal_beams
+render scale ok (427x240 -> 854x480)
+far terrain ok (pixel ff0000)
+food outline 20 px from fallback (vanilla shank)
+1.19.0 0 sections unpacked early, 0 used, 0 read normally; 0 out of range, 0 over the per-tick limit; textures freed 1567 (4787 KiB)
+stepped aside 0
+overlap check 67 classes, 0 also changed by other mods, 0 options stepped aside
+
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1795253735200.json
+
+[Incubating] Problems report is available at: file:///home/runner/work/_temp/tree/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 50s
+8 actionable tasks: 7 executed, 1 up-to-date
