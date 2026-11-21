@@ -539,6 +539,134 @@
   "file": 9256804,
   "project": 1749327
  },
+ "aetherium-fabric-1.19.0+1.16.5.jar": {
+  "file": 9730574,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.17.1.jar": {
+  "file": 9730576,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.17.jar": {
+  "file": 9730575,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.18.1.jar": {
+  "file": 9730579,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.18.2.jar": {
+  "file": 9730580,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.18.jar": {
+  "file": 9730578,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.19.1.jar": {
+  "file": 9730582,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.19.2.jar": {
+  "file": 9730584,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.19.3.jar": {
+  "file": 9730585,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.19.4.jar": {
+  "file": 9730586,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.19.jar": {
+  "file": 9730581,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.20.1.jar": {
+  "file": 9730591,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.20.2.jar": {
+  "file": 9730592,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.20.3.jar": {
+  "file": 9730594,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.20.5.jar": {
+  "file": 9730595,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.20.6.jar": {
+  "file": 9730596,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.20.jar": {
+  "file": 9730588,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.1.jar": {
+  "file": 9730600,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.10.jar": {
+  "file": 9730613,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.11.jar": {
+  "file": 9730614,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.2.jar": {
+  "file": 9730602,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.3.jar": {
+  "file": 9730604,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.4.jar": {
+  "file": 9730606,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.5.jar": {
+  "file": 9730607,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.6.jar": {
+  "file": 9730608,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.7.jar": {
+  "file": 9730609,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.8.jar": {
+  "file": 9730611,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.9.jar": {
+  "file": 9730612,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+1.21.jar": {
+  "file": 9730597,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+26.1.jar": {
+  "file": 9730616,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+26.2.jar": {
+  "file": 9730618,
+  "project": 1749327
+ },
+ "aetherium-fabric-1.19.0+26.3.jar": {
+  "file": 9730619,
+  "project": 1749327
+ },
  "aetherium-fabric-1.8.2+1.16.5.jar": {
   "file": 9218078,
   "project": 1749327
@@ -941,6 +1069,70 @@
  },
  "aetherium-neoforge-1.17.0+26.3.jar": {
   "file": 9256830,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.20.6.jar": {
+  "file": 9730620,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.1.jar": {
+  "file": 9730623,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.10.jar": {
+  "file": 9730635,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.11.jar": {
+  "file": 9730636,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.2.jar": {
+  "file": 9730624,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.3.jar": {
+  "file": 9730625,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.4.jar": {
+  "file": 9730626,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.5.jar": {
+  "file": 9730628,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.6.jar": {
+  "file": 9730629,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.7.jar": {
+  "file": 9730630,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.8.jar": {
+  "file": 9730631,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.9.jar": {
+  "file": 9730634,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+1.21.jar": {
+  "file": 9730621,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+26.1.jar": {
+  "file": 9730637,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+26.2.jar": {
+  "file": 9730638,
+  "project": 1749357
+ },
+ "aetherium-neoforge-1.19.0+26.3.jar": {
+  "file": 9730639,
   "project": 1749357
  },
  "aetherium-neoforge-1.8.2+1.20.4.jar": {
