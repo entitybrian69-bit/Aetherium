@@ -6,6 +6,9 @@ name: ship
 #   publish a REAL (not draft) release v<mod_version>+<mcversion> with the jars it built
 #   (only when that version compiled AND passed its tests),
 #   then rewrite DOWNLOADS.md from the releases that actually exist and commit it.
+#   A re-run is safe: releases are edited in place, and the Modrinth and CurseForge publishers
+#   skip what is already uploaded, so a version whose leg failed (a dependency download that
+#   timed out) is filled in by simply running again.
 #
 # Why the release happens here and not in build.yml: build.yml proves one version
 # (1.21.1) on three OSes, which is a correctness matrix, not a shipping matrix.
