@@ -37,6 +37,8 @@ not shipped - the table only ever lists what exists, never what should exist.
 | 1.20.2 | Forge/NeoForge | *none: this row pins no (Neo)Forge loader; see VERIFICATION.md* |
 | 1.20.3 | Fabric | [aetherium-fabric-1.19.0+1.20.3.jar](https://github.com/entitybrian69-bit/Aetherium/releases/download/v1.19.0+1.20.3/aetherium-fabric-1.19.0+1.20.3.jar) |
 | 1.20.3 | Forge/NeoForge | *none: this row pins no (Neo)Forge loader; see VERIFICATION.md* |
+| 1.20.4 | Fabric | [aetherium-fabric-1.19.0+1.20.4.jar](https://github.com/entitybrian69-bit/Aetherium/releases/download/v1.19.0+1.20.4/aetherium-fabric-1.19.0+1.20.4.jar) |
+| 1.20.4 | NeoForge | [aetherium-neoforge-1.19.0+1.20.4.jar](https://github.com/entitybrian69-bit/Aetherium/releases/download/v1.19.0+1.20.4/aetherium-neoforge-1.19.0+1.20.4.jar) |
 | 1.20.5 | Fabric | [aetherium-fabric-1.19.0+1.20.5.jar](https://github.com/entitybrian69-bit/Aetherium/releases/download/v1.19.0+1.20.5/aetherium-fabric-1.19.0+1.20.5.jar) |
 | 1.20.5 | Forge/NeoForge | *none: this row pins no (Neo)Forge loader; see VERIFICATION.md* |
 | 1.20.6 | Fabric | [aetherium-fabric-1.19.0+1.20.6.jar](https://github.com/entitybrian69-bit/Aetherium/releases/download/v1.19.0+1.20.6/aetherium-fabric-1.19.0+1.20.6.jar) |
@@ -72,8 +74,4 @@ not shipped - the table only ever lists what exists, never what should exist.
 | 26.3 | Fabric | [aetherium-fabric-1.19.0+26.3.jar](https://github.com/entitybrian69-bit/Aetherium/releases/download/v1.19.0+26.3/aetherium-fabric-1.19.0+26.3.jar) |
 | 26.3 | NeoForge | [aetherium-neoforge-1.19.0+26.3.jar](https://github.com/entitybrian69-bit/Aetherium/releases/download/v1.19.0+26.3/aetherium-neoforge-1.19.0+26.3.jar) |
 
-Shipped: **32/33** Minecraft versions.
-
-## Not shipped
-
-- **1.20.4** - no release yet
+Shipped: **33/33** Minecraft versions.
