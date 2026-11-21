@@ -555,3 +555,16 @@ net.minecraft.client.renderer.texture.AbstractTexture
 net.minecraft.client.renderer.texture.TextureManager
 net.minecraft.client.gui.components.DebugScreenOverlay
 net.minecraft.network.FriendlyByteBuf
+net.minecraft.core.registries.Registries
+net.minecraft.world.level.chunk.PalettedContainerFactory
+net.minecraft.world.level.chunk.PalettedContainer
+net.minecraft.world.level.chunk.PalettedContainerRO
+net.minecraft.client.gui.font.FontSet
+net.minecraft.client.gui.font.FontManager
+net.minecraft.client.StringSplitter
+net.minecraft.client.gui.components.PlayerTabOverlay
+net.minecraft.client.renderer.texture.SpriteLoader$Preparations
+net.minecraft.client.renderer.texture.TextureAtlas$Preparations
+net.minecraft.client.renderer.texture.MissingTextureAtlasSprite
+net.minecraft.client.gui.screens.Screen
+org.lwjgl.system.MemoryUtil

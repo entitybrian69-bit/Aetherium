@@ -252,3 +252,16 @@ com.mojang.blaze3d.vertex.BufferUploader (end|draw|drawWithShader|_endInternal|_
 net.minecraft.client.resources.model.ModelManager apply[(]
 net.minecraft.client.resources.model.ModelBakery uploadTextures[(]
 net.minecraft.client.gui.render.GuiRenderer (prepareItemElements|submitBlitFromItemAtlas|invalidateItemAtlas|createAtlasTextures|render[(])
+# 1.19.0 optimizations, second pass (font reloads, texture upload, GUI batching sites)
+net.minecraft.client.gui.font.FontSet (reload|setGlyphProviders|close)[(]
+net.minecraft.client.gui.font.FontManager (setRenames|updateOptions|apply|reload)[(]
+net.minecraft.client.renderer.texture.TextureAtlas (reload|upload|getSprite)[(]
+net.minecraft.client.gui.GuiComponent (fill|innerFill|fillGradient|drawString|drawCenteredString|blit|innerBlit)[(]
+net.minecraft.client.gui.Font (draw|drawShadow|drawInternal|renderText|drawInBatch)[(]
+net.minecraft.client.gui.components.ChatComponent render[(]
+net.minecraft.client.gui.components.PlayerTabOverlay render[(]
+net.minecraft.client.gui.Gui (displayScoreboardSidebar|renderScoreboardSidebar|renderHotbar|renderItemHotbar|renderSlot)[(]
+net.minecraft.client.gui.components.DebugScreenOverlay (render|drawGameInformation|drawSystemInformation|renderLines)[(]
+net.minecraft.client.gui.GuiGraphics (fill|drawString|renderTooltipInternal|blit|innerBlit|renderItem|flush)[(]
+net.minecraft.client.gui.screens.Screen (renderTooltip|renderToolTip|renderTooltipInternal|renderComponentTooltip)[(]
+com.mojang.blaze3d.platform.NativeImage (getPixelRGBA|getPixel|checkAllocated|close|_upload|upload)[(]
