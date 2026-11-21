@@ -232,3 +232,23 @@ net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher (getRender
 net.minecraft.client.renderer.LevelRenderer (renderLevel|allChanged)[(]
 net.minecraft.world.level.block.ChestBlock (getConnectedDirection|combine|opennessCombiner)[(]
 net.minecraft.world.level.block.entity.TrappedChestBlockEntity .
+# 1.18.0 optimizations (sound culling, distant drops, chunk unpacking, text widths, texture copies, GUI icon cache + batch)
+net.minecraft.client.sounds.SoundEngine play[(]
+net.minecraft.client.renderer.entity.ItemEntityRenderer (extractRenderState|submit|getRenderedAmount|extractItemGroupRenderState|renderMultipleFromCount|submitMultipleFromCount)[(]
+net.minecraft.client.multiplayer.ClientPacketListener (handleLevelChunk|handleLevelChunkWithLight|updateLevelChunk|handleChunksBiomes)[(]
+net.minecraft.world.level.chunk.LevelChunk replaceWithPacketData[(]
+net.minecraft.world.level.chunk.LevelChunkSection (read[(]|LevelChunkSection[(])
+net.minecraft.network.protocol.game.ClientboundLevelChunkPacketData (getReadBuffer|ClientboundLevelChunkPacketData[(])
+net.minecraft.network.protocol.game.ClientboundLevelChunkPacket (getReadBuffer|read[(]|ClientboundLevelChunkPacket[(])
+net.minecraft.client.gui.Font (width|lineHeight)[(]
+net.minecraft.client.gui.StringSplitter stringWidth[(]
+net.minecraft.client.renderer.texture.TextureAtlas (reload|upload|clearTextureData)[(]
+net.minecraft.client.renderer.texture.TextureAtlasSprite (uploadFirstFrame|isTransparent|close|getPixelRGBA)[(]
+net.minecraft.client.renderer.texture.SpriteContents (uploadFirstFrame|isTransparent|close|increaseMipLevel|getOriginalImage)[(]
+net.minecraft.client.renderer.entity.ItemRenderer (renderGuiItem|tryRenderGuiItem|renderGuiItemDecorations|renderAndDecorateItem|renderAndDecorateFakeItem)[(]
+net.minecraft.client.renderer.ItemRenderer (renderGuiItem|tryRenderGuiItem|renderGuiItemDecorations|renderAndDecorateItem)[(]
+net.minecraft.client.gui.GuiGraphics (renderItem|renderItemDecorations|flush|flushIfUnmanaged|drawManaged|enableScissor|disableScissor|applyScissor|innerBlit)[(]
+com.mojang.blaze3d.vertex.BufferUploader (end|draw|drawWithShader|_endInternal|_drawWithShader)[(]
+net.minecraft.client.resources.model.ModelManager apply[(]
+net.minecraft.client.resources.model.ModelBakery uploadTextures[(]
+net.minecraft.client.gui.render.GuiRenderer (prepareItemElements|submitBlitFromItemAtlas|invalidateItemAtlas|createAtlasTextures|render[(])
