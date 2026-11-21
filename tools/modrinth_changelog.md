@@ -3,6 +3,18 @@
 One `## <mod_version>` section per release. tools/modrinth_publish.py uses the section matching
 `mod_version` in gradle.properties as the changelog of every Modrinth version it uploads.
 
+## 1.19.0
+**Five new performance options, on every version from 1.16.5 to 26.3.** All are on the Performance page, on by default, can be switched off one by one, help on computers and phones alike and change nothing on the server.
+
+- Text measurement cache: recently measured text widths are remembered, so name tags, the scoreboard, menus and the F3 screen stop measuring the same words letter by letter every frame. Refreshed every second, so font and resource pack changes show up right away.
+- Sound culling: short world sounds that start too far away to be heard at all do not get an audio channel. Music, ambience and anything that loops or follows a moving object always plays.
+- Same sound per tick (1 to 32, default 8, or Unlimited): big farms, explosions and mob crowds start dozens of identical sounds at once; beyond this number they only add load, not loudness.
+- Simpler distant item drops: dropped stacks further than 16 blocks away are drawn as one item instead of up to five stacked copies.
+- Background chunk unpacking: the blocks of chunks arriving from a server (or the built-in server) are unpacked on a background thread as soon as they arrive, so the main thread only puts them in place. Less stutter while flying or joining.
+- Free texture copies: after block and item textures are on the graphics card, the copies kept in main memory for textures that never change are freed. Saves memory, most with high-resolution resource packs. Takes effect at the next resource reload (F3+T) or restart.
+- Each new option steps aside by itself when another installed mod already changes the same game method, like the existing ones.
+- Also in this release since the 1.17.0 release: the Mouse Tweaks options in the Quality of life tab, the real Aetherium version in the log and the screen footer, and the start-up check that lets a performance option step aside next to other performance mods.
+
 ## 1.17.5
 **Four performance options removed (test build for Minecraft 1.16.5 only).**
 
