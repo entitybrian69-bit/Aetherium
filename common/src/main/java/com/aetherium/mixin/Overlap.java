@@ -59,6 +59,12 @@ public final class Overlap {
         {"TuningHudBlendMixin", "hud_fps", ANY, "aetherium$captureBlend", "aetherium$captureBlendSeparate"},
         {"TuningHudFrameMixin", "hud_fps", REPLACED, "aetherium$hudRate"},
         {"TuningServerIdleMixin", "server_idle", ANY, "aetherium$park"},
+        // 1.19.0: text widths answer before vanilla measures, so any other change to the method wins.
+        {"TuningTextWidthMixin", "text_width_cache", ANY, "aetherium$cachedWidth"},
+        {"TuningSoundMixin", "sound_culling", REPLACED, "aetherium$cull"},
+        {"TuningDropsMixin", "distant_drops", REPLACED, "aetherium$copies"},
+        // Chunk data is read exactly as vanilla reads it; another mod changing that method may read more.
+        {"TuningUnpackChunkMixin", "chunk_unpacking", ANY, "aetherium$prepared"},
     };
 
     private static final String OWN_PACKAGE = "com.aetherium.";

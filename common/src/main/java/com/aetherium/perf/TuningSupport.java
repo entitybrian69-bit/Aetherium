@@ -341,6 +341,15 @@ public final class TuningSupport {
     //~ public static final boolean WORLD_CACHE = false;
     // @era:t-world-cache-end
 
+    // 1.19.0 optimizations (every version). The hooks differ per version inside each mixin.
+    public static final boolean TEXT_WIDTH = true;
+
+    public static final boolean SOUND = true;
+
+    public static final boolean DROPS = true;
+
+    public static final boolean UNPACK = true;
+
     /** Whether the {@code Tuning*} mixin (or tuning accessor) with this simple name applies here. */
     public static boolean mixin(final String simpleName) {
         switch (simpleName) {
@@ -453,6 +462,16 @@ public final class TuningSupport {
                 return VIEW_AREAACC;
             case "TuningWorldMixin":
                 return WORLD;
+            case "TuningTextWidthMixin":
+                return TEXT_WIDTH;
+            case "TuningSoundMixin":
+                return SOUND;
+            case "TuningDropsMixin":
+                return DROPS;
+            case "TuningUnpackChunkMixin":
+            case "TuningUnpackNetMixin":
+            case "TuningUnpackSectionMixin":
+                return UNPACK;
             default:
                 return false;
         }
@@ -502,6 +521,11 @@ public final class TuningSupport {
             "perf.batched_chests",
             "perf.packed_terrain",
             "perf.occlusion_queries",
+            "perf.text_width_cache",
+            "perf.sound_culling",
+            "perf.same_sound_limit",
+            "perf.distant_drops",
+            "perf.chunk_unpacking",
             "quality.far_terrain",
             "quality.shader_preset",
             "quality.cloud_distance",
@@ -599,6 +623,15 @@ public final class TuningSupport {
             case "perf.occlusion_queries":
                 // Drawn by the Aetherium pipeline's batched path.
                 return BOOST && com.aetherium.Capabilities.AETHERIUM_RENDERER;
+            case "perf.text_width_cache":
+                return TEXT_WIDTH;
+            case "perf.sound_culling":
+            case "perf.same_sound_limit":
+                return SOUND;
+            case "perf.distant_drops":
+                return DROPS;
+            case "perf.chunk_unpacking":
+                return UNPACK;
             case "quality.far_terrain":
                 return FAR_TERRAIN && FAR_DRAW && LIGHT && (LEVEL || !LEVEL_DRAWS_FAR)
                         && com.aetherium.client.FarTerrain.available();

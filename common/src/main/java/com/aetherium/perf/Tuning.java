@@ -96,6 +96,17 @@ public final class Tuning {
     public static volatile int cloudDistance = 100;
     public static volatile boolean fastGrass;
 
+    // 1.19.0 (every version)
+    public static volatile boolean iconCache;
+    public static volatile boolean batchedGui;
+    public static volatile boolean textWidthCache;
+    public static volatile boolean soundCulling;
+    /** Same short sound starts per tick ({@code SoundBudget.SAME_UNLIMITED} = no limit). */
+    public static volatile int sameSoundLimit = SoundBudget.SAME_UNLIMITED;
+    public static volatile boolean distantDrops;
+    public static volatile boolean chunkUnpacking;
+    public static volatile boolean freeTextureCopies;
+
     /** Set by the server thread while vanilla's periodic autosave runs (MinecraftServer.tickServer). */
     public static volatile boolean autosaving;
 
@@ -187,6 +198,19 @@ public final class Tuning {
         }
         cloudDistance = active ? clouds : 100;
         fastGrass = active && (low || c.fastGrass.get().booleanValue());
+        iconCache = active && c.iconCache.get().booleanValue() && free("icon_cache");
+        batchedGui = active && c.batchedGui.get().booleanValue() && free("batched_gui");
+        textWidthCache = active && c.textWidthCache.get().booleanValue() && free("text_width_cache");
+        TextWidths.invalidateAll();
+        soundCulling = active && (low || c.soundCulling.get().booleanValue()) && free("sound_culling");
+        int same = c.sameSoundLimit.get().intValue();
+        if (low) {
+            same = Math.min(same, 4);
+        }
+        sameSoundLimit = active && free("sound_culling") ? same : SoundBudget.SAME_UNLIMITED;
+        distantDrops = active && (low || c.distantDrops.get().booleanValue()) && free("distant_drops");
+        chunkUnpacking = active && c.chunkUnpacking.get().booleanValue() && free("chunk_unpacking");
+        freeTextureCopies = active && c.freeTextureCopies.get().booleanValue() && free("free_texture_copies");
         on = active;
     }
 

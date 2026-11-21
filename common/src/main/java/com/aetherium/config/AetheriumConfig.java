@@ -161,6 +161,24 @@ public final class AetheriumConfig {
     public final ConfigValue<Boolean> occlusionQueries = ConfigValue.bool(
             "performance.occlusion_queries", false, "Minecraft 1.16.5, Aetherium pipeline, computers only, experimental: the graphics card reports which chunk sections were completely hidden behind other terrain last frame, and those are not drawn until they could be visible again. Big gains in mountains and cities on strong graphics cards; a hidden section can appear one frame late when you turn fast, which is why this is off by default.");
 
+    // 1.19.0 (every version)
+    public final ConfigValue<Boolean> iconCache = ConfigValue.bool(
+            "performance.icon_cache", true, "Item icons in inventories, the hotbar and item lists are drawn once into a texture and then reused, instead of building every item's model again each frame. Enchanted, animated and specially drawn items (heads, shields, banners, chests, compasses, clocks) stay live. Looks the same; full inventories and long item lists draw much faster. Minecraft 1.21.6 and newer already do this themselves.");
+    public final ConfigValue<Boolean> batchedGui = ConfigValue.bool(
+            "performance.batched_gui", true, "Text and plain rectangles in menus and the HUD (chat, scoreboard, tab list, tooltips, the F3 screen) are collected and drawn together instead of one draw call per line. Anything that would overlap is drawn in the original order, so the picture is identical. Minecraft 1.21.6 and newer already do this themselves.");
+    public final ConfigValue<Boolean> textWidthCache = ConfigValue.bool(
+            "performance.text_width_cache", true, "Remembers how wide recently measured text is, so name tags, the scoreboard, menus and the F3 screen do not measure the same words letter by letter every frame. Refreshed every second, so font and resource pack changes show up right away.");
+    public final ConfigValue<Boolean> soundCulling = ConfigValue.bool(
+            "performance.sound_culling", true, "Short world sounds that start too far away to be heard at all do not get an audio channel. Music, ambience and anything that loops or follows a moving object always plays.");
+    public final ConfigValue<Integer> sameSoundLimit = ConfigValue.intRange(
+            "performance.same_sound_limit", 8, 1, 33, false, "How many copies of the same short world sound may start within one tick (1/20 of a second). Big farms, explosions and mob crowds start dozens of identical sounds at once; beyond this number they only add load, not loudness. 33 = no limit.");
+    public final ConfigValue<Boolean> distantDrops = ConfigValue.bool(
+            "performance.distant_drops", true, "Dropped item stacks further than 16 blocks away are drawn as one item instead of up to five stacked copies. At that distance the copies cover each other; up close nothing changes.");
+    public final ConfigValue<Boolean> chunkUnpacking = ConfigValue.bool(
+            "performance.chunk_unpacking", true, "The blocks of chunks arriving from a server (or the built-in server) are unpacked on the network thread as soon as they arrive, so the main thread only has to put them in place. Less stutter while flying or joining. Every unpacked part is checked against the original data; anything unexpected is read the normal way.");
+    public final ConfigValue<Boolean> freeTextureCopies = ConfigValue.bool(
+            "performance.free_texture_copies", true, "After block and item textures have been sent to the graphics card, the copies kept in main memory for textures that never change are freed. Saves memory, most with high-resolution resource packs. Animated textures keep theirs. Takes effect at the next resource reload (F3+T) or restart.");
+
     // ---------------------------------------------------------------- quality
     public final ConfigValue<Boolean> weather = ConfigValue.bool("quality.weather", true, "Render rain and snow. Off saves a lot of fill rate on mobile GPUs.");
     public final ConfigValue<Boolean> vignette = ConfigValue.bool("quality.vignette", true, "Draw the darkened screen edges.");

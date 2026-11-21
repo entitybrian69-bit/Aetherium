@@ -216,6 +216,9 @@ public final class ClientHooks {
 
     /** Minecraft.tick TAIL. */
     public static void onClientTick(final Minecraft mc) {
+        // The client thread owns the text measurement caches (other threads measure normally).
+        com.aetherium.perf.TextWidths.setOwner(Thread.currentThread());
+        com.aetherium.perf.TextWidths.tick();
         AutoBench.tick(mc);
         com.aetherium.mixin.SmokeTest.tick();
         final Aetherium.Subsystems sub = Aetherium.subsystemsOrNull();
