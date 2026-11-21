@@ -23600,6 +23600,78 @@ public final class org.lwjgl.system.MemoryUtil {
   private static byte[] lambda$static$0();
   static {};
 }
+=== net.minecraft.client.sounds.SoundEngine$PlayResult
+Compiled from "SoundEngine.java"
+public final class net.minecraft.client.sounds.SoundEngine$PlayResult extends java.lang.Enum<net.minecraft.client.sounds.SoundEngine$PlayResult> {
+  public static final net.minecraft.client.sounds.SoundEngine$PlayResult STARTED;
+  public static final net.minecraft.client.sounds.SoundEngine$PlayResult STARTED_SILENTLY;
+  public static final net.minecraft.client.sounds.SoundEngine$PlayResult NOT_STARTED;
+  private static final net.minecraft.client.sounds.SoundEngine$PlayResult[] $VALUES;
+  public static net.minecraft.client.sounds.SoundEngine$PlayResult[] values();
+  public static net.minecraft.client.sounds.SoundEngine$PlayResult valueOf(java.lang.String);
+  private net.minecraft.client.sounds.SoundEngine$PlayResult();
+  private static net.minecraft.client.sounds.SoundEngine$PlayResult[] $values();
+  static {};
+}
+=== net.minecraft.client.resources.sounds.SoundInstance$Attenuation
+Compiled from "SoundInstance.java"
+public final class net.minecraft.client.resources.sounds.SoundInstance$Attenuation extends java.lang.Enum<net.minecraft.client.resources.sounds.SoundInstance$Attenuation> {
+  public static final net.minecraft.client.resources.sounds.SoundInstance$Attenuation NONE;
+  public static final net.minecraft.client.resources.sounds.SoundInstance$Attenuation LINEAR;
+  private static final net.minecraft.client.resources.sounds.SoundInstance$Attenuation[] $VALUES;
+  public static net.minecraft.client.resources.sounds.SoundInstance$Attenuation[] values();
+  public static net.minecraft.client.resources.sounds.SoundInstance$Attenuation valueOf(java.lang.String);
+  private net.minecraft.client.resources.sounds.SoundInstance$Attenuation();
+  private static net.minecraft.client.resources.sounds.SoundInstance$Attenuation[] $values();
+  static {};
+}
+=== com.mojang.blaze3d.platform.NativeImage$Format
+Compiled from "NativeImage.java"
+public final class com.mojang.blaze3d.platform.NativeImage$Format extends java.lang.Enum<com.mojang.blaze3d.platform.NativeImage$Format> {
+  public static final com.mojang.blaze3d.platform.NativeImage$Format RGBA;
+  public static final com.mojang.blaze3d.platform.NativeImage$Format RGB;
+  public static final com.mojang.blaze3d.platform.NativeImage$Format LUMINANCE_ALPHA;
+  public static final com.mojang.blaze3d.platform.NativeImage$Format LUMINANCE;
+  private final int components;
+  private final boolean hasRed;
+  private final boolean hasGreen;
+  private final boolean hasBlue;
+  private final boolean hasLuminance;
+  private final boolean hasAlpha;
+  private final int redOffset;
+  private final int greenOffset;
+  private final int blueOffset;
+  private final int luminanceOffset;
+  private final int alphaOffset;
+  private final boolean supportedByStb;
+  private static final com.mojang.blaze3d.platform.NativeImage$Format[] $VALUES;
+  public static com.mojang.blaze3d.platform.NativeImage$Format[] values();
+  public static com.mojang.blaze3d.platform.NativeImage$Format valueOf(java.lang.String);
+  private com.mojang.blaze3d.platform.NativeImage$Format(int, boolean, boolean, boolean, boolean, boolean, int, int, int, int, int, boolean);
+  public int components();
+  public boolean hasRed();
+  public boolean hasGreen();
+  public boolean hasBlue();
+  public boolean hasLuminance();
+  public boolean hasAlpha();
+  public int redOffset();
+  public int greenOffset();
+  public int blueOffset();
+  public int luminanceOffset();
+  public int alphaOffset();
+  public boolean hasLuminanceOrRed();
+  public boolean hasLuminanceOrGreen();
+  public boolean hasLuminanceOrBlue();
+  public boolean hasLuminanceOrAlpha();
+  public int luminanceOrRedOffset();
+  public int luminanceOrGreenOffset();
+  public int luminanceOrBlueOffset();
+  public int luminanceOrAlphaOffset();
+  public boolean supportedByStb();
+  private static com.mojang.blaze3d.platform.NativeImage$Format getStbFormat(int);
+  private static com.mojang.blaze3d.platform.NativeImage$Format[] $values();
+  static {};
+}
 === code net.minecraft.Util :: max\.bg\.threads|availableProcessors|getMaxThreads|makeExecutor|BACKGROUND|backgroundExecutor
 === code net.minecraft.util.Util :: max\.bg\.threads|availableProcessors|getMaxThreads|makeExecutor|BACKGROUND|backgroundExecutor
   private static final java.lang.String MAX_THREADS_SYSTEM_PROPERTY = "max.bg.threads"; :: private static final java.lang.String MAX_THREADS_SYSTEM_PROPERTY = "max.bg.threads";
@@ -58875,103 +58947,105 @@ com/mojang/blaze3d/platform/ClientShutdownWatchdog.class
 com/mojang/blaze3d/platform/ClipboardManager.class
 com/mojang/blaze3d/platform/CompareOp.class
 com/mojang/blaze3d/platform/DebugMemoryUntracker.class
-com/mojang/blaze3d/platform/DestFactor.class
-com/mojang/blaze3d/platform/FramerateLimitTracker$FramerateThrottleReason.class
 com/mojang/blaze3d/platform/DisplayData.class
+com/mojang/blaze3d/platform/FramerateLimitTracker$FramerateThrottleReason.class
 com/mojang/blaze3d/platform/FramerateLimitTracker.class
 com/mojang/blaze3d/platform/IconSet.class
+com/mojang/blaze3d/platform/GLX.class
 com/mojang/blaze3d/platform/InputConstants$Key.class
 com/mojang/blaze3d/platform/InputConstants$Value.class
+com/mojang/blaze3d/platform/DestFactor.class
 com/mojang/blaze3d/platform/Lighting$Entry.class
 com/mojang/blaze3d/platform/InputConstants.class
 com/mojang/blaze3d/platform/Lighting.class
-com/mojang/blaze3d/platform/MessageBox.class
 com/mojang/blaze3d/platform/MacosUtil.class
+com/mojang/blaze3d/platform/MessageBox.class
 com/mojang/blaze3d/platform/MonitorCreator.class
 com/mojang/blaze3d/platform/Monitor.class
 com/mojang/blaze3d/platform/NativeImage$WriteCallback.class
-com/mojang/blaze3d/platform/GLX.class
+com/mojang/blaze3d/platform/NativeImage$Format.class
 com/mojang/blaze3d/platform/PolygonMode.class
-com/mojang/blaze3d/platform/ScreenManager.class
+com/mojang/blaze3d/platform/InputConstants.class
 com/mojang/blaze3d/platform/SourceFactor.class
 com/mojang/blaze3d/platform/TextInputManager.class
-com/mojang/blaze3d/platform/NativeImage$Format.class
-com/mojang/blaze3d/platform/Transparency.class
-com/mojang/blaze3d/platform/NativeImage.class
-com/mojang/blaze3d/platform/Window$WindowInitFailed.class
 com/mojang/blaze3d/platform/InputConstants$Type.class
-com/mojang/blaze3d/platform/WindowEventHandler.class
+com/mojang/blaze3d/platform/Transparency.class
 com/mojang/blaze3d/platform/VideoMode.class
+com/mojang/blaze3d/platform/Window$WindowInitFailed.class
+com/mojang/blaze3d/platform/NativeImage.class
+com/mojang/blaze3d/platform/WindowEventHandler.class
+com/mojang/blaze3d/platform/ScreenManager.class
+com/mojang/blaze3d/platform/TextureUtil.class
 com/mojang/blaze3d/systems/BackendCreationException.class
 com/mojang/blaze3d/systems/CommandEncoderBackend.class
 com/mojang/blaze3d/systems/GpuBackend.class
-com/mojang/blaze3d/platform/TextureUtil.class
+com/mojang/blaze3d/platform/Window.class
 com/mojang/blaze3d/systems/GpuDeviceBackend.class
 com/mojang/blaze3d/systems/GpuQuery.class
-com/mojang/blaze3d/platform/Window.class
-com/mojang/blaze3d/systems/RenderPass$UniformUploader.class
 com/mojang/blaze3d/systems/GpuDevice.class
 com/mojang/blaze3d/systems/RenderPass$Draw.class
-com/mojang/blaze3d/systems/RenderSystem$AutoStorageIndexBuffer$IndexGenerator.class
-com/mojang/blaze3d/systems/RenderSystem$AutoStorageIndexBuffer.class
-com/mojang/blaze3d/systems/CommandEncoder.class
+com/mojang/blaze3d/systems/RenderPass$UniformUploader.class
+com/mojang/blaze3d/systems/RenderPassBackend.class
+com/mojang/blaze3d/systems/RenderPass.class
 com/mojang/blaze3d/systems/RenderSystem$GpuAsyncTask.class
+com/mojang/blaze3d/systems/RenderSystem$AutoStorageIndexBuffer.class
 com/mojang/blaze3d/systems/SamplerCache.class
 com/mojang/blaze3d/systems/ScissorState.class
 com/mojang/blaze3d/systems/TimerQuery$FrameProfile.class
 com/mojang/blaze3d/systems/TimerQuery$TimerQueryLazyLoader.class
+com/mojang/blaze3d/systems/CommandEncoder.class
 com/mojang/blaze3d/systems/RenderSystem.class
-com/mojang/blaze3d/systems/TimerQuery.class
-com/mojang/blaze3d/systems/RenderPassBackend.class
+com/mojang/blaze3d/systems/RenderSystem$AutoStorageIndexBuffer$IndexGenerator.class
 com/mojang/blaze3d/vertex/ByteBufferBuilder$Result.class
-com/mojang/blaze3d/systems/RenderPass.class
+com/mojang/blaze3d/vertex/BufferBuilder.class
 com/mojang/blaze3d/vertex/CompactVectorArray.class
 com/mojang/blaze3d/vertex/DefaultVertexFormat.class
-com/mojang/blaze3d/vertex/MeshData$DrawState.class
+com/mojang/blaze3d/systems/TimerQuery.class
 com/mojang/blaze3d/vertex/MeshData$SortState.class
-com/mojang/blaze3d/vertex/BufferBuilder.class
+com/mojang/blaze3d/vertex/MeshData.class
 com/mojang/blaze3d/vertex/ByteBufferBuilder.class
 com/mojang/blaze3d/vertex/PoseStack$Pose.class
-com/mojang/blaze3d/vertex/SheetedDecalTextureGenerator.class
+com/mojang/blaze3d/vertex/PoseStack.class
 com/mojang/blaze3d/vertex/QuadInstance.class
+com/mojang/blaze3d/vertex/SheetedDecalTextureGenerator.class
 com/mojang/blaze3d/vertex/Tesselator.class
 com/mojang/blaze3d/vertex/TlsfAllocator$Allocation.class
 com/mojang/blaze3d/vertex/TlsfAllocator$Heap.class
-com/mojang/blaze3d/vertex/PoseStack.class
-com/mojang/blaze3d/vertex/MeshData.class
-com/mojang/blaze3d/vertex/TlsfAllocator$IndexPair.class
+com/mojang/blaze3d/vertex/TlsfAllocator$Block.class
+com/mojang/blaze3d/vertex/TlsfAllocator.class
 com/mojang/blaze3d/vertex/UberGpuBuffer$StagedAllocationEntry.class
 com/mojang/blaze3d/vertex/UberGpuBuffer$UberGpuBufferHeap.class
-com/mojang/blaze3d/vertex/UberGpuBuffer$UberGpuBufferStagingBuffer$CPUStagingBuffer.class
+com/mojang/blaze3d/vertex/MeshData$DrawState.class
 com/mojang/blaze3d/vertex/UberGpuBuffer$UberGpuBufferStagingBuffer.class
 com/mojang/blaze3d/vertex/UberGpuBuffer$UploadCallback.class
-com/mojang/blaze3d/vertex/TlsfAllocator.class
-com/mojang/blaze3d/vertex/VertexConsumer.class
 com/mojang/blaze3d/vertex/UberGpuBuffer.class
-com/mojang/blaze3d/vertex/TlsfAllocator$Block.class
-com/mojang/blaze3d/vertex/VertexFormat$Mode.class
-com/mojang/blaze3d/vertex/UberGpuBuffer$UberGpuBufferStagingBuffer$MappedStagingBuffer.class
+com/mojang/blaze3d/vertex/UberGpuBuffer$UberGpuBufferStagingBuffer$CPUStagingBuffer.class
 com/mojang/blaze3d/vertex/VertexFormat$Builder.class
+com/mojang/blaze3d/vertex/VertexFormat$IndexType.class
+com/mojang/blaze3d/vertex/VertexFormat$Mode.class
 com/mojang/blaze3d/vertex/VertexFormat.class
-com/mojang/blaze3d/vertex/VertexFormatElement.class
-com/mojang/blaze3d/vertex/VertexMultiConsumer$Double.class
 com/mojang/blaze3d/vertex/VertexFormatElement$Type.class
+com/mojang/blaze3d/vertex/TlsfAllocator$IndexPair.class
+com/mojang/blaze3d/vertex/VertexMultiConsumer$Double.class
+com/mojang/blaze3d/vertex/VertexMultiConsumer$Multiple.class
 com/mojang/blaze3d/vertex/VertexMultiConsumer.class
 com/mojang/blaze3d/vertex/VertexSorting$DistanceFunction.class
 com/mojang/blaze3d/vertex/VertexFormat$IndexType.class
 com/mojang/blaze3d/vertex/VertexSorting.class
-com/mojang/blaze3d/vertex/VertexMultiConsumer$Multiple.class
-net/minecraft/client/AttackIndicatorStatus.class
+com/mojang/blaze3d/vertex/UberGpuBuffer$UberGpuBufferStagingBuffer$MappedStagingBuffer.class
+com/mojang/blaze3d/vertex/VertexConsumer.class
+com/mojang/blaze3d/vertex/VertexFormatElement.class
 net/minecraft/client/CameraType.class
 net/minecraft/client/ClientBootstrap.class
 net/minecraft/client/ClientBrandRetriever.class
 net/minecraft/client/ClientClockManager.class
+net/minecraft/client/Camera.class
 net/minecraft/client/ClientRecipeBook.class
 net/minecraft/client/Camera.class
 net/minecraft/client/CloudStatus.class
+net/minecraft/client/AttackIndicatorStatus.class
 net/minecraft/client/ComponentCollector.class
 net/minecraft/client/CommandHistory.class
-net/minecraft/client/DebugQueryHandler.class
 net/minecraft/client/DeltaTracker.class
 net/minecraft/client/FramerateLimiter.class
 net/minecraft/client/GameNarrator.class
@@ -58979,89 +59053,90 @@ net/minecraft/client/GraphicsPreset.class
 net/minecraft/client/HotbarManager.class
 net/minecraft/client/InactivityFpsLimit.class
 net/minecraft/client/InputType.class
+net/minecraft/client/DebugQueryHandler.class
+net/minecraft/client/MouseHandler.class
 net/minecraft/client/KeyMapping.class
 net/minecraft/client/MusicToastDisplayState.class
 net/minecraft/client/NarratorStatus.class
-net/minecraft/client/MouseHandler.class
+net/minecraft/client/KeyboardHandler.class
 net/minecraft/client/OptionInstance.class
 net/minecraft/client/KeyboardHandler.class
 net/minecraft/client/PrioritizeChunkUpdates.class
 net/minecraft/client/PeriodicNotificationManager.class
 net/minecraft/client/Minecraft.class
 net/minecraft/client/ScrollWheelHandler.class
-net/minecraft/client/Screenshot.class
+net/minecraft/client/StringSplitter.class
 net/minecraft/client/TextureFilteringMethod.class
+net/minecraft/client/Screenshot.class
 net/minecraft/client/ToggleKeyMapping.class
 net/minecraft/client/User.class
 net/minecraft/client/StringSplitter.class
 net/minecraft/client/ResourceLoadStateTracker.class
 net/minecraft/client/Options.class
-net/minecraft/client/gui/screens/AccessibilityOnboardingScreen.class
 net/minecraft/client/gui/screens/AlertScreen.class
-net/minecraft/client/gui/screens/ChatScreen.class
-net/minecraft/client/gui/screens/ConfirmLinkScreen.class
+net/minecraft/client/gui/screens/AccessibilityOnboardingScreen.class
 net/minecraft/client/gui/screens/BackupConfirmScreen.class
+net/minecraft/client/gui/screens/ConfirmLinkScreen.class
+net/minecraft/client/gui/screens/ChatScreen.class
 net/minecraft/client/gui/screens/ConnectScreen.class
-net/minecraft/client/gui/screens/CreateBuffetWorldScreen.class
-net/minecraft/client/gui/screens/CreateFlatWorldScreen.class
-net/minecraft/client/gui/screens/CreditsAndAttributionScreen.class
-net/minecraft/client/gui/screens/DatapackLoadFailureScreen.class
-net/minecraft/client/gui/screens/DeathScreen.class
 net/minecraft/client/gui/screens/ConfirmScreen.class
+net/minecraft/client/gui/screens/CreditsAndAttributionScreen.class
+net/minecraft/client/gui/screens/CreateFlatWorldScreen.class
+net/minecraft/client/gui/screens/DatapackLoadFailureScreen.class
 net/minecraft/client/gui/screens/DirectJoinServerScreen.class
-net/minecraft/client/gui/screens/DisconnectedScreen.class
+net/minecraft/client/gui/screens/DeathScreen.class
 net/minecraft/client/gui/screens/ErrorScreen.class
+net/minecraft/client/gui/screens/DisconnectedScreen.class
+net/minecraft/client/gui/screens/CreateBuffetWorldScreen.class
 net/minecraft/client/gui/screens/GenericMessageScreen.class
 net/minecraft/client/gui/screens/GenericWaitingScreen.class
-net/minecraft/client/gui/screens/InBedChatScreen.class
 net/minecraft/client/gui/screens/LevelLoadingScreen.class
+net/minecraft/client/gui/screens/ManageServerScreen.class
 net/minecraft/client/gui/screens/NoticeWithLinkScreen.class
 net/minecraft/client/gui/screens/OutOfMemoryScreen.class
-net/minecraft/client/gui/screens/ManageServerScreen.class
-net/minecraft/client/gui/screens/FileFixerAbortedScreen.class
-net/minecraft/client/gui/screens/PauseScreen.class
 net/minecraft/client/gui/screens/ProgressScreen.class
-net/minecraft/client/gui/screens/PresetFlatWorldScreen.class
+net/minecraft/client/gui/screens/FileFixerAbortedScreen.class
 net/minecraft/client/gui/screens/RecoverWorldDataScreen.class
+net/minecraft/client/gui/screens/PresetFlatWorldScreen.class
+net/minecraft/client/gui/screens/PauseScreen.class
 net/minecraft/client/gui/screens/ShareToLanScreen.class
 net/minecraft/client/gui/screens/WinScreen.class
 net/minecraft/client/gui/screens/TitleScreen.class
 net/minecraft/client/model/geom/EntityModelSet.class
 net/minecraft/client/model/geom/LayerDefinitions.class
 net/minecraft/client/model/geom/ModelLayerLocation.class
-net/minecraft/client/model/geom/ModelPart$Cube.class
-net/minecraft/client/model/geom/ModelPart$Vertex.class
-net/minecraft/client/model/geom/ModelPart$Visitor.class
-net/minecraft/client/model/geom/PartNames.class
-net/minecraft/client/model/geom/PartPose.class
-net/minecraft/client/model/geom/ModelPart.class
 net/minecraft/client/model/geom/ModelPart$Polygon.class
+net/minecraft/client/model/geom/ModelPart$Cube.class
+net/minecraft/client/model/geom/ModelPart$Visitor.class
+net/minecraft/client/model/geom/ModelPart$Vertex.class
+net/minecraft/client/model/geom/PartNames.class
+net/minecraft/client/model/geom/ModelPart.class
+net/minecraft/client/model/geom/LayerDefinitions.class
+net/minecraft/client/model/geom/PartPose.class
 net/minecraft/client/model/geom/ModelLayers.class
 net/minecraft/client/particle/AshParticle.class
+net/minecraft/client/particle/AshParticle$Provider.class
+net/minecraft/client/particle/AttackSweepParticle$Provider.class
 net/minecraft/client/particle/AttackSweepParticle.class
-net/minecraft/client/particle/BaseAshSmokeParticle.class
 net/minecraft/client/particle/BlockMarker$Provider.class
+net/minecraft/client/particle/BaseAshSmokeParticle.class
 net/minecraft/client/particle/BlockMarker.class
 net/minecraft/client/particle/BreakingItemParticle$CobwebProvider.class
 net/minecraft/client/particle/BreakingItemParticle$ItemParticleProvider.class
 net/minecraft/client/particle/BreakingItemParticle$Provider.class
-net/minecraft/client/particle/AttackSweepParticle$Provider.class
-net/minecraft/client/particle/AshParticle$Provider.class
+net/minecraft/client/particle/BreakingItemParticle$ItemParticleProvider.class
 net/minecraft/client/particle/BreakingItemParticle$SlimeProvider.class
 net/minecraft/client/particle/BreakingItemParticle$SnowballProvider.class
 net/minecraft/client/particle/BreakingItemParticle.class
 net/minecraft/client/particle/BubbleColumnUpParticle.class
-net/minecraft/client/particle/BubbleColumnUpParticle$Provider.class
 net/minecraft/client/particle/BubbleParticle.class
 net/minecraft/client/particle/BubblePopParticle$Provider.class
-net/minecraft/client/particle/CampfireSmokeParticle$CosyProvider.class
-net/minecraft/client/particle/BubbleParticle$Provider.class
 net/minecraft/client/particle/BubblePopParticle.class
-net/minecraft/client/particle/CampfireSmokeParticle.class
-net/minecraft/client/particle/CritParticle$MagicProvider.class
-net/minecraft/client/particle/CritParticle$Provider.class
-net/minecraft/client/particle/CritParticle.class
 net/minecraft/client/particle/CampfireSmokeParticle$SignalProvider.class
+net/minecraft/client/particle/BubbleParticle$Provider.class
+net/minecraft/client/particle/CampfireSmokeParticle$CosyProvider.class
+net/minecraft/client/particle/CritParticle$MagicProvider.class
+net/minecraft/client/particle/CampfireSmokeParticle.class
 net/minecraft/client/particle/CritParticle$DamageIndicatorProvider.class
 net/minecraft/client/particle/DragonBreathParticle$Provider.class
 net/minecraft/client/particle/DripParticle$CoolingDripHangParticle.class
@@ -59074,8 +59149,8 @@ net/minecraft/client/particle/DripParticle$DripstoneWaterFallProvider.class
 net/minecraft/client/particle/DripParticle$DripstoneWaterHangProvider.class
 net/minecraft/client/particle/DripParticle$FallingParticle.class
 net/minecraft/client/particle/DripParticle$HoneyFallAndLandParticle.class
-net/minecraft/client/particle/DripParticle$HoneyFallProvider.class
-net/minecraft/client/particle/DripParticle$HoneyHangProvider.class
+net/minecraft/client/particle/CritParticle$Provider.class
+net/minecraft/client/particle/DripParticle$DripstoneLavaHangProvider.class
 net/minecraft/client/particle/DripParticle$HoneyLandProvider.class
 net/minecraft/client/particle/DripParticle$LavaFallProvider.class
 net/minecraft/client/particle/DripParticle$LavaHangProvider.class
@@ -59086,40 +59161,40 @@ net/minecraft/client/particle/DripParticle$ObsidianTearHangProvider.class
 net/minecraft/client/particle/DripParticle$ObsidianTearLandProvider.class
 net/minecraft/client/particle/DripParticle$SporeBlossomFallProvider.class
 net/minecraft/client/particle/DripParticle$WaterHangProvider.class
-net/minecraft/client/particle/DripParticle.class
+net/minecraft/client/particle/DripParticle$WaterFallProvider.class
 net/minecraft/client/particle/DustColorTransitionParticle$Provider.class
+net/minecraft/client/particle/DripParticle.class
 net/minecraft/client/particle/DustColorTransitionParticle.class
 net/minecraft/client/particle/DustParticle$Provider.class
 net/minecraft/client/particle/DustParticle.class
-net/minecraft/client/particle/DustParticleBase.class
-net/minecraft/client/particle/DripParticle$FallAndLandParticle.class
 net/minecraft/client/particle/DustPlumeParticle$Provider.class
+net/minecraft/client/particle/DustParticleBase.class
 net/minecraft/client/particle/DustPlumeParticle.class
 net/minecraft/client/particle/ElderGuardianParticle$Provider.class
 net/minecraft/client/particle/ElderGuardianParticle.class
 net/minecraft/client/particle/DripParticle$DripstoneLavaHangProvider.class
 net/minecraft/client/particle/ElderGuardianParticleGroup$State.class
 net/minecraft/client/particle/EndRodParticle$Provider.class
-net/minecraft/client/particle/ElderGuardianParticleGroup$ElderGuardianParticleRenderState.class
+net/minecraft/client/particle/DripParticle$HoneyFallProvider.class
+net/minecraft/client/particle/DripParticle$HoneyHangProvider.class
 net/minecraft/client/particle/EndRodParticle.class
-net/minecraft/client/particle/ElderGuardianParticleGroup.class
-net/minecraft/client/particle/ExplodeParticle.class
+net/minecraft/client/particle/ExplodeParticle$Provider.class
 net/minecraft/client/particle/FallingDustParticle$Provider.class
+net/minecraft/client/particle/ExplodeParticle.class
 net/minecraft/client/particle/FallingLeavesParticle$CherryProvider.class
 net/minecraft/client/particle/FallingDustParticle.class
-net/minecraft/client/particle/FallingLeavesParticle$PaleOakProvider.class
 net/minecraft/client/particle/FallingLeavesParticle$TintedLeavesProvider.class
 net/minecraft/client/particle/FireflyParticle$FireflyProvider.class
 net/minecraft/client/particle/FallingLeavesParticle.class
 net/minecraft/client/particle/FireflyParticle.class
-net/minecraft/client/particle/FireworkParticles$OverlayParticle.class
-net/minecraft/client/particle/ExplodeParticle$Provider.class
+net/minecraft/client/particle/FireworkParticles$FlashProvider.class
+net/minecraft/client/particle/FallingLeavesParticle$PaleOakProvider.class
+net/minecraft/client/particle/FireworkParticles$SparkParticle.class
 net/minecraft/client/particle/FireworkParticles$SparkProvider.class
 net/minecraft/client/particle/FireworkParticles$FlashProvider.class
 net/minecraft/client/particle/FireworkParticles.class
 net/minecraft/client/particle/FlameParticle$Provider.class
 net/minecraft/client/particle/FlameParticle$SmallFlameProvider.class
-net/minecraft/client/particle/FlameParticle.class
 net/minecraft/client/particle/FlyStraightTowardsParticle$OminousSpawnProvider.class
 net/minecraft/client/particle/FireworkParticles$Starter.class
 net/minecraft/client/particle/FlyStraightTowardsParticle.class
@@ -59128,45 +59203,50 @@ net/minecraft/client/particle/FlyTowardsPositionParticle$NautilusProvider.class
 net/minecraft/client/particle/DripParticle$WaterFallProvider.class
 net/minecraft/client/particle/FireworkParticles$SparkParticle.class
 net/minecraft/client/particle/FlyTowardsPositionParticle$VaultConnectionProvider.class
-net/minecraft/client/particle/FlyTowardsPositionParticle.class
 net/minecraft/client/particle/GlowParticle$ElectricSparkProvider.class
+net/minecraft/client/particle/GlowParticle$GlowSquidProvider.class
+net/minecraft/client/particle/FlyTowardsPositionParticle.class
 net/minecraft/client/particle/GlowParticle$ScrapeProvider.class
-net/minecraft/client/particle/GlowParticle$WaxOnProvider.class
+net/minecraft/client/particle/FlameParticle.class
+net/minecraft/client/particle/FireworkParticles$OverlayParticle.class
 net/minecraft/client/particle/GlowParticle.class
 net/minecraft/client/particle/GustParticle$Provider.class
 net/minecraft/client/particle/GustParticle$SmallProvider.class
 net/minecraft/client/particle/GustParticle.class
 net/minecraft/client/particle/GustSeedParticle$Provider.class
 net/minecraft/client/particle/GustSeedParticle.class
-net/minecraft/client/particle/HeartParticle$AngryVillagerProvider.class
+net/minecraft/client/particle/GlowParticle$WaxOnProvider.class
 net/minecraft/client/particle/HeartParticle$Provider.class
 net/minecraft/client/particle/HeartParticle.class
 net/minecraft/client/particle/HugeExplosionParticle$Provider.class
-net/minecraft/client/particle/HugeExplosionParticle.class
+net/minecraft/client/particle/GlowParticle$WaxOffProvider.class
 net/minecraft/client/particle/HugeExplosionSeedParticle$Provider.class
 net/minecraft/client/particle/HugeExplosionSeedParticle.class
 net/minecraft/client/particle/ItemPickupParticle.class
 net/minecraft/client/particle/ItemPickupParticleGroup$ParticleInstance.class
-net/minecraft/client/particle/GlowParticle$WaxOffProvider.class
+net/minecraft/client/particle/ItemPickupParticleGroup$State.class
+net/minecraft/client/particle/HeartParticle$AngryVillagerProvider.class
 net/minecraft/client/particle/ItemPickupParticleGroup.class
-net/minecraft/client/particle/LargeSmokeParticle$Provider.class
 net/minecraft/client/particle/LargeSmokeParticle.class
 net/minecraft/client/particle/LavaParticle$Provider.class
-net/minecraft/client/particle/NoRenderParticle.class
-net/minecraft/client/particle/LavaParticle.class
+net/minecraft/client/particle/LargeSmokeParticle$Provider.class
+net/minecraft/client/particle/HugeExplosionParticle.class
 net/minecraft/client/particle/NoRenderParticleGroup.class
 net/minecraft/client/particle/NoteParticle$Provider.class
 net/minecraft/client/particle/NoteParticle.class
 net/minecraft/client/particle/Particle$LifetimeAlpha.class
 net/minecraft/client/particle/ParticleDescription.class
+net/minecraft/client/particle/NoRenderParticle.class
 net/minecraft/client/particle/Particle.class
-net/minecraft/client/particle/ParticleGroup.class
-net/minecraft/client/particle/ParticleEngine.class
 net/minecraft/client/particle/ParticleProvider$Sprite.class
 net/minecraft/client/particle/GlowParticle$GlowSquidProvider.class
 net/minecraft/client/particle/ItemPickupParticleGroup$State.class
 net/minecraft/client/particle/ParticleProvider.class
+net/minecraft/client/particle/ParticleRenderType.class
+net/minecraft/client/particle/ParticleGroup.class
+net/minecraft/client/particle/ParticleResources$MutableSpriteSet.class
 net/minecraft/client/particle/ParticleResources$SpriteParticleRegistration.class
+net/minecraft/client/particle/LavaParticle.class
 net/minecraft/client/particle/PlayerCloudParticle$Provider.class
 net/minecraft/client/particle/PlayerCloudParticle$SneezeProvider.class
 net/minecraft/client/particle/PlayerCloudParticle.class
@@ -59174,11 +59254,10 @@ net/minecraft/client/particle/PortalParticle$Provider.class
 net/minecraft/client/particle/PortalParticle.class
 net/minecraft/client/particle/QuadParticleGroup.class
 net/minecraft/client/particle/ReversePortalParticle$ReversePortalProvider.class
-net/minecraft/client/particle/ReversePortalParticle.class
 net/minecraft/client/particle/RisingParticle.class
+net/minecraft/client/particle/ParticleEngine.class
 net/minecraft/client/particle/SculkChargeParticle$Provider.class
 net/minecraft/client/particle/SculkChargeParticle.class
-net/minecraft/client/particle/ParticleResources.class
 net/minecraft/client/particle/SculkChargePopParticle$Provider.class
 net/minecraft/client/particle/SculkChargePopParticle.class
 net/minecraft/client/particle/ShriekParticle$Provider.class
@@ -59194,149 +59273,153 @@ net/minecraft/client/particle/ParticleResources$MutableSpriteSet.class
 net/minecraft/client/particle/SingleQuadParticle.class
 net/minecraft/client/particle/SnowflakeParticle$Provider.class
 net/minecraft/client/particle/SnowflakeParticle.class
-net/minecraft/client/particle/SonicBoomParticle$Provider.class
+net/minecraft/client/particle/ParticleResources.class
 net/minecraft/client/particle/SonicBoomParticle.class
-net/minecraft/client/particle/SoulParticle$EmissiveProvider.class
 net/minecraft/client/particle/SoulParticle$Provider.class
-net/minecraft/client/particle/SoulParticle.class
-net/minecraft/client/particle/SpellParticle$InstantProvider.class
-net/minecraft/client/particle/SpellParticle$Provider.class
+net/minecraft/client/particle/SonicBoomParticle$Provider.class
+net/minecraft/client/particle/SoulParticle$EmissiveProvider.class
+net/minecraft/client/particle/ReversePortalParticle.class
 net/minecraft/client/particle/SpellParticle$MobEffectProvider.class
-net/minecraft/client/particle/SpellParticle$WitchProvider.class
+net/minecraft/client/particle/SpellParticle$Provider.class
+net/minecraft/client/particle/SpellParticle$InstantProvider.class
 net/minecraft/client/particle/SpitParticle$Provider.class
-net/minecraft/client/particle/SpellParticle.class
 net/minecraft/client/particle/SpitParticle.class
-net/minecraft/client/particle/SplashParticle.class
+net/minecraft/client/particle/SpellParticle.class
+net/minecraft/client/particle/SplashParticle$Provider.class
+net/minecraft/client/particle/SoulParticle.class
 net/minecraft/client/particle/SpriteSet.class
 net/minecraft/client/particle/ParticleRenderType.class
 net/minecraft/client/particle/SquidInkParticle$GlowInkProvider.class
-net/minecraft/client/particle/SplashParticle$Provider.class
-net/minecraft/client/particle/SuspendedParticle$CrimsonSporeProvider.class
-net/minecraft/client/particle/SquidInkParticle.class
+net/minecraft/client/particle/SquidInkParticle$Provider.class
+net/minecraft/client/particle/SpellParticle$WitchProvider.class
+net/minecraft/client/particle/SplashParticle.class
 net/minecraft/client/particle/SuspendedParticle$SporeBlossomAirProvider.class
 net/minecraft/client/particle/SuspendedParticle$UnderwaterProvider.class
 net/minecraft/client/particle/SuspendedParticle$WarpedSporeProvider.class
 net/minecraft/client/particle/SuspendedTownParticle$ComposterFillProvider.class
-net/minecraft/client/particle/SquidInkParticle$Provider.class
+net/minecraft/client/particle/SquidInkParticle.class
+net/minecraft/client/particle/SuspendedParticle$CrimsonSporeProvider.class
+net/minecraft/client/particle/SuspendedParticle.class
 net/minecraft/client/particle/SuspendedTownParticle$EggCrackProvider.class
 net/minecraft/client/particle/SuspendedTownParticle$DolphinSpeedProvider.class
-net/minecraft/client/particle/SuspendedTownParticle$HappyVillagerProvider.class
 net/minecraft/client/particle/SuspendedTownParticle.class
 net/minecraft/client/particle/TerrainParticle$CrumblingProvider.class
-net/minecraft/client/particle/TerrainParticle$DustPillarProvider.class
 net/minecraft/client/particle/TerrainParticle$Provider.class
-net/minecraft/client/particle/TerrainParticle.class
+net/minecraft/client/particle/TerrainParticle$DustPillarProvider.class
 net/minecraft/client/particle/TotemParticle$Provider.class
 net/minecraft/client/particle/TotemParticle.class
-net/minecraft/client/particle/SmokeParticle.class
-net/minecraft/client/particle/TrackingEmitter.class
-net/minecraft/client/particle/SuspendedParticle.class
+net/minecraft/client/particle/TerrainParticle.class
 net/minecraft/client/particle/TrailParticle$Provider.class
-net/minecraft/client/particle/TrailParticle.class
+net/minecraft/client/particle/TrackingEmitter.class
 net/minecraft/client/particle/TrialSpawnerDetectionParticle$Provider.class
+net/minecraft/client/particle/SuspendedTownParticle$HappyVillagerProvider.class
 net/minecraft/client/particle/VibrationSignalParticle$Provider.class
 net/minecraft/client/particle/TrialSpawnerDetectionParticle.class
 net/minecraft/client/particle/WakeParticle$Provider.class
-net/minecraft/client/particle/WakeParticle.class
 net/minecraft/client/particle/VibrationSignalParticle.class
+net/minecraft/client/particle/WakeParticle.class
 net/minecraft/client/particle/WaterCurrentDownParticle$Provider.class
-net/minecraft/client/particle/WaterCurrentDownParticle.class
 net/minecraft/client/particle/WaterDropParticle$Provider.class
-net/minecraft/client/particle/WhiteAshParticle$Provider.class
+net/minecraft/client/particle/WaterCurrentDownParticle.class
+net/minecraft/client/particle/SuspendedTownParticle$Provider.class
+net/minecraft/client/particle/TrailParticle.class
 net/minecraft/client/particle/WhiteAshParticle.class
-net/minecraft/client/particle/WaterDropParticle.class
 net/minecraft/client/particle/WhiteSmokeParticle$Provider.class
+net/minecraft/client/particle/WhiteAshParticle$Provider.class
 net/minecraft/client/particle/WhiteSmokeParticle.class
 net/minecraft/client/player/ClientInput.class
-net/minecraft/client/player/KeyboardInput.class
-net/minecraft/client/player/AbstractClientPlayer.class
+net/minecraft/client/particle/WaterDropParticle.class
 net/minecraft/client/player/LocalPlayerResolver.class
 net/minecraft/client/player/RemotePlayer.class
+net/minecraft/client/player/AbstractClientPlayer.class
+net/minecraft/client/player/KeyboardInput.class
 net/minecraft/client/renderer/BiomeColors.class
 net/minecraft/client/renderer/CloudRenderer$RelativeCameraPos.class
 net/minecraft/client/renderer/CloudRenderer$TextureData.class
 net/minecraft/client/particle/SuspendedTownParticle$Provider.class
 net/minecraft/client/renderer/CubeMap.class
 net/minecraft/client/renderer/DynamicUniformStorage$DynamicUniform.class
-net/minecraft/client/player/LocalPlayer.class
+net/minecraft/client/renderer/CloudRenderer.class
+net/minecraft/client/renderer/DynamicUniforms$ChunkSectionInfo.class
 net/minecraft/client/renderer/DynamicUniformStorage.class
 net/minecraft/client/renderer/DynamicUniforms$Transform.class
-net/minecraft/client/renderer/DynamicUniforms$ChunkSectionInfo.class
 net/minecraft/client/renderer/DynamicUniforms.class
 net/minecraft/client/renderer/EndFlashState.class
+net/minecraft/client/renderer/FaceInfo$Extent.class
 net/minecraft/client/renderer/FaceInfo$VertexInfo.class
 net/minecraft/client/renderer/FaceInfo$Extent.class
 net/minecraft/client/renderer/FaceInfo.class
 net/minecraft/client/renderer/GlobalSettingsUniform.class
 net/minecraft/client/renderer/GpuWarnlistManager$Preparations.class
-net/minecraft/client/renderer/GpuWarnlistManager.class
 net/minecraft/client/renderer/ItemInHandRenderer$HandRenderSelection.class
-net/minecraft/client/renderer/CloudRenderer.class
-net/minecraft/client/renderer/ItemInHandRenderer.class
+net/minecraft/client/renderer/GpuWarnlistManager.class
+net/minecraft/client/player/LocalPlayer.class
 net/minecraft/client/renderer/LevelRenderer$BrightnessGetter.class
 net/minecraft/client/renderer/LevelRenderer$FinalizedGizmos.class
-net/minecraft/client/renderer/LevelEventHandler.class
+net/minecraft/client/renderer/GameRenderer.class
 net/minecraft/client/renderer/LevelTargetBundle.class
+net/minecraft/client/renderer/Lightmap.class
+net/minecraft/client/renderer/ItemInHandRenderer.class
+net/minecraft/client/renderer/LevelEventHandler.class
 net/minecraft/client/renderer/LightmapRenderStateExtractor.class
-net/minecraft/client/renderer/MapRenderer.class
-net/minecraft/client/renderer/MappableRingBuffer.class
 net/minecraft/client/renderer/MultiBufferSource$BufferSource.class
 net/minecraft/client/renderer/MultiBufferSource.class
 net/minecraft/client/renderer/MultiblockChestResources.class
 net/minecraft/client/renderer/Octree$AxisSorting.class
 net/minecraft/client/renderer/Octree$Branch.class
 net/minecraft/client/renderer/Octree$Leaf.class
-net/minecraft/client/renderer/Octree$Node.class
-net/minecraft/client/renderer/LevelRenderer.class
+net/minecraft/client/renderer/MappableRingBuffer.class
+net/minecraft/client/renderer/Octree$OctreeVisitor.class
+net/minecraft/client/renderer/MapRenderer.class
 net/minecraft/client/renderer/Octree.class
-net/minecraft/client/renderer/GameRenderer.class
-net/minecraft/client/renderer/OutlineBufferSource$EntityOutlineGenerator.class
 net/minecraft/client/renderer/OrderedSubmitNodeCollector.class
+net/minecraft/client/renderer/OutlineBufferSource$EntityOutlineGenerator.class
 net/minecraft/client/renderer/OutlineBufferSource.class
 net/minecraft/client/renderer/Panorama.class
 net/minecraft/client/renderer/PlayerSkinRenderCache$RenderInfo.class
 net/minecraft/client/renderer/PlayerSkinRenderCache.class
 net/minecraft/client/renderer/PostChain$TargetBundle.class
 net/minecraft/client/renderer/PostChainConfig$Input.class
-net/minecraft/client/renderer/Lightmap.class
-net/minecraft/client/renderer/PostChain.class
+net/minecraft/client/renderer/PostChainConfig$InternalTarget.class
+net/minecraft/client/renderer/Octree$Node.class
 net/minecraft/client/renderer/PostChainConfig$TargetInput.class
-net/minecraft/client/renderer/PostChainConfig$Pass.class
 net/minecraft/client/renderer/PostChainConfig$TextureInput.class
 net/minecraft/client/renderer/PostChainConfig.class
 net/minecraft/client/renderer/PostPass$Input.class
 net/minecraft/client/renderer/PostPass$InputTexture.class
-net/minecraft/client/renderer/PostPass$TextureInput.class
 net/minecraft/client/renderer/PostPass$TargetInput.class
-net/minecraft/client/renderer/Projection.class
+net/minecraft/client/renderer/PostPass$TextureInput.class
+net/minecraft/client/renderer/LevelRenderer.class
+net/minecraft/client/renderer/PostChain.class
+net/minecraft/client/renderer/PostChainConfig$Pass.class
 net/minecraft/client/renderer/ProjectionMatrixBuffer.class
 net/minecraft/client/renderer/PostPass.class
 net/minecraft/client/renderer/RenderBuffers.class
 net/minecraft/client/renderer/RunningTrimmedMean.class
 net/minecraft/client/renderer/ScreenEffectRenderer.class
-net/minecraft/client/renderer/Octree$OctreeVisitor.class
 net/minecraft/client/renderer/SectionBufferBuilderPack.class
-net/minecraft/client/renderer/SectionBufferBuilderPool.class
+net/minecraft/client/renderer/Projection.class
 net/minecraft/client/renderer/SectionOcclusionGraph$GraphEvents.class
+net/minecraft/client/renderer/PostPass.class
 net/minecraft/client/renderer/SectionOcclusionGraph$GraphState.class
 net/minecraft/client/renderer/SectionOcclusionGraph$GraphStorage.class
 net/minecraft/client/renderer/SectionOcclusionGraph$SectionToNodeMap.class
 net/minecraft/client/renderer/SectionOcclusionGraph$Node.class
 net/minecraft/client/renderer/ShaderDefines$Builder.class
 net/minecraft/client/renderer/ShaderDefines.class
-net/minecraft/client/renderer/PostChainConfig$InternalTarget.class
 net/minecraft/client/renderer/ShaderManager$CompilationCache.class
 net/minecraft/client/renderer/ShaderManager$CompilationException.class
-net/minecraft/client/renderer/ShaderManager$Configs.class
+net/minecraft/client/renderer/RenderPipelines.class
+net/minecraft/client/renderer/SectionBufferBuilderPool.class
 net/minecraft/client/renderer/ShaderManager$ShaderSourceKey.class
 net/minecraft/client/renderer/SectionOcclusionGraph.class
 net/minecraft/client/renderer/ShaderManager.class
 net/minecraft/client/renderer/Sheets.class
 net/minecraft/client/renderer/SpriteCoordinateExpander.class
 net/minecraft/client/renderer/SpriteMapper.class
-net/minecraft/client/renderer/RenderPipelines.class
+net/minecraft/client/renderer/ShaderManager$Configs.class
+net/minecraft/client/renderer/SectionOcclusionGraph.class
 net/minecraft/client/renderer/SubmitNodeCollector$CustomGeometryRenderer.class
-net/minecraft/client/renderer/SubmitNodeCollection.class
 net/minecraft/client/renderer/SubmitNodeCollector.class
 net/minecraft/client/renderer/SubmitNodeCollector$ParticleGroupRenderer.class
 net/minecraft/client/renderer/SubmitNodeStorage$BreakingBlockModelSubmit.class
@@ -59345,28 +59428,40 @@ net/minecraft/client/renderer/SubmitNodeStorage$CustomGeometrySubmit.class
 net/minecraft/client/renderer/SubmitNodeStorage$FlameSubmit.class
 net/minecraft/client/renderer/SubmitNodeStorage$LeashSubmit.class
 net/minecraft/client/renderer/SubmitNodeStorage$ItemSubmit.class
-net/minecraft/client/renderer/SkyRenderer.class
+net/minecraft/client/renderer/SubmitNodeStorage$ModelPartSubmit.class
+net/minecraft/client/renderer/SubmitNodeStorage$ModelSubmit.class
 net/minecraft/client/renderer/SubmitNodeStorage$MovingBlockSubmit.class
 net/minecraft/client/renderer/SubmitNodeStorage$ModelSubmit.class
 net/minecraft/client/renderer/SubmitNodeStorage$NameTagSubmit.class
-net/minecraft/client/renderer/SubmitNodeStorage$ShadowSubmit.class
-net/minecraft/client/renderer/ShapeRenderer.class
+net/minecraft/client/renderer/SubmitNodeStorage$TextSubmit.class
 net/minecraft/client/renderer/SubmitNodeStorage$TranslucentModelSubmit.class
-net/minecraft/client/renderer/SubmitNodeStorage$ModelPartSubmit.class
+net/minecraft/client/renderer/SkyRenderer.class
+net/minecraft/client/renderer/UiLightmap.class
+net/minecraft/client/renderer/SubmitNodeCollection.class
 net/minecraft/client/renderer/UniformValue$FloatUniform.class
-net/minecraft/client/renderer/SubmitNodeStorage.class
+net/minecraft/client/renderer/SubmitNodeStorage$ShadowSubmit.class
 net/minecraft/client/renderer/UniformValue$IntUniform.class
 net/minecraft/client/renderer/UniformValue$Type.class
 net/minecraft/client/renderer/UniformValue.class
 net/minecraft/client/renderer/WeatherEffectRenderer$ColumnInstance.class
 net/minecraft/client/renderer/ViewArea.class
-net/minecraft/client/renderer/UiLightmap.class
-net/minecraft/client/renderer/SubmitNodeStorage$TextSubmit.class
 net/minecraft/client/renderer/WorldBorderRenderer.class
+net/minecraft/client/renderer/SubmitNodeStorage.class
 net/minecraft/client/renderer/WeatherEffectRenderer.class
 net/minecraft/client/renderer/chunk/ChunkSectionLayer.class
 net/minecraft/client/renderer/chunk/ChunkSectionLayerGroup.class
 net/minecraft/client/renderer/chunk/CompileTaskDynamicQueue.class
+net/minecraft/client/renderer/chunk/RenderRegionCache.class
+net/minecraft/client/renderer/chunk/CompiledSectionMesh.class
+net/minecraft/client/renderer/chunk/RenderSectionRegion.class
+net/minecraft/client/renderer/chunk/SectionCompiler$Results.class
+net/minecraft/client/renderer/chunk/SectionCopy.class
+net/minecraft/client/renderer/chunk/SectionMesh$SectionDraw.class
+net/minecraft/client/renderer/chunk/SectionCompiler.class
+net/minecraft/client/renderer/chunk/SectionMesh.class
+net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$CompileTask$SectionTaskResult.class
+net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$CompileTask.class
+net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$ResortTransparencyTask.class
 net/minecraft/client/renderer/chunk/ChunkSectionsToRender.class
 net/minecraft/client/renderer/chunk/RenderRegionCache.class
 net/minecraft/client/renderer/chunk/CompiledSectionMesh.class
@@ -59380,15 +59475,16 @@ net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$Resort
 net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$RebuildTask.class
 net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSectionBufferSlice.class
 net/minecraft/client/renderer/chunk/SectionRenderDispatcher$SectionUberBuffers.class
-net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection.class
-net/minecraft/client/renderer/chunk/SectionRenderDispatcher.class
 net/minecraft/client/renderer/chunk/TranslucencyPointOfView.class
+net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection.class
 net/minecraft/client/renderer/chunk/VisibilitySet.class
 net/minecraft/client/renderer/chunk/VisGraph.class
-net/minecraft/client/renderer/chunk/SectionCompiler.class
-net/minecraft/client/renderer/chunk/SectionCopy.class
+net/minecraft/client/renderer/chunk/SectionRenderDispatcher.class
+net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$RebuildTask.class
 net/minecraft/client/renderer/fog/FogData.class
 net/minecraft/client/renderer/fog/FogRenderer$FogMode.class
+net/minecraft/client/renderer/fog/environment/BlindnessFogEnvironment.class
+net/minecraft/client/renderer/fog/environment/DarknessFogEnvironment.class
 net/minecraft/client/renderer/fog/environment/AtmosphericFogEnvironment.class
 net/minecraft/client/renderer/fog/environment/BlindnessFogEnvironment.class
 net/minecraft/client/renderer/fog/FogRenderer.class
@@ -59397,15 +59493,18 @@ net/minecraft/client/renderer/fog/environment/DarknessFogEnvironment.class
 net/minecraft/client/renderer/fog/environment/MobEffectFogEnvironment.class
 net/minecraft/client/renderer/fog/environment/PowderedSnowFogEnvironment.class
 net/minecraft/client/renderer/fog/environment/WaterFogEnvironment.class
-net/minecraft/client/renderer/fog/environment/LavaFogEnvironment.class
-net/minecraft/client/renderer/state/GameRenderState.class
+net/minecraft/client/renderer/fog/FogRenderer.class
 net/minecraft/client/renderer/state/LightmapRenderState.class
 net/minecraft/client/renderer/state/MapRenderState.class
 net/minecraft/client/renderer/state/OptionsRenderState.class
 net/minecraft/client/renderer/state/WindowRenderState.class
+net/minecraft/client/renderer/state/MapRenderState$MapDecorationRenderState.class
+net/minecraft/client/renderer/state/GameRenderState.class
 net/minecraft/client/renderer/state/level/BlockBreakingRenderState.class
 net/minecraft/client/renderer/state/level/BlockOutlineRenderState.class
 net/minecraft/client/renderer/state/level/CameraEntityRenderState.class
+net/minecraft/client/renderer/state/level/CameraRenderState.class
+net/minecraft/client/renderer/state/level/LevelRenderState.class
 net/minecraft/client/renderer/state/level/ParticleGroupRenderState.class
 net/minecraft/client/renderer/state/MapRenderState$MapDecorationRenderState.class
 net/minecraft/client/renderer/state/level/QuadParticleRenderState$ParticleConsumer.class
@@ -59414,59 +59513,58 @@ net/minecraft/client/renderer/state/level/QuadParticleRenderState$PreparedLayer.
 net/minecraft/client/renderer/state/level/QuadParticleRenderState$PreparedBuffers.class
 net/minecraft/client/renderer/state/level/QuadParticleRenderState$Storage.class
 net/minecraft/client/renderer/state/level/SkyRenderState.class
-net/minecraft/client/renderer/state/level/CameraRenderState.class
-net/minecraft/client/renderer/state/level/WorldBorderRenderState$DistancePerDirection.class
-net/minecraft/client/renderer/state/level/QuadParticleRenderState.class
-net/minecraft/client/renderer/state/level/WorldBorderRenderState.class
-net/minecraft/client/renderer/state/level/LevelRenderState.class
 net/minecraft/client/renderer/state/level/WeatherRenderState.class
+net/minecraft/client/renderer/state/level/WorldBorderRenderState$DistancePerDirection.class
+net/minecraft/client/renderer/state/level/WorldBorderRenderState.class
+net/minecraft/client/renderer/state/level/ParticlesRenderState.class
+net/minecraft/client/renderer/state/level/QuadParticleRenderState.class
 === backend class listing (opengl / vulkan packages, any jar on the classpath)
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/BufferStorage$Immutable.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/BufferStorage.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/BufferStorage$Mutable.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/DirectStateAccess$Core.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/DirectStateAccess$Emulated.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/DirectStateAccess.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlBackend.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/DirectStateAccess$Emulated.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlBuffer$GlMappedView.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlBuffer.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/DirectStateAccess$Core.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDebug$LogEntry.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlConst.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDebug.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDebugLabel$Empty.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlBackend.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDebugLabel$Core.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDebugLabel$Empty.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDebugLabel$Ext.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDevice$ShaderCompilationKey.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlConst.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDebugLabel.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDevice$ShaderCompilationKey.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlFence.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlCommandEncoder.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDebug.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlRenderPass$TextureViewAndSampler.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlProgram.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlRenderPipeline.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlRenderPass.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlSampler.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlShaderModule.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager$BlendState.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlShaderModule.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager$BooleanState.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager$ColorLogicState.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager$CullState.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager$DepthState.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager$PolygonOffsetState.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager$ScissorState.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlProgram.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager$TextureState.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlCommandEncoder.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager$ScissorState.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlTexture.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlTextureView.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlTimerQuery.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/Uniform$Sampler.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/Uniform$Ubo.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/Uniform$Utb.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/Uniform.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlDevice.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/Uniform.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/VertexArrayCache$Emulated.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/VertexArrayCache$Separate.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/VertexArrayCache$VertexArray.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/VertexArrayCache.class
 minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlTexture.class
-minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/VertexArrayCache$Separate.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/GlStateManager$PolygonOffsetState.class
+minecraft-merged-deobf-26.1.jar: com/mojang/blaze3d/opengl/Uniform$Utb.class
 === grep Sampler|BLIT|[bB]lit[A-Z(]|mainRenderTarget
 public final class net.minecraft.client.gui.render.TextureSetup extends java.lang.Record { ::   private final com.mojang.blaze3d.textures.GpuSampler sampler0;
 public final class net.minecraft.client.gui.render.TextureSetup extends java.lang.Record { ::   private final com.mojang.blaze3d.textures.GpuSampler sampler1;

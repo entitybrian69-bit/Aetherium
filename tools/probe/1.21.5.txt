@@ -1,11 +1,11 @@
 # minecraft 1.21.5 jar: /home/runner/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/minecraft-merged/1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2/minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar
 # candidates:
-#   /home/runner/.gradle/caches/fabric-loom/1.21.5/minecraft-extracted_server.jar
-#   /home/runner/.gradle/caches/fabric-loom/1.21.5/minecraft-server.jar
-#   /home/runner/.gradle/caches/fabric-loom/1.21.5/minecraft-client.jar
-#   /home/runner/.gradle/caches/fabric-loom/1.21.5/minecraft-merged.jar
 #   /home/runner/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/minecraft-merged/1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2/minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar
 #   /home/runner/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/minecraft-merged-intermediary/1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2/minecraft-merged-intermediary-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar
+#   /home/runner/.gradle/caches/fabric-loom/1.21.5/minecraft-client.jar
+#   /home/runner/.gradle/caches/fabric-loom/1.21.5/minecraft-extracted_server.jar
+#   /home/runner/.gradle/caches/fabric-loom/1.21.5/minecraft-merged.jar
+#   /home/runner/.gradle/caches/fabric-loom/1.21.5/minecraft-server.jar
 # version filter: [-_]1\.21\.5([-_]|\.jar$)
 === net.minecraft.client.Minecraft
 Compiled from "Minecraft.java"
@@ -22378,6 +22378,67 @@ public abstract class net.minecraft.client.gui.screens.Screen extends net.minecr
 }
 === org.lwjgl.system.MemoryUtil
 Error: class not found: org.lwjgl.system.MemoryUtil
+=== net.minecraft.client.sounds.SoundEngine$PlayResult
+Error: class not found: net.minecraft.client.sounds.SoundEngine$PlayResult
+=== net.minecraft.client.resources.sounds.SoundInstance$Attenuation
+Compiled from "SoundInstance.java"
+public final class net.minecraft.client.resources.sounds.SoundInstance$Attenuation extends java.lang.Enum<net.minecraft.client.resources.sounds.SoundInstance$Attenuation> {
+  public static final net.minecraft.client.resources.sounds.SoundInstance$Attenuation NONE;
+  public static final net.minecraft.client.resources.sounds.SoundInstance$Attenuation LINEAR;
+  private static final net.minecraft.client.resources.sounds.SoundInstance$Attenuation[] $VALUES;
+  public static net.minecraft.client.resources.sounds.SoundInstance$Attenuation[] values();
+  public static net.minecraft.client.resources.sounds.SoundInstance$Attenuation valueOf(java.lang.String);
+  private net.minecraft.client.resources.sounds.SoundInstance$Attenuation();
+  private static net.minecraft.client.resources.sounds.SoundInstance$Attenuation[] $values();
+  static {};
+}
+=== com.mojang.blaze3d.platform.NativeImage$Format
+Compiled from "NativeImage.java"
+public final class com.mojang.blaze3d.platform.NativeImage$Format extends java.lang.Enum<com.mojang.blaze3d.platform.NativeImage$Format> {
+  public static final com.mojang.blaze3d.platform.NativeImage$Format RGBA;
+  public static final com.mojang.blaze3d.platform.NativeImage$Format RGB;
+  public static final com.mojang.blaze3d.platform.NativeImage$Format LUMINANCE_ALPHA;
+  public static final com.mojang.blaze3d.platform.NativeImage$Format LUMINANCE;
+  final int components;
+  private final boolean hasRed;
+  private final boolean hasGreen;
+  private final boolean hasBlue;
+  private final boolean hasLuminance;
+  private final boolean hasAlpha;
+  private final int redOffset;
+  private final int greenOffset;
+  private final int blueOffset;
+  private final int luminanceOffset;
+  private final int alphaOffset;
+  private final boolean supportedByStb;
+  private static final com.mojang.blaze3d.platform.NativeImage$Format[] $VALUES;
+  public static com.mojang.blaze3d.platform.NativeImage$Format[] values();
+  public static com.mojang.blaze3d.platform.NativeImage$Format valueOf(java.lang.String);
+  private com.mojang.blaze3d.platform.NativeImage$Format(int, boolean, boolean, boolean, boolean, boolean, int, int, int, int, int, boolean);
+  public int components();
+  public boolean hasRed();
+  public boolean hasGreen();
+  public boolean hasBlue();
+  public boolean hasLuminance();
+  public boolean hasAlpha();
+  public int redOffset();
+  public int greenOffset();
+  public int blueOffset();
+  public int luminanceOffset();
+  public int alphaOffset();
+  public boolean hasLuminanceOrRed();
+  public boolean hasLuminanceOrGreen();
+  public boolean hasLuminanceOrBlue();
+  public boolean hasLuminanceOrAlpha();
+  public int luminanceOrRedOffset();
+  public int luminanceOrGreenOffset();
+  public int luminanceOrBlueOffset();
+  public int luminanceOrAlphaOffset();
+  public boolean supportedByStb();
+  static com.mojang.blaze3d.platform.NativeImage$Format getStbFormat(int);
+  private static com.mojang.blaze3d.platform.NativeImage$Format[] $values();
+  static {};
+}
 === code net.minecraft.Util :: max\.bg\.threads|availableProcessors|getMaxThreads|makeExecutor|BACKGROUND|backgroundExecutor
   private static final java.lang.String MAX_THREADS_SYSTEM_PROPERTY = "max.bg.threads"; :: private static final java.lang.String MAX_THREADS_SYSTEM_PROPERTY = "max.bg.threads";
   private static final net.minecraft.TracingExecutor BACKGROUND_EXECUTOR; :: private static final net.minecraft.TracingExecutor BACKGROUND_EXECUTOR;
@@ -68862,8 +68923,8 @@ com/mojang/blaze3d/platform/NativeImage$Format.class
 net/minecraft/client/particle/GlowParticle$WaxOnProvider.class
 net/minecraft/client/particle/GlowParticle$WaxOffProvider.class
 net/minecraft/client/particle/GlowParticle$ScrapeProvider.class
-net/minecraft/client/particle/GlowParticle$GlowSquidProvider.class
 net/minecraft/client/particle/GlowParticle$ElectricSparkProvider.class
+net/minecraft/client/particle/GlowParticle$GlowSquidProvider.class
 net/minecraft/client/particle/DustParticle$Provider.class
 com/mojang/blaze3d/vertex/VertexSorting$DistanceFunction.class
 net/minecraft/client/particle/SpellParticle$InstantProvider.class
@@ -68894,7 +68955,6 @@ net/minecraft/client/particle/ParticleProvider$Sprite.class
 net/minecraft/client/particle/SplashParticle$Provider.class
 net/minecraft/client/particle/WakeParticle$Provider.class
 net/minecraft/client/renderer/ItemInHandRenderer$HandRenderSelection.class
-net/minecraft/client/renderer/RenderStateShard$EmptyTextureStateShard.class
 net/minecraft/client/renderer/RenderStateShard$BooleanStateShard.class
 net/minecraft/client/renderer/RenderStateShard$LightmapStateShard.class
 net/minecraft/client/renderer/RenderStateShard$LayeringStateShard.class
@@ -68905,11 +68965,12 @@ net/minecraft/client/renderer/RenderStateShard$OffsetTexturingStateShard.class
 net/minecraft/client/renderer/RenderStateShard$TextureStateShard.class
 net/minecraft/client/renderer/RenderStateShard$OverlayStateShard.class
 net/minecraft/client/renderer/RenderStateShard$TexturingStateShard.class
+net/minecraft/client/renderer/RenderStateShard$EmptyTextureStateShard.class
 com/mojang/blaze3d/platform/ClientShutdownWatchdog.class
 com/mojang/blaze3d/platform/DebugMemoryUntracker.class
 com/mojang/blaze3d/platform/ClipboardManager.class
-com/mojang/blaze3d/platform/FramerateLimitTracker.class
 com/mojang/blaze3d/platform/DisplayData.class
+com/mojang/blaze3d/platform/FramerateLimitTracker.class
 com/mojang/blaze3d/platform/IconSet.class
 com/mojang/blaze3d/platform/Lighting.class
 com/mojang/blaze3d/platform/Monitor.class
@@ -68921,6 +68982,7 @@ com/mojang/blaze3d/platform/WindowEventHandler.class
 com/mojang/blaze3d/platform/ScreenManager.class
 com/mojang/blaze3d/platform/Window.class
 com/mojang/blaze3d/platform/NativeImage.class
+com/mojang/blaze3d/platform/Window.class
 com/mojang/blaze3d/systems/TimerQuery.class
 com/mojang/blaze3d/vertex/BufferBuilder.class
 com/mojang/blaze3d/vertex/ByteBufferBuilder.class
@@ -68940,8 +69002,8 @@ net/minecraft/client/AttackIndicatorStatus.class
 net/minecraft/client/Camera.class
 net/minecraft/client/CameraType.class
 net/minecraft/client/ClientBootstrap.class
-net/minecraft/client/CommandHistory.class
 net/minecraft/client/CloudStatus.class
+net/minecraft/client/CommandHistory.class
 net/minecraft/client/ClientRecipeBook.class
 net/minecraft/client/DebugQueryHandler.class
 net/minecraft/client/ComponentCollector.class
@@ -68954,10 +69016,10 @@ net/minecraft/client/InputType.class
 net/minecraft/client/GuiMessageTag.class
 net/minecraft/client/InactivityFpsLimit.class
 net/minecraft/client/KeyMapping.class
-net/minecraft/client/KeyboardHandler.class
+net/minecraft/client/OptionInstance.class
 net/minecraft/client/MouseHandler.class
 net/minecraft/client/NarratorStatus.class
-net/minecraft/client/OptionInstance.class
+net/minecraft/client/KeyboardHandler.class
 net/minecraft/client/PeriodicNotificationManager.class
 net/minecraft/client/ResourceLoadStateTracker.class
 net/minecraft/client/PrioritizeChunkUpdates.class
@@ -68973,7 +69035,7 @@ net/minecraft/client/particle/GustParticle$SmallProvider.class
 net/minecraft/client/particle/GustParticle$Provider.class
 net/minecraft/client/gui/screens/AlertScreen.class
 net/minecraft/client/gui/screens/AccessibilityOnboardingScreen.class
-net/minecraft/client/gui/screens/BackupConfirmScreen.class
+net/minecraft/client/gui/screens/ConfirmLinkScreen.class
 net/minecraft/client/gui/screens/ChatScreen.class
 net/minecraft/client/gui/screens/ConnectScreen.class
 net/minecraft/client/gui/screens/ConfirmScreen.class
@@ -68988,14 +69050,17 @@ net/minecraft/client/gui/screens/DisconnectedScreen.class
 net/minecraft/client/gui/screens/DirectJoinServerScreen.class
 net/minecraft/client/gui/screens/ErrorScreen.class
 net/minecraft/client/gui/screens/EditServerScreen.class
+net/minecraft/client/gui/screens/BackupConfirmScreen.class
 net/minecraft/client/gui/screens/GenericWaitingScreen.class
 net/minecraft/client/gui/screens/GenericMessageScreen.class
 net/minecraft/client/gui/screens/LevelLoadingScreen.class
 net/minecraft/client/gui/screens/InBedChatScreen.class
 net/minecraft/client/gui/screens/NoticeWithLinkScreen.class
 net/minecraft/client/gui/screens/OutOfMemoryScreen.class
-net/minecraft/client/gui/screens/PauseScreen.class
+net/minecraft/client/gui/screens/PresetFlatWorldScreen.class
+net/minecraft/client/gui/screens/ReceivingLevelScreen.class
 net/minecraft/client/gui/screens/ProgressScreen.class
+net/minecraft/client/gui/screens/PauseScreen.class
 net/minecraft/client/particle/GustSeedParticle$Provider.class
 net/minecraft/client/gui/screens/PresetFlatWorldScreen.class
 net/minecraft/client/gui/screens/RecoverWorldDataScreen.class
@@ -69009,14 +69074,14 @@ net/minecraft/client/renderer/state/MapRenderState$MapDecorationRenderState.clas
 com/mojang/blaze3d/platform/DestFactor.class
 net/minecraft/client/model/geom/EntityModelSet.class
 net/minecraft/client/model/geom/ModelLayerLocation.class
-net/minecraft/client/model/geom/ModelPart.class
-net/minecraft/client/model/geom/PartPose.class
-net/minecraft/client/model/geom/LayerDefinitions.class
 net/minecraft/client/model/geom/PartNames.class
+net/minecraft/client/model/geom/PartPose.class
+net/minecraft/client/model/geom/ModelPart.class
+net/minecraft/client/model/geom/LayerDefinitions.class
 net/minecraft/client/model/geom/ModelLayers.class
 net/minecraft/client/particle/AttackSweepParticle.class
 net/minecraft/client/particle/AshParticle.class
-net/minecraft/client/particle/BaseAshSmokeParticle.class
+net/minecraft/client/particle/BlockMarker.class
 net/minecraft/client/particle/BubbleColumnUpParticle.class
 net/minecraft/client/particle/BreakingItemParticle.class
 net/minecraft/client/particle/BubblePopParticle.class
@@ -69036,33 +69101,35 @@ net/minecraft/client/particle/FallingDustParticle.class
 net/minecraft/client/particle/FireflyParticle.class
 net/minecraft/client/particle/FallingLeavesParticle.class
 net/minecraft/client/particle/FlameParticle.class
+net/minecraft/client/particle/FallingLeavesParticle.class
 net/minecraft/client/particle/FireworkParticles.class
 net/minecraft/client/particle/FlyTowardsPositionParticle.class
 net/minecraft/client/particle/FlyStraightTowardsParticle.class
-net/minecraft/client/particle/GlowParticle.class
+net/minecraft/client/particle/GustParticle.class
 net/minecraft/client/particle/HeartParticle.class
+net/minecraft/client/particle/GlowParticle.class
 net/minecraft/client/particle/GustSeedParticle.class
 net/minecraft/client/particle/HugeExplosionSeedParticle.class
 net/minecraft/client/particle/HugeExplosionParticle.class
-net/minecraft/client/particle/LargeSmokeParticle.class
 net/minecraft/client/particle/ItemPickupParticle.class
 net/minecraft/client/particle/MobAppearanceParticle.class
-net/minecraft/client/particle/LavaParticle.class
 net/minecraft/client/particle/NoteParticle.class
+net/minecraft/client/particle/LavaParticle.class
 net/minecraft/client/particle/NoRenderParticle.class
 net/minecraft/client/particle/ParticleDescription.class
-net/minecraft/client/particle/Particle.class
+net/minecraft/client/particle/BaseAshSmokeParticle.class
 net/minecraft/client/particle/ParticleRenderType.class
 net/minecraft/client/particle/ParticleProvider.class
 net/minecraft/client/particle/PortalParticle.class
-net/minecraft/client/particle/PlayerCloudParticle.class
 net/minecraft/client/particle/RisingParticle.class
+net/minecraft/client/particle/PlayerCloudParticle.class
 net/minecraft/client/particle/ReversePortalParticle.class
 net/minecraft/client/particle/SculkChargePopParticle.class
 net/minecraft/client/particle/SculkChargeParticle.class
 net/minecraft/client/particle/SimpleAnimatedParticle.class
 net/minecraft/client/particle/ShriekParticle.class
 net/minecraft/client/particle/SmokeParticle.class
+net/minecraft/client/particle/SonicBoomParticle.class
 net/minecraft/client/particle/SingleQuadParticle.class
 net/minecraft/client/particle/SonicBoomParticle.class
 net/minecraft/client/particle/GustParticle.class
@@ -69080,63 +69147,64 @@ net/minecraft/client/particle/TrackingEmitter.class
 net/minecraft/client/particle/TerrainParticle.class
 net/minecraft/client/particle/TotemParticle.class
 net/minecraft/client/particle/TrailParticle.class
-net/minecraft/client/particle/TrialSpawnerDetectionParticle.class
 net/minecraft/client/particle/VibrationSignalParticle.class
-net/minecraft/client/particle/WaterCurrentDownParticle.class
+net/minecraft/client/particle/TrialSpawnerDetectionParticle.class
 net/minecraft/client/particle/WakeParticle.class
 net/minecraft/client/particle/WhiteAshParticle.class
+net/minecraft/client/particle/Particle.class
 net/minecraft/client/particle/WaterDropParticle.class
 net/minecraft/client/particle/WhiteSmokeParticle.class
 net/minecraft/client/player/ClientInput.class
 net/minecraft/client/particle/ParticleEngine.class
 net/minecraft/client/player/KeyboardInput.class
+net/minecraft/client/particle/WaterCurrentDownParticle.class
 net/minecraft/client/player/RemotePlayer.class
-net/minecraft/client/player/LocalPlayer.class
+net/minecraft/client/particle/ParticleEngine.class
 net/minecraft/client/renderer/BiomeColors.class
-net/minecraft/client/renderer/CubeMap.class
 net/minecraft/client/renderer/DimensionSpecialEffects.class
-net/minecraft/client/player/AbstractClientPlayer.class
+net/minecraft/client/renderer/CloudRenderer.class
 net/minecraft/client/renderer/FogParameters.class
 net/minecraft/client/renderer/FaceInfo.class
 net/minecraft/client/renderer/FogRenderer.class
-net/minecraft/client/renderer/GameRenderer.class
+net/minecraft/client/renderer/CubeMap.class
+net/minecraft/client/player/LocalPlayer.class
+net/minecraft/client/renderer/ItemBlockRenderTypes.class
 net/minecraft/client/renderer/GpuWarnlistManager.class
-net/minecraft/client/renderer/CloudRenderer.class
-net/minecraft/client/renderer/LevelEventHandler.class
 net/minecraft/client/renderer/LevelTargetBundle.class
+net/minecraft/client/renderer/ItemInHandRenderer.class
 net/minecraft/client/renderer/MapRenderer.class
 net/minecraft/client/renderer/LightTexture.class
 net/minecraft/client/renderer/MultiBufferSource.class
 net/minecraft/client/renderer/MaterialMapper.class
 net/minecraft/client/renderer/OutlineBufferSource.class
 net/minecraft/client/renderer/Octree.class
-net/minecraft/client/renderer/ItemBlockRenderTypes.class
-net/minecraft/client/renderer/PanoramaRenderer.class
-net/minecraft/client/renderer/PostPass.class
-net/minecraft/client/renderer/PostChainConfig.class
-net/minecraft/client/renderer/RenderBuffers.class
-net/minecraft/client/renderer/ItemInHandRenderer.class
-net/minecraft/client/renderer/LevelRenderer.class
-net/minecraft/client/renderer/RunningTrimmedMean.class
-net/minecraft/client/renderer/RenderPipelines.class
+net/minecraft/client/renderer/GameRenderer.class
 net/minecraft/client/renderer/PostChain.class
+net/minecraft/client/renderer/PanoramaRenderer.class
+net/minecraft/client/renderer/PostChainConfig.class
+net/minecraft/client/renderer/PostPass.class
+net/minecraft/client/renderer/RenderBuffers.class
+net/minecraft/client/renderer/RenderStateShard.class
+net/minecraft/client/renderer/RunningTrimmedMean.class
+net/minecraft/client/renderer/RenderType.class
+net/minecraft/client/renderer/ScreenEffectRenderer.class
 net/minecraft/client/renderer/SectionBufferBuilderPool.class
 net/minecraft/client/renderer/SectionBufferBuilderPack.class
-net/minecraft/client/renderer/RenderType.class
 net/minecraft/client/renderer/ShaderDefines.class
-net/minecraft/client/renderer/RenderStateShard.class
-net/minecraft/client/renderer/ScreenEffectRenderer.class
-net/minecraft/client/renderer/ShaderManager.class
-net/minecraft/client/renderer/SkyRenderer.class
-net/minecraft/client/renderer/Sheets.class
-net/minecraft/client/renderer/SpecialBlockModelRenderer.class
-net/minecraft/client/renderer/SpriteCoordinateExpander.class
-net/minecraft/client/renderer/VirtualScreen.class
-net/minecraft/client/renderer/ViewArea.class
+net/minecraft/client/renderer/RenderPipelines.class
+net/minecraft/client/renderer/LevelRenderer.class
+net/minecraft/client/renderer/LevelEventHandler.class
 net/minecraft/client/renderer/SectionOcclusionGraph.class
 net/minecraft/client/renderer/ShapeRenderer.class
-net/minecraft/client/renderer/WorldBorderRenderer.class
+net/minecraft/client/renderer/SpriteCoordinateExpander.class
+net/minecraft/client/renderer/SpecialBlockModelRenderer.class
+net/minecraft/client/renderer/VirtualScreen.class
+net/minecraft/client/renderer/Sheets.class
+net/minecraft/client/renderer/ViewArea.class
+net/minecraft/client/renderer/SkyRenderer.class
 net/minecraft/client/renderer/WeatherEffectRenderer.class
+net/minecraft/client/renderer/ShaderManager.class
+net/minecraft/client/renderer/WorldBorderRenderer.class
 net/minecraft/client/renderer/chunk/SectionRenderDispatcher$CompiledSection.class
 net/minecraft/client/renderer/chunk/SectionRenderDispatcher$TranslucencyPointOfView.class
 net/minecraft/client/renderer/chunk/SectionRenderDispatcher$SectionBuffers.class
@@ -69188,13 +69256,13 @@ com/mojang/blaze3d/systems/RenderSystem$AutoStorageIndexBuffer.class
 com/mojang/blaze3d/platform/PolygonMode.class
 net/minecraft/client/particle/PortalParticle$Provider.class
 net/minecraft/client/particle/SuspendedParticle$CrimsonSporeProvider.class
-net/minecraft/client/particle/SuspendedParticle$SporeBlossomAirProvider.class
 net/minecraft/client/particle/SuspendedParticle$UnderwaterProvider.class
+net/minecraft/client/particle/SuspendedParticle$SporeBlossomAirProvider.class
 net/minecraft/client/particle/SuspendedParticle$WarpedSporeProvider.class
-net/minecraft/client/particle/WhiteAshParticle$Provider.class
 net/minecraft/client/renderer/CloudRenderer$RelativeCameraPos.class
 net/minecraft/client/renderer/CloudRenderer$TextureData.class
 net/minecraft/client/particle/SculkChargeParticle$Provider.class
+net/minecraft/client/particle/WhiteAshParticle$Provider.class
 net/minecraft/client/renderer/RenderStateShard$MultiTextureStateShard$Entry.class
 net/minecraft/client/renderer/RenderStateShard$MultiTextureStateShard$Builder.class
 com/mojang/blaze3d/vertex/ByteBufferBuilder$Result.class
@@ -69206,18 +69274,19 @@ net/minecraft/client/particle/TerrainParticle$DustPillarProvider.class
 net/minecraft/client/particle/TerrainParticle$Provider.class
 net/minecraft/client/renderer/DimensionSpecialEffects$EndEffects.class
 net/minecraft/client/renderer/DimensionSpecialEffects$NetherEffects.class
-net/minecraft/client/renderer/DimensionSpecialEffects$OverworldEffects.class
 net/minecraft/client/renderer/DimensionSpecialEffects$SkyType.class
+net/minecraft/client/renderer/DimensionSpecialEffects$OverworldEffects.class
 net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$CompileTask.class
 net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$ResortTransparencyTask.class
 net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$RebuildTask.class
 net/minecraft/client/particle/BreakingItemParticle$SnowballProvider.class
 net/minecraft/client/particle/BreakingItemParticle$Provider.class
 net/minecraft/client/particle/BreakingItemParticle$ItemParticleProvider.class
+net/minecraft/client/particle/BreakingItemParticle$Provider.class
 net/minecraft/client/particle/BreakingItemParticle$CobwebProvider.class
-net/minecraft/client/particle/BreakingItemParticle$SlimeProvider.class
-net/minecraft/client/particle/LavaParticle$Provider.class
 net/minecraft/client/particle/EndRodParticle$Provider.class
+net/minecraft/client/particle/LavaParticle$Provider.class
+com/mojang/blaze3d/vertex/VertexFormatElement$Type.class
 com/mojang/blaze3d/vertex/MeshData$SortState.class
 com/mojang/blaze3d/vertex/MeshData$DrawState.class
 net/minecraft/client/particle/BubblePopParticle$Provider.class
@@ -69232,6 +69301,7 @@ net/minecraft/client/renderer/Octree$Leaf.class
 net/minecraft/client/renderer/Octree$OctreeVisitor.class
 net/minecraft/client/renderer/Octree$Node.class
 net/minecraft/client/renderer/Octree$Branch.class
+net/minecraft/client/renderer/Octree$Node.class
 net/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder.class
 net/minecraft/client/particle/SculkChargePopParticle$Provider.class
 net/minecraft/client/particle/FallingDustParticle$Provider.class
@@ -69242,9 +69312,9 @@ com/mojang/blaze3d/systems/RenderPass$Draw.class
 com/mojang/blaze3d/systems/RenderPass$UniformUploader.class
 net/minecraft/client/particle/BubbleParticle$Provider.class
 net/minecraft/client/particle/FireworkParticles$SparkProvider.class
+net/minecraft/client/particle/CritParticle$Provider.class
 net/minecraft/client/particle/FireworkParticles$Starter.class
 net/minecraft/client/particle/CritParticle$MagicProvider.class
-net/minecraft/client/particle/CritParticle$Provider.class
 net/minecraft/client/particle/CritParticle$DamageIndicatorProvider.class
 com/mojang/blaze3d/platform/GLX.class
 net/minecraft/client/particle/FireworkParticles$SparkParticle.class
@@ -69254,14 +69324,14 @@ net/minecraft/client/particle/SingleQuadParticle$FacingCameraMode.class
 com/mojang/blaze3d/systems/RenderSystem$AutoStorageIndexBuffer$IndexGenerator.class
 net/minecraft/client/renderer/PostChain$TargetBundle.class
 com/mojang/blaze3d/systems/RenderPass.class
-net/minecraft/client/renderer/SectionOcclusionGraph$GraphEvents.class
 net/minecraft/client/renderer/SectionOcclusionGraph$GraphStorage.class
-net/minecraft/client/renderer/SectionOcclusionGraph$SectionToNodeMap.class
-net/minecraft/client/renderer/SectionOcclusionGraph$Node.class
 net/minecraft/client/renderer/SectionOcclusionGraph$GraphState.class
+net/minecraft/client/renderer/SectionOcclusionGraph$GraphEvents.class
+net/minecraft/client/renderer/SectionOcclusionGraph$Node.class
+net/minecraft/client/renderer/SectionOcclusionGraph$SectionToNodeMap.class
 com/mojang/blaze3d/platform/InputConstants$Key.class
-com/mojang/blaze3d/platform/InputConstants$Type.class
 com/mojang/blaze3d/vertex/PoseStack$Pose.class
+com/mojang/blaze3d/platform/InputConstants$Type.class
 net/minecraft/client/particle/CampfireSmokeParticle$SignalProvider.class
 net/minecraft/client/particle/CampfireSmokeParticle$CosyProvider.class
 net/minecraft/client/particle/Particle$LifetimeAlpha.class
@@ -69288,9 +69358,9 @@ net/minecraft/client/renderer/PostPass$Input.class
 net/minecraft/client/renderer/PostPass$TextureInput.class
 net/minecraft/client/renderer/PostPass$TargetInput.class
 net/minecraft/client/renderer/ShaderManager$CompilationCache.class
-net/minecraft/client/renderer/ShaderManager$Configs.class
 net/minecraft/client/renderer/ShaderManager$CompilationException.class
 net/minecraft/client/renderer/ShaderManager$ShaderSourceKey.class
+net/minecraft/client/renderer/ShaderManager$Configs.class
 net/minecraft/client/particle/DragonBreathParticle$Provider.class
 net/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration.class
 net/minecraft/client/particle/ParticleEngine$MutableSpriteSet.class
@@ -69321,32 +69391,32 @@ minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojan
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlDebugLabel.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlRenderPass.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlDevice.class
-minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlCommandEncoder.class
-minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlProgram.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlShaderModule.class
+minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlProgram.class
+minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlCommandEncoder.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlRenderPipeline.class
-minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/Uniform.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlTexture.class
+minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/Uniform.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/VertexArrayCache.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlDevice$ShaderCompilationKey.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlConst.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlDebugLabel$Core.class
-minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlDebugLabel$Empty.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlDebugLabel$Ext.class
+minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlDebugLabel$Empty.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager$BlendState.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager$CullState.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager$ColorMask.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager$ColorLogicState.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager$TextureState.class
+minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager$ScissorState.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager$DepthState.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager$PolygonOffsetState.class
-minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager$BooleanState.class
-minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/GlStateManager$ScissorState.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/VertexArrayCache$VertexArray.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/VertexArrayCache$Separate.class
 minecraft-merged-1.21.5-loom.mappings.1_21_5.layered+hash.2198-v2.jar: com/mojang/blaze3d/opengl/VertexArrayCache$Emulated.class
 === grep Sampler|BLIT|[bB]lit[A-Z(]|mainRenderTarget
+public class net.minecraft.client.Minecraft extends net.minecraft.util.thread.ReentrantBlockableEventLoop<java.lang.Runnable> implements com.mojang.blaze3d.platform.WindowEventHandler { ::   private final com.mojang.blaze3d.pipeline.RenderTarget mainRenderTarget;
 public class net.minecraft.client.gui.GuiGraphics { ::   public void blitSprite(java.util.function.Function<net.minecraft.resources.ResourceLocation, net.minecraft.client.renderer.RenderType>, net.minecraft.resources.ResourceLocation, int, int, int, int);
 public class net.minecraft.client.gui.GuiGraphics { ::   public void blitSprite(java.util.function.Function<net.minecraft.resources.ResourceLocation, net.minecraft.client.renderer.RenderType>, net.minecraft.resources.ResourceLocation, int, int, int, int, int);
 public class net.minecraft.client.gui.GuiGraphics { ::   public void blitSprite(java.util.function.Function<net.minecraft.resources.ResourceLocation, net.minecraft.client.renderer.RenderType>, net.minecraft.resources.ResourceLocation, int, int, int, int, int, int, int, int);
@@ -69361,32 +69431,25 @@ public class net.minecraft.client.gui.GuiGraphics { ::   public void blit(java.u
 public class net.minecraft.client.gui.GuiGraphics { ::   public void blit(java.util.function.Function<net.minecraft.resources.ResourceLocation, net.minecraft.client.renderer.RenderType>, net.minecraft.resources.ResourceLocation, int, int, float, float, int, int, int, int, int, int);
 public class net.minecraft.client.gui.GuiGraphics { ::   public void blit(java.util.function.Function<net.minecraft.resources.ResourceLocation, net.minecraft.client.renderer.RenderType>, net.minecraft.resources.ResourceLocation, int, int, float, float, int, int, int, int, int, int, int);
 public class net.minecraft.client.gui.GuiGraphics { ::   private void innerBlit(java.util.function.Function<net.minecraft.resources.ResourceLocation, net.minecraft.client.renderer.RenderType>, net.minecraft.resources.ResourceLocation, int, int, int, int, float, float, float, float, int);
-class net.minecraft.client.gui.screens.CreateFlatWorldScreen$DetailsList$Entry extends net.minecraft.client.gui.components.ObjectSelectionList$Entry<net.minecraft.client.gui.screens.CreateFlatWorldScreen$DetailsList$Entry> { ::   private void blitSlot(net.minecraft.client.gui.GuiGraphics, int, int, net.minecraft.world.item.ItemStack);
-class net.minecraft.client.gui.screens.CreateFlatWorldScreen$DetailsList$Entry extends net.minecraft.client.gui.components.ObjectSelectionList$Entry<net.minecraft.client.gui.screens.CreateFlatWorldScreen$DetailsList$Entry> { ::   private void blitSlotBg(net.minecraft.client.gui.GuiGraphics, int, int);
-public abstract class net.minecraft.client.gui.screens.inventory.AbstractContainerScreen<T extends net.minecraft.world.inventory.AbstractContainerMenu> extends net.minecraft.client.gui.screens.Screen implements net.minecraft.client.gui.screens.inventory.MenuAccess<T> { ::   public static final int SLOT_ITEM_BLIT_OFFSET;
-public abstract class net.minecraft.client.gui.screens.inventory.AbstractContainerScreen<T extends net.minecraft.world.inventory.AbstractContainerMenu> extends net.minecraft.client.gui.screens.Screen implements net.minecraft.client.gui.screens.inventory.MenuAccess<T> { ::   private static final int HOVER_ITEM_BLIT_OFFSET;
 public class net.minecraft.client.gui.screens.PresetFlatWorldScreen$PresetsList$Entry extends net.minecraft.client.gui.components.ObjectSelectionList$Entry<net.minecraft.client.gui.screens.PresetFlatWorldScreen$PresetsList$Entry> { ::   private void blitSlot(net.minecraft.client.gui.GuiGraphics, int, int, net.minecraft.world.item.Item);
 public class net.minecraft.client.gui.screens.PresetFlatWorldScreen$PresetsList$Entry extends net.minecraft.client.gui.components.ObjectSelectionList$Entry<net.minecraft.client.gui.screens.PresetFlatWorldScreen$PresetsList$Entry> { ::   private void blitSlotBg(net.minecraft.client.gui.GuiGraphics, int, int);
-interface net.minecraft.client.profiling.package-info { :: Compiled from "ClientMetricsSamplersProvider.java"
+public abstract class net.minecraft.client.gui.screens.inventory.AbstractContainerScreen<T extends net.minecraft.world.inventory.AbstractContainerMenu> extends net.minecraft.client.gui.screens.Screen implements net.minecraft.client.gui.screens.inventory.MenuAccess<T> { ::   public static final int SLOT_ITEM_BLIT_OFFSET;
+public abstract class net.minecraft.client.gui.screens.inventory.AbstractContainerScreen<T extends net.minecraft.world.inventory.AbstractContainerMenu> extends net.minecraft.client.gui.screens.Screen implements net.minecraft.client.gui.screens.inventory.MenuAccess<T> { ::   private static final int HOVER_ITEM_BLIT_OFFSET;
+class net.minecraft.client.gui.screens.CreateFlatWorldScreen$DetailsList$Entry extends net.minecraft.client.gui.components.ObjectSelectionList$Entry<net.minecraft.client.gui.screens.CreateFlatWorldScreen$DetailsList$Entry> { ::   private void blitSlot(net.minecraft.client.gui.GuiGraphics, int, int, net.minecraft.world.item.ItemStack);
+class net.minecraft.client.gui.screens.CreateFlatWorldScreen$DetailsList$Entry extends net.minecraft.client.gui.components.ObjectSelectionList$Entry<net.minecraft.client.gui.screens.CreateFlatWorldScreen$DetailsList$Entry> { ::   private void blitSlotBg(net.minecraft.client.gui.GuiGraphics, int, int);
+public final class net.minecraft.client.OptionInstance$LazyEnum<T> extends java.lang.Record implements net.minecraft.client.OptionInstance$CycleableValueSet<T> { :: Compiled from "ClientMetricsSamplersProvider.java"
 public class net.minecraft.client.profiling.ClientMetricsSamplersProvider implements net.minecraft.util.profiling.metrics.MetricsSamplerProvider { :: public class net.minecraft.client.profiling.ClientMetricsSamplersProvider implements net.minecraft.util.profiling.metrics.MetricsSamplerProvider {
 public class net.minecraft.client.profiling.ClientMetricsSamplersProvider implements net.minecraft.util.profiling.metrics.MetricsSamplerProvider { ::   private final java.util.Set<net.minecraft.util.profiling.metrics.MetricSampler> samplers;
 public class net.minecraft.client.profiling.ClientMetricsSamplersProvider implements net.minecraft.util.profiling.metrics.MetricsSamplerProvider { ::   private final net.minecraft.util.profiling.metrics.profiling.ProfilerSamplerAdapter samplerFactory;
 public class net.minecraft.client.profiling.ClientMetricsSamplersProvider implements net.minecraft.util.profiling.metrics.MetricsSamplerProvider { ::   public net.minecraft.client.profiling.ClientMetricsSamplersProvider(java.util.function.LongSupplier, net.minecraft.client.renderer.LevelRenderer);
 public class net.minecraft.client.profiling.ClientMetricsSamplersProvider implements net.minecraft.util.profiling.metrics.MetricsSamplerProvider { ::   private void registerStaticSamplers();
 public class net.minecraft.client.profiling.ClientMetricsSamplersProvider implements net.minecraft.util.profiling.metrics.MetricsSamplerProvider { ::   public java.util.Set<net.minecraft.util.profiling.metrics.MetricSampler> samplers(java.util.function.Supplier<net.minecraft.util.profiling.ProfileCollector>);
-public class net.minecraft.client.Minecraft extends net.minecraft.util.thread.ReentrantBlockableEventLoop<java.lang.Runnable> implements com.mojang.blaze3d.platform.WindowEventHandler { ::   private final com.mojang.blaze3d.pipeline.RenderTarget mainRenderTarget;
 public class net.minecraft.client.renderer.RenderPipelines { ::   public static final com.mojang.blaze3d.pipeline.RenderPipeline ENTITY_OUTLINE_BLIT;
 public class net.minecraft.client.renderer.RenderPipelines { ::   public static final com.mojang.blaze3d.pipeline.RenderPipeline TRACY_BLIT;
 public class net.minecraft.client.renderer.entity.ItemRenderer { ::   public static final int ITEM_DECORATION_BLIT_OFFSET;
-public class net.minecraft.world.level.levelgen.NoiseChunk implements net.minecraft.world.level.levelgen.DensityFunction$ContextProvider,net.minecraft.world.level.levelgen.DensityFunction$FunctionContext { ::   protected net.minecraft.world.level.biome.Climate$Sampler cachedClimateSampler(net.minecraft.world.level.levelgen.NoiseRouter, java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>);
-public final class net.minecraft.world.level.levelgen.RandomState { ::   private final net.minecraft.world.level.biome.Climate$Sampler sampler;
-public final class net.minecraft.world.level.levelgen.RandomState { ::   public net.minecraft.world.level.biome.Climate$Sampler sampler();
-public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { :: public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext {
-public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { ::   private final net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper rarityValueMapper;
-public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { ::   private static final com.mojang.serialization.MapCodec<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler> DATA_CODEC;
-public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { ::   public static final net.minecraft.util.KeyDispatchDataCodec<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler> CODEC;
-public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { ::   protected net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler(net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction$NoiseHolder, net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper);
-public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { ::   public net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper rarityValueMapper();
+public class net.minecraft.world.level.chunk.LevelChunkSection { ::   public void fillBiomesFromNoise(net.minecraft.world.level.biome.BiomeResolver, net.minecraft.world.level.biome.Climate$Sampler, int, int, int);
+public class net.minecraft.world.level.chunk.ImposterProtoChunk extends net.minecraft.world.level.chunk.ProtoChunk { ::   public void fillBiomesFromNoise(net.minecraft.world.level.biome.BiomeResolver, net.minecraft.world.level.biome.Climate$Sampler);
+public abstract class net.minecraft.world.level.chunk.ChunkAccess implements net.minecraft.world.level.biome.BiomeManager$NoiseBiomeSource,net.minecraft.world.level.chunk.LightChunk,net.minecraft.world.level.chunk.StructureAccess { ::   public void fillBiomesFromNoise(net.minecraft.world.level.biome.BiomeResolver, net.minecraft.world.level.biome.Climate$Sampler);
 public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper extends java.lang.Enum<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper> implements net.minecraft.util.StringRepresentable { :: public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper extends java.lang.Enum<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper> implements net.minecraft.util.StringRepresentable {
 public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper extends java.lang.Enum<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper> implements net.minecraft.util.StringRepresentable { ::   public static final net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper TYPE1;
 public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper extends java.lang.Enum<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper> implements net.minecraft.util.StringRepresentable { ::   public static final net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper TYPE2;
@@ -69396,31 +69459,37 @@ public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScal
 public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper extends java.lang.Enum<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper> implements net.minecraft.util.StringRepresentable { ::   public static net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper valueOf(java.lang.String);
 public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper extends java.lang.Enum<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper> implements net.minecraft.util.StringRepresentable { ::   private net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper(java.lang.String, it.unimi.dsi.fastutil.doubles.Double2DoubleFunction, double);
 public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper extends java.lang.Enum<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper> implements net.minecraft.util.StringRepresentable { ::   private static net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper[] $values();
+public class net.minecraft.world.level.levelgen.NoiseChunk implements net.minecraft.world.level.levelgen.DensityFunction$ContextProvider,net.minecraft.world.level.levelgen.DensityFunction$FunctionContext { ::   protected net.minecraft.world.level.biome.Climate$Sampler cachedClimateSampler(net.minecraft.world.level.levelgen.NoiseRouter, java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>);
+public final class net.minecraft.world.level.levelgen.DensityFunctions { ::   public static net.minecraft.world.level.levelgen.DensityFunction weirdScaledSampler(net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.core.Holder<net.minecraft.world.level.levelgen.synth.NormalNoise$NoiseParameters>, net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper);
+public final class net.minecraft.world.level.levelgen.RandomState { ::   private final net.minecraft.world.level.biome.Climate$Sampler sampler;
+public final class net.minecraft.world.level.levelgen.RandomState { ::   public net.minecraft.world.level.biome.Climate$Sampler sampler();
+public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { :: public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext {
+public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { ::   private final net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper rarityValueMapper;
+public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { ::   private static final com.mojang.serialization.MapCodec<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler> DATA_CODEC;
+public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { ::   public static final net.minecraft.util.KeyDispatchDataCodec<net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler> CODEC;
+public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { ::   protected net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler(net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction$NoiseHolder, net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper);
+public final class net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler extends java.lang.Record implements net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext { ::   public net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper rarityValueMapper();
 public class net.minecraft.world.level.levelgen.blending.Blender { ::   private net.minecraft.core.Holder method_39564(net.minecraft.world.level.biome.BiomeResolver, int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
 public final class net.minecraft.world.level.levelgen.BelowZeroRetrogen { ::   private static net.minecraft.core.Holder method_39768(net.minecraft.world.level.biome.BiomeResolver, java.util.function.Predicate, net.minecraft.world.level.chunk.ChunkAccess, int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
-public final class net.minecraft.world.level.levelgen.DensityFunctions { ::   public static net.minecraft.world.level.levelgen.DensityFunction weirdScaledSampler(net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.core.Holder<net.minecraft.world.level.levelgen.synth.NormalNoise$NoiseParameters>, net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper);
+public final class net.minecraft.world.level.biome.Climate$Sampler extends java.lang.Record { :: public final class net.minecraft.world.level.biome.Climate$Sampler extends java.lang.Record {
+public final class net.minecraft.world.level.biome.Climate$Sampler extends java.lang.Record { ::   public net.minecraft.world.level.biome.Climate$Sampler(net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction, java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>);
+public class net.minecraft.world.level.biome.TheEndBiomeSource extends net.minecraft.world.level.biome.BiomeSource { ::   public net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
+public interface net.minecraft.world.level.biome.BiomeResolver { ::   public abstract net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
+class net.minecraft.world.level.biome.Climate$SpawnFinder { ::   net.minecraft.world.level.biome.Climate$SpawnFinder(java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>, net.minecraft.world.level.biome.Climate$Sampler);
+class net.minecraft.world.level.biome.Climate$SpawnFinder { ::   private void radialSearch(java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>, net.minecraft.world.level.biome.Climate$Sampler, float, float);
+class net.minecraft.world.level.biome.Climate$SpawnFinder { ::   private static net.minecraft.world.level.biome.Climate$SpawnFinder$Result getSpawnPositionAndFitness(java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>, net.minecraft.world.level.biome.Climate$Sampler, int, int);
 public abstract class net.minecraft.world.level.biome.BiomeSource implements net.minecraft.world.level.biome.BiomeResolver { ::   public java.util.Set<net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>> getBiomesWithin(int, int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
 public abstract class net.minecraft.world.level.biome.BiomeSource implements net.minecraft.world.level.biome.BiomeResolver { ::   public com.mojang.datafixers.util.Pair<net.minecraft.core.BlockPos, net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>> findBiomeHorizontal(int, int, int, int, java.util.function.Predicate<net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>>, net.minecraft.util.RandomSource, net.minecraft.world.level.biome.Climate$Sampler);
 public abstract class net.minecraft.world.level.biome.BiomeSource implements net.minecraft.world.level.biome.BiomeResolver { ::   public com.mojang.datafixers.util.Pair<net.minecraft.core.BlockPos, net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>> findClosestBiome3d(net.minecraft.core.BlockPos, int, int, int, java.util.function.Predicate<net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>>, net.minecraft.world.level.biome.Climate$Sampler, net.minecraft.world.level.LevelReader);
 public abstract class net.minecraft.world.level.biome.BiomeSource implements net.minecraft.world.level.biome.BiomeResolver { ::   public com.mojang.datafixers.util.Pair<net.minecraft.core.BlockPos, net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>> findBiomeHorizontal(int, int, int, int, int, java.util.function.Predicate<net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>>, net.minecraft.util.RandomSource, boolean, net.minecraft.world.level.biome.Climate$Sampler);
 public abstract class net.minecraft.world.level.biome.BiomeSource implements net.minecraft.world.level.biome.BiomeResolver { ::   public abstract net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
 public abstract class net.minecraft.world.level.biome.BiomeSource implements net.minecraft.world.level.biome.BiomeResolver { ::   public void addDebugInfo(java.util.List<java.lang.String>, net.minecraft.core.BlockPos, net.minecraft.world.level.biome.Climate$Sampler);
-public class net.minecraft.world.level.biome.Climate { ::   public static net.minecraft.world.level.biome.Climate$Sampler empty();
-public class net.minecraft.world.level.biome.Climate { ::   public static net.minecraft.core.BlockPos findSpawnPosition(java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>, net.minecraft.world.level.biome.Climate$Sampler);
-public class net.minecraft.world.level.biome.MultiNoiseBiomeSource extends net.minecraft.world.level.biome.BiomeSource { ::   public net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
-public class net.minecraft.world.level.biome.MultiNoiseBiomeSource extends net.minecraft.world.level.biome.BiomeSource { ::   public void addDebugInfo(java.util.List<java.lang.String>, net.minecraft.core.BlockPos, net.minecraft.world.level.biome.Climate$Sampler);
-public interface net.minecraft.world.level.biome.BiomeResolver { ::   public abstract net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
-public class net.minecraft.world.level.biome.TheEndBiomeSource extends net.minecraft.world.level.biome.BiomeSource { ::   public net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
-public class net.minecraft.world.level.biome.CheckerboardColumnBiomeSource extends net.minecraft.world.level.biome.BiomeSource { ::   public net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
-class net.minecraft.world.level.biome.Climate$SpawnFinder { ::   net.minecraft.world.level.biome.Climate$SpawnFinder(java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>, net.minecraft.world.level.biome.Climate$Sampler);
-class net.minecraft.world.level.biome.Climate$SpawnFinder { ::   private void radialSearch(java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>, net.minecraft.world.level.biome.Climate$Sampler, float, float);
-class net.minecraft.world.level.biome.Climate$SpawnFinder { ::   private static net.minecraft.world.level.biome.Climate$SpawnFinder$Result getSpawnPositionAndFitness(java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>, net.minecraft.world.level.biome.Climate$Sampler, int, int);
-public final class net.minecraft.world.level.biome.Climate$Sampler extends java.lang.Record { :: public final class net.minecraft.world.level.biome.Climate$Sampler extends java.lang.Record {
-public final class net.minecraft.world.level.biome.Climate$Sampler extends java.lang.Record { ::   public net.minecraft.world.level.biome.Climate$Sampler(net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction, net.minecraft.world.level.levelgen.DensityFunction, java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>);
 public class net.minecraft.world.level.biome.FixedBiomeSource extends net.minecraft.world.level.biome.BiomeSource implements net.minecraft.world.level.biome.BiomeManager$NoiseBiomeSource { ::   public net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
 public class net.minecraft.world.level.biome.FixedBiomeSource extends net.minecraft.world.level.biome.BiomeSource implements net.minecraft.world.level.biome.BiomeManager$NoiseBiomeSource { ::   public com.mojang.datafixers.util.Pair<net.minecraft.core.BlockPos, net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>> findBiomeHorizontal(int, int, int, int, int, java.util.function.Predicate<net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>>, net.minecraft.util.RandomSource, boolean, net.minecraft.world.level.biome.Climate$Sampler);
 public class net.minecraft.world.level.biome.FixedBiomeSource extends net.minecraft.world.level.biome.BiomeSource implements net.minecraft.world.level.biome.BiomeManager$NoiseBiomeSource { ::   public com.mojang.datafixers.util.Pair<net.minecraft.core.BlockPos, net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>> findClosestBiome3d(net.minecraft.core.BlockPos, int, int, int, java.util.function.Predicate<net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>>, net.minecraft.world.level.biome.Climate$Sampler, net.minecraft.world.level.LevelReader);
 public class net.minecraft.world.level.biome.FixedBiomeSource extends net.minecraft.world.level.biome.BiomeSource implements net.minecraft.world.level.biome.BiomeManager$NoiseBiomeSource { ::   public java.util.Set<net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>> getBiomesWithin(int, int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
-public class net.minecraft.world.level.chunk.LevelChunkSection { ::   public void fillBiomesFromNoise(net.minecraft.world.level.biome.BiomeResolver, net.minecraft.world.level.biome.Climate$Sampler, int, int, int);
-public abstract class net.minecraft.world.level.chunk.ChunkAccess implements net.minecraft.world.level.biome.BiomeManager$NoiseBiomeSource,net.minecraft.world.level.chunk.LightChunk,net.minecraft.world.level.chunk.StructureAccess { ::   public void fillBiomesFromNoise(net.minecraft.world.level.biome.BiomeResolver, net.minecraft.world.level.biome.Climate$Sampler);
-public class net.minecraft.world.level.chunk.ImposterProtoChunk extends net.minecraft.world.level.chunk.ProtoChunk { ::   public void fillBiomesFromNoise(net.minecraft.world.level.biome.BiomeResolver, net.minecraft.world.level.biome.Climate$Sampler);
+public class net.minecraft.world.level.biome.CheckerboardColumnBiomeSource extends net.minecraft.world.level.biome.BiomeSource { ::   public net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
+public class net.minecraft.world.level.biome.MultiNoiseBiomeSource extends net.minecraft.world.level.biome.BiomeSource { ::   public net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int, int, int, net.minecraft.world.level.biome.Climate$Sampler);
+public class net.minecraft.world.level.biome.MultiNoiseBiomeSource extends net.minecraft.world.level.biome.BiomeSource { ::   public void addDebugInfo(java.util.List<java.lang.String>, net.minecraft.core.BlockPos, net.minecraft.world.level.biome.Climate$Sampler);
+public class net.minecraft.world.level.biome.Climate { ::   public static net.minecraft.world.level.biome.Climate$Sampler empty();
+public class net.minecraft.world.level.biome.Climate { ::   public static net.minecraft.core.BlockPos findSpawnPosition(java.util.List<net.minecraft.world.level.biome.Climate$ParameterPoint>, net.minecraft.world.level.biome.Climate$Sampler);
